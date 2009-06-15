@@ -1,0 +1,119 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.6.12)  12 JUN 2009 16:13
+entering extended mode
+ %&-line parsing enabled.
+**&prv_main _region_.tex
+(./_region_.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2005/09/16 v1.4f Standard LaTeX document class
+  size10.clo    2005/09/16 v1.4f Standard LaTeX file (size option)
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2006/08/25 11.84 (AUCTeX/preview-latex)
+
+(/usr/share/texmf/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen103
+)
+(/usr/share/texmf/tex/latex/preview/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count87
+\hfuzz=\dimen104
+(/usr/share/texmf/tex/latex/preview/prauctex.cfg))
+(/usr/share/texmf/tex/latex/preview/prfootnotes.def)
+\pr@snippet=\count88
+\pr@box=\box26
+\pr@output=\toks14
+
+Preview: Fontsize 10pt
+)  !name(main.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.7 \begin{eqnarray}
+                    
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(730073+0x22609920).
+<-><->
+      
+l.10 \end{eqnarray}
+                   
+Not a real error.
+
+[1
+
+]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.11 Let $
+          \rho$ be a representation of $G$ in $V$.
+Not a real error.
+
+! Preview: Snippet 2 ended.(282168+127431x338831).
+<-><->
+      
+l.11 Let $\rho$
+                be a representation of $G$ in $V$.
+Not a real error.
+
+[2]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.11 Let $\rho$ be a representation of $
+                                        G$ in $V$.
+Not a real error.
+
+! Preview: Snippet 3 ended.(447828+0x515276).
+<-><->
+      
+l.11 Let $\rho$ be a representation of $G$
+                                           in $V$.
+Not a real error.
+
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.11 Let $\rho$ be a representation of $G$ in $
+                                               V$.
+Not a real error.
+
+! Preview: Snippet 4 ended.(447828+0x527929).
+<-><->
+      
+l.11 Let $\rho$ be a representation of $G$ in $V$
+                                                 .
+Not a real error.
+
+[4] ) 
+Here is how much of TeX's memory you used:
+ 172 strings out of 94853
+ 2321 string characters out of 1180547
+ 50705 words of memory out of 1500000
+ 3629 multiletter control sequences out of 10000+50000
+ 5723 words of font info for 21 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 22i,7n,22p,161b,112s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on _region_.dvi (4 pages, 2032 bytes).
