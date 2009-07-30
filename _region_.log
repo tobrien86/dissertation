@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.6.12)  12 JUN 2009 16:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.7.27)  27 JUL 2009 17:13
 entering extended mode
  %&-line parsing enabled.
 **&prv_main _region_.tex
@@ -8,55 +8,64 @@ Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
 CUSTOMISED FORMAT. Preloaded files:
         .
- article.cls    2005/09/16 v1.4f Standard LaTeX document class
-  size10.clo    2005/09/16 v1.4f Standard LaTeX file (size option)
+  amsart.cls    2004/08/06 v2.20
+ amsmath.sty    2000/07/18 v2.13 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+    umsa.fd    2002/01/19 v2.2g AMS font definitions
+amsfonts.sty    2001/10/25 v2.2f
+enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
+    umsa.fd    2002/01/19 v2.2g AMS font definitions
+    umsb.fd    2002/01/19 v2.2g AMS font definitions
         .
 No file _region_.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 (/usr/share/texmf/tex/latex/preview/preview.sty
 Package: preview 2006/08/25 11.84 (AUCTeX/preview-latex)
 
 (/usr/share/texmf/tex/latex/preview/prtightpage.def
-\PreviewBorder=\dimen103
+\PreviewBorder=\dimen114
 )
 (/usr/share/texmf/tex/latex/preview/prauctex.def
 No auxiliary output files.
 
 
-\hbadness=\count87
-\hfuzz=\dimen104
+\hbadness=\count103
+\hfuzz=\dimen115
 (/usr/share/texmf/tex/latex/preview/prauctex.cfg))
 (/usr/share/texmf/tex/latex/preview/prfootnotes.def)
-\pr@snippet=\count88
-\pr@box=\box26
-\pr@output=\toks14
+\pr@snippet=\count104
+\pr@box=\box29
+\pr@output=\toks26
 
 Preview: Fontsize 10pt
-)  !name(main.tex) !offset(-3) 
+)  !name(endomorphisms/end.tex) !offset(-17) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.7 \begin{eqnarray}
-                    
+l.18 \section
+             {The endomorphism ring of an elliptic curve}
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(730073+0x22609920).
+! Preview: Snippet 1 ended.(447828+0x23592960).
 <-><->
       
-l.10 \end{eqnarray}
-                   
+l.18 ...he endomorphism ring of an elliptic curve}
+                                                  
 Not a real error.
 
 [1
@@ -65,55 +74,1760 @@ Not a real error.
 ! Preview: Snippet 2 started.
 <-><->
       
-l.11 Let $
-          \rho$ be a representation of $G$ in $V$.
+l.21 ...elliptic curves are defined over a field $
+                                                  k$ of
 Not a real error.
 
-! Preview: Snippet 2 ended.(282168+127431x338831).
+! Preview: Snippet 2 ended.(455111+0x361814).
 <-><->
       
-l.11 Let $\rho$
-                be a representation of $G$ in $V$.
+l.21 ...liptic curves are defined over a field $k$
+                                                   of
 Not a real error.
 
 [2]
 ! Preview: Snippet 3 started.
 <-><->
       
-l.11 Let $\rho$ be a representation of $
-                                        G$ in $V$.
+l.22 characteristic not equal to $
+                                  2$ or $3$.
 Not a real error.
 
-! Preview: Snippet 3 ended.(447828+0x515276).
+! Preview: Snippet 3 ended.(422343+0x327681).
 <-><->
       
-l.11 Let $\rho$ be a representation of $G$
-                                           in $V$.
+l.22 characteristic not equal to $2$
+                                     or $3$.
 Not a real error.
 
 [3]
 ! Preview: Snippet 4 started.
 <-><->
       
-l.11 Let $\rho$ be a representation of $G$ in $
-                                               V$.
+l.22 characteristic not equal to $2$ or $
+                                         3$.
 Not a real error.
 
-! Preview: Snippet 4 ended.(447828+0x527929).
+! Preview: Snippet 4 ended.(422343+0x327681).
 <-><->
       
-l.11 Let $\rho$ be a representation of $G$ in $V$
-                                                 .
+l.22 characteristic not equal to $2$ or $3$
+                                           .
 Not a real error.
 
-[4] ) 
-Here is how much of TeX's memory you used:
- 172 strings out of 94853
- 2321 string characters out of 1180547
- 50705 words of memory out of 1500000
- 3629 multiletter control sequences out of 10000+50000
- 5723 words of font info for 21 fonts, out of 1200000 for 2000
- 28 hyphenation exceptions out of 8191
- 22i,7n,22p,161b,112s stack positions out of 5000i,500n,6000p,200000b,5000s
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.24 \subsection
+                {Isogenies}
+Not a real error.
 
-Output written on _region_.dvi (4 pages, 2032 bytes).
+! Preview: Snippet 5 ended.(455111+127431x4509408).
+<-><->
+      
+l.24 \subsection{Isogenies}
+                           
+Not a real error.
+
+[5
+
+]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.27 Let $
+          E_{1}$ and $E_{2}$ be elliptic curves.  An \emph{isogeny} from $E_...
+
+Not a real error.
+
+! Preview: Snippet 6 ended.(447828+98303x777786).
+<-><->
+      
+l.27 Let $E_{1}$
+                 and $E_{2}$ be elliptic curves.  An \emph{isogeny} from $E_...
+
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.27 Let $E_{1}$ and $
+                      E_{2}$ be elliptic curves.  An \emph{isogeny} from $E_...
+
+Not a real error.
+
+! Preview: Snippet 7 ended.(447828+98303x777786).
+<-><->
+      
+l.27 Let $E_{1}$ and $E_{2}$
+                             be elliptic curves.  An \emph{isogeny} from $E_...
+
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.27 ...elliptic curves.  An \emph{isogeny} from $
+                                                  E_{1}$ to
+Not a real error.
+
+! Preview: Snippet 8 ended.(447828+98303x777786).
+<-><->
+      
+l.27 ...ic curves.  An \emph{isogeny} from $E_{1}$
+                                                   to
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.28 $
+      E_{2}$ is a morphism (of projective varieties) $\phi \colon E_{1} \rig...
+
+Not a real error.
+
+! Preview: Snippet 9 ended.(447828+98303x777786).
+<-><->
+      
+l.28 $E_{2}$
+             is a morphism (of projective varieties) $\phi \colon E_{1} \rig...
+
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.28 ... is a morphism (of projective varieties) $
+                                                  \phi \colon E_{1} \rightar...
+
+Not a real error.
+
+! Preview: Snippet 10 ended.(455111+127431x3438808).
+<-><->
+      
+l.28 ...ies) $\phi \colon E_{1} \rightarrow E_{2}$
+                                                  
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.30 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 11 ended.(655360+0x13347222).
+<-><->
+      
+l.32 \end{equation*}
+                    
+Not a real error.
+
+[11]
+
+LaTeX Warning: Citation `silverman86' on page 1 undefined on input line 33.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+
+
+LaTeX Warning: Citation `shafarevich94' on page 1 undefined on input line 34.
+
+! Preview: Snippet 12 started.
+<-><->
+      
+l.35 Thm 4).  Therefore, such an isogeny $
+                                          \phi \colon E_{1} \rightarrow E_{2...
+
+Not a real error.
+
+! Preview: Snippet 12 ended.(455111+127431x3438808).
+<-><->
+      
+l.35 ...geny $\phi \colon E_{1} \rightarrow E_{2}$
+                                                   induces an
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.36 injective homomorphism of function fields $
+                                                \phi^{*} \colon \bar{k}\left...
+
+Not a real error.
+
+! Preview: Snippet 13 ended.(545041+163840x5701620).
+<-><->
+      
+l.37 \rightarrow \bar{k}\left(E_{1}\right)$
+                                            given by
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.38 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 14 ended.(655360+0x13875879).
+<-><->
+      
+l.40 \end{equation*}
+                    
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.41 The extension $
+                    \bar{k}\left(E_{1}\right) /
+Not a real error.
+
+! Preview: Snippet 15 ended.(557059+229380x5355749).
+<-><->
+      
+l.42 ...{*}\left(\bar{k}\left(E_{2}\right)\right)$
+                                                   is finite (\cite{hartshor...
+
+Not a real error.
+
+[15]
+
+LaTeX Warning: Citation `hartshorne77' on page 1 undefined on input line 42.
+
+! Preview: Snippet 16 started.
+<-><->
+      
+l.43 ... and we thus define the \emph{degree} of $
+                                                  \phi$ to be the degree of the
+
+Not a real error.
+
+! Preview: Snippet 16 ended.(455111+127431x390486).
+<-><->
+      
+l.43 ...we thus define the \emph{degree} of $\phi$
+                                                   to be the degree of the
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.44 ...gree of the zero isogeny to be zero.  If $
+                                                  \phi_{1}
+Not a real error.
+
+! Preview: Snippet 17 ended.(455111+127431x3732811).
+<-><->
+      
+l.45 \colon E_{1} \rightarrow E_{2}$
+                                     and $\phi_{2} \colon E_{2} \rightarrow ...
+
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.45 \colon E_{1} \rightarrow E_{2}$ and $
+                                          \phi_{2} \colon E_{2} \rightarrow ...
+
+Not a real error.
+
+! Preview: Snippet 18 ended.(455111+127431x3732811).
+<-><->
+      
+l.45 ... $\phi_{2} \colon E_{2} \rightarrow E_{3}$
+                                                   are
+Not a real error.
+
+[18]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.46 isogenies of elliptic curves, then $
+                                         \phi_{2} \circ \phi_{1}$ is an isog...
+
+Not a real error.
+
+! Preview: Snippet 19 ended.(455111+127431x1987923).
+<-><->
+      
+l.46 ...tic curves, then $\phi_{2} \circ \phi_{1}$
+                                                   is an isogeny, where
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.47 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 20 ended.(655360+0x16514042).
+<-><->
+      
+l.50 \end{equation}
+                   
+Not a real error.
+
+[20
+
+]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.51 We say $
+             \phi$ is \emph{separable}, \emph{inseparable} or \emph{purely i...
+
+Not a real error.
+
+! Preview: Snippet 21 ended.(455111+127431x390486).
+<-><->
+      
+l.51 We say $\phi$
+                   is \emph{separable}, \emph{inseparable} or \emph{purely i...
+
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.54 An \emph{endomorphism} of an elliptic curve $
+                                                  E$ is an isogeny from $E$ ...
+
+Not a real error.
+
+! Preview: Snippet 22 ended.(447828+0x521556).
+<-><->
+      
+l.54 ...mph{endomorphism} of an elliptic curve $E$
+                                                   is an isogeny from $E$ to...
+
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.54 ...an elliptic curve $E$ is an isogeny from $
+                                                  E$ to itself.
+Not a real error.
+
+! Preview: Snippet 23 ended.(447828+0x521556).
+<-><->
+      
+l.54 ... elliptic curve $E$ is an isogeny from $E$
+                                                   to itself.
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.55 The set of all endomorphisms of $
+                                      E$ forms a ring $End(E)$ under pointwi...
+
+Not a real error.
+
+! Preview: Snippet 24 ended.(447828+0x521556).
+<-><->
+      
+l.55 The set of all endomorphisms of $E$
+                                         forms a ring $End(E)$ under pointwi...
+
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.55 ...of all endomorphisms of $E$ forms a ring $
+                                                  End(E)$ under pointwise ad...
+
+Not a real error.
+
+! Preview: Snippet 25 ended.(491520+163840x2287314).
+<-><->
+      
+l.55 ...endomorphisms of $E$ forms a ring $End(E)$
+                                                   under pointwise addition
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.56 ...known as the \emph{endomorphism ring} of $
+                                                  E$.
+Not a real error.
+
+! Preview: Snippet 26 ended.(447828+0x521556).
+<-><->
+      
+l.56 ...own as the \emph{endomorphism ring} of $E$
+                                                  .
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.58 \subsection
+                {Some properties of $End(E)$}
+Not a real error.
+
+! Preview: Snippet 27 ended.(491520+163840x10320086).
+<-><->
+      
+l.58 \subsection{Some properties of $End(E)$}
+                                             
+Not a real error.
+
+[27
+
+]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.66   Let $
+            E$ be an elliptic curve.  For every rational integer $m$ the \em...
+
+Not a real error.
+
+! Preview: Snippet 28 ended.(447828+0x521556).
+<-><->
+      
+l.66   Let $E$
+               be an elliptic curve.  For every rational integer $m$ the \em...
+
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.66 ...iptic curve.  For every rational integer $
+                                                  m$ the \emph{multiplicatio...
+
+Not a real error.
+
+! Preview: Snippet 29 ended.(282168+0x575415).
+<-><->
+      
+l.66 ...tic curve.  For every rational integer $m$
+                                                   the \emph{multiplication-...
+
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.67   map $
+            \left[m\right] \colon E \rightarrow E$ defined by
+Not a real error.
+
+! Preview: Snippet 30 ended.(491520+163840x3584591).
+<-><->
+      
+l.67   map $\left[m\right] \colon E \rightarrow E$
+                                                   defined by
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.71   \begin{equation*}
+                        
+Not a real error.
+
+! Preview: Snippet 31 ended.(2831145+0x16910774).
+<-><->
+      
+l.78   \end{equation*}
+                      
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.79   is an endomorphism of $
+                              E$.  Its kernel is the familiar subgroup $E \l...
+
+Not a real error.
+
+! Preview: Snippet 32 ended.(447828+0x521556).
+<-><->
+      
+l.79   is an endomorphism of $E$
+                                .  Its kernel is the familiar subgroup $E \l...
+
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.79 ...E$.  Its kernel is the familiar subgroup $
+                                                  E \left[ m
+Not a real error.
+
+! Preview: Snippet 33 ended.(491520+163840x1570285).
+<-><->
+      
+l.80   \right]$
+                of $E$.  From the definition it follows that $\left[m\right]
+Not a real error.
+
+[33]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.80   \right]$ of $
+                    E$.  From the definition it follows that $\left[m\right]
+Not a real error.
+
+! Preview: Snippet 34 ended.(447828+0x521556).
+<-><->
+      
+l.80   \right]$ of $E$
+                      .  From the definition it follows that $\left[m\right]
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.80 ...E$.  From the definition it follows that $
+                                                  \left[m\right]
+Not a real error.
+
+! Preview: Snippet 35 ended.(491520+163840x4522591).
+<-><->
+      
+l.81   \circ \left[n\right] = \left[mn\right]$
+                                              .
+Not a real error.
+
+[35]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.90 An elliptic curve $
+                        E$ has precisely three points of order 2.  Since $E$...
+
+Not a real error.
+
+! Preview: Snippet 36 ended.(447828+0x521556).
+<-><->
+      
+l.90 An elliptic curve $E$
+                           has precisely three points of order 2.  Since $E$...
+
+Not a real error.
+
+[36]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.90 ...recisely three points of order 2.  Since $
+                                                  E$ is infinite,
+Not a real error.
+
+! Preview: Snippet 37 ended.(447828+0x521556).
+<-><->
+      
+l.90 ...cisely three points of order 2.  Since $E$
+                                                   is infinite,
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.91 there exists a point $
+                           P_{1}$ on $E$ of order not equal to 2 so that
+Not a real error.
+
+! Preview: Snippet 38 ended.(447828+98303x714753).
+<-><->
+      
+l.91 there exists a point $P_{1}$
+                                  on $E$ of order not equal to 2 so that
+Not a real error.
+
+[38]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.91 there exists a point $P_{1}$ on $
+                                      E$ of order not equal to 2 so that
+Not a real error.
+
+! Preview: Snippet 39 ended.(447828+0x521556).
+<-><->
+      
+l.91 there exists a point $P_{1}$ on $E$
+                                         of order not equal to 2 so that
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.92 $
+      \left[2\right]P_{1} \neq O$.  Similarly, for a point $P_{2}$ of order ...
+
+Not a real error.
+
+! Preview: Snippet 40 ended.(491520+163840x2907652).
+<-><->
+      
+l.92 $\left[2\right]P_{1} \neq O$
+                                 .  Similarly, for a point $P_{2}$ of order ...
+
+Not a real error.
+
+[40]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.92 ...t]P_{1} \neq O$.  Similarly, for a point $
+                                                  P_{2}$ of order 2, any odd
+Not a real error.
+
+! Preview: Snippet 41 ended.(447828+98303x714753).
+<-><->
+      
+l.92 ...} \neq O$.  Similarly, for a point $P_{2}$
+                                                   of order 2, any odd
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.93 integer $
+              m$ satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-...
+
+Not a real error.
+
+! Preview: Snippet 42 ended.(282168+0x575415).
+<-><->
+      
+l.93 integer $m$
+                 satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-...
+
+Not a real error.
+
+[42]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.93 integer $m$ satisfies $
+                            \left[m\right]P_{2} = P_{2}$.  Thus for all non-...
+
+Not a real error.
+
+! Preview: Snippet 43 ended.(491520+163840x3352041).
+<-><->
+      
+l.93 ...m$ satisfies $\left[m\right]P_{2} = P_{2}$
+                                                  .  Thus for all non-zero $...
+
+Not a real error.
+
+[43]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.93 ...t]P_{2} = P_{2}$.  Thus for all non-zero $
+                                                  m$ it
+Not a real error.
+
+! Preview: Snippet 44 ended.(282168+0x575415).
+<-><->
+      
+l.93 ...P_{2} = P_{2}$.  Thus for all non-zero $m$
+                                                   it
+Not a real error.
+
+[44]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.94 follows that $
+                   \left[m\right] \neq \left[0\right]$.
+Not a real error.
+
+! Preview: Snippet 45 ended.(491520+163840x2505082).
+<-><->
+      
+l.94 ... that $\left[m\right] \neq \left[0\right]$
+                                                  .
+Not a real error.
+
+[45]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.96 As a $
+           \mathbb{Z}$-module, the endomorphism ring of an elliptic curve $E...
+
+Not a real error.
+
+! Preview: Snippet 46 ended.(451470+0x436908).
+<-><->
+      
+l.96 As a $\mathbb{Z}$
+                      -module, the endomorphism ring of an elliptic curve $E...
+
+Not a real error.
+
+[46]
+! Preview: Snippet 47 started.
+<-><->
+      
+l.96 ...e endomorphism ring of an elliptic curve $
+                                                  E$ is torsion-free; if $\p...
+
+Not a real error.
+
+! Preview: Snippet 47 ended.(447828+0x521556).
+<-><->
+      
+l.96 ...endomorphism ring of an elliptic curve $E$
+                                                   is torsion-free; if $\phi...
+
+Not a real error.
+
+[47]
+! Preview: Snippet 48 started.
+<-><->
+      
+l.96 ...n elliptic curve $E$ is torsion-free; if $
+                                                  \phi \in
+Not a real error.
+
+! Preview: Snippet 48 ended.(491520+163840x3478788).
+<-><->
+      
+l.97 End(E)$
+             and $m \in \mathbb{Z}$ satisfy
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.97 End(E)$ and $
+                  m \in \mathbb{Z}$ satisfy
+Not a real error.
+
+! Preview: Snippet 49 ended.(451470+25623x1813311).
+<-><->
+      
+l.97 End(E)$ and $m \in \mathbb{Z}$
+                                    satisfy
+Not a real error.
+
+[49]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.98 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 50 ended.(655360+0x13553737).
+<-><->
+      
+l.100 \end{equation*}
+                     
+Not a real error.
+
+[50]
+
+LaTeX Warning: Reference `eq:degree-of-composition' on page 1 undefined on inpu
+t line 101.
+
+! Preview: Snippet 51 started.
+<-><->
+      
+l.102 \begin{equation*}
+                       
+Not a real error.
+
+! Preview: Snippet 51 ended.(655360+0x14900182).
+<-><->
+      
+l.104 \end{equation*}
+                     
+Not a real error.
+
+[51]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.105 whence either $
+                     m = 0$ or $deg\left(\left[m\right]\right) > 0$, in whic...
+
+Not a real error.
+
+! Preview: Snippet 52 ended.(422343+0x1776902).
+<-><->
+      
+l.105 whence either $m = 0$
+                            or $deg\left(\left[m\right]\right) > 0$, in whic...
+
+Not a real error.
+
+[52]
+! Preview: Snippet 53 started.
+<-><->
+      
+l.105 whence either $m = 0$ or $
+                                deg\left(\left[m\right]\right) > 0$, in whic...
+
+Not a real error.
+
+! Preview: Snippet 53 ended.(491520+163840x3742300).
+<-><->
+      
+l.105 ...$ or $deg\left(\left[m\right]\right) > 0$
+                                                  , in which case $\phi =
+Not a real error.
+
+[53]
+! Preview: Snippet 54 started.
+<-><->
+      
+l.105 ...eft[m\right]\right) > 0$, in which case $
+                                                  \phi =
+Not a real error.
+
+! Preview: Snippet 54 ended.(491520+163840x1956063).
+<-><->
+      
+l.106 \left[0\right]$
+                      and $m \neq 0$.
+Not a real error.
+
+[54]
+! Preview: Snippet 55 started.
+<-><->
+      
+l.106 \left[0\right]$ and $
+                           m \neq 0$.
+Not a real error.
+
+! Preview: Snippet 55 ended.(455111+127430x1776902).
+<-><->
+      
+l.106 \left[0\right]$ and $m \neq 0$
+                                    .
+Not a real error.
+
+[55]
+! Preview: Snippet 56 started.
+<-><->
+      
+l.108 Taking degrees also shows that $
+                                      End(E)$ is an integral domain; if $\ph...
+
+Not a real error.
+
+! Preview: Snippet 56 ended.(491520+163840x2287314).
+<-><->
+      
+l.108 Taking degrees also shows that $End(E)$
+                                              is an integral domain; if $\ph...
+
+Not a real error.
+
+[56]
+! Preview: Snippet 57 started.
+<-><->
+      
+l.108 ...that $End(E)$ is an integral domain; if $
+                                                  \phi_{1}$ and
+Not a real error.
+
+! Preview: Snippet 57 ended.(455111+127431x684489).
+<-><->
+      
+l.108 ...(E)$ is an integral domain; if $\phi_{1}$
+                                                   and
+Not a real error.
+
+[57]
+! Preview: Snippet 58 started.
+<-><->
+      
+l.109 $
+       \phi_{2}$ are endomorphisms of $E$ such that
+Not a real error.
+
+! Preview: Snippet 58 ended.(455111+127431x684489).
+<-><->
+      
+l.109 $\phi_{2}$
+                 are endomorphisms of $E$ such that
+Not a real error.
+
+[58]
+! Preview: Snippet 59 started.
+<-><->
+      
+l.109 $\phi_{2}$ are endomorphisms of $
+                                       E$ such that
+Not a real error.
+
+! Preview: Snippet 59 ended.(447828+0x521556).
+<-><->
+      
+l.109 $\phi_{2}$ are endomorphisms of $E$
+                                          such that
+Not a real error.
+
+[59]
+! Preview: Snippet 60 started.
+<-><->
+      
+l.110 \begin{equation*}
+                       
+Not a real error.
+
+! Preview: Snippet 60 ended.(655360+0x13718865).
+<-><->
+      
+l.112 \end{equation*}
+                     
+Not a real error.
+
+[60]
+! Preview: Snippet 61 started.
+<-><->
+      
+l.114 \begin{equation*}
+                       
+Not a real error.
+
+! Preview: Snippet 61 ended.(655360+0x15010698).
+<-><->
+      
+l.116 \end{equation*}
+                     
+Not a real error.
+
+[61]
+! Preview: Snippet 62 started.
+<-><->
+      
+l.123   Let $
+             E$ be an elliptic curve.  Then $End(E)$ is a characteristic zer...
+
+Not a real error.
+
+! Preview: Snippet 62 ended.(447828+0x521556).
+<-><->
+      
+l.123   Let $E$
+                be an elliptic curve.  Then $End(E)$ is a characteristic zer...
+
+Not a real error.
+
+[62]
+! Preview: Snippet 63 started.
+<-><->
+      
+l.123   Let $E$ be an elliptic curve.  Then $
+                                             End(E)$ is a characteristic zer...
+
+Not a real error.
+
+! Preview: Snippet 63 ended.(491520+163840x2287314).
+<-><->
+      
+l.123 ... $E$ be an elliptic curve.  Then $End(E)$
+                                                   is a characteristic zero ...
+
+Not a real error.
+
+[63]
+! Preview: Snippet 64 started.
+<-><->
+      
+l.127 ...domorphism ring is strictly larger than $
+                                                  \mathbb{Z}$ is
+Not a real error.
+
+! Preview: Snippet 64 ended.(451470+0x436908).
+<-><->
+      
+l.127 ...ring is strictly larger than $\mathbb{Z}$
+                                                   is
+Not a real error.
+
+[64]
+! Preview: Snippet 65 started.
+<-><->
+      
+l.132   Consider the elliptic curve $
+                                     E$ given by the equation
+Not a real error.
+
+! Preview: Snippet 65 ended.(447828+0x521556).
+<-><->
+      
+l.132   Consider the elliptic curve $E$
+                                        given by the equation
+Not a real error.
+
+[65]
+! Preview: Snippet 66 started.
+<-><->
+      
+l.133   \begin{equation*}
+                         
+Not a real error.
+
+! Preview: Snippet 66 ended.(693664+0x13565872).
+<-><->
+      
+l.135   \end{equation*}
+                       
+Not a real error.
+
+[66]
+! Preview: Snippet 67 started.
+<-><->
+      
+l.136   The map $
+                 \left[ i \right] \colon E \rightarrow E$ given by
+Not a real error.
+
+! Preview: Snippet 67 ended.(491520+163840x3234956).
+<-><->
+      
+l.136 ...$\left[ i \right] \colon E \rightarrow E$
+                                                   given by
+Not a real error.
+
+[67]
+! Preview: Snippet 68 started.
+<-><->
+      
+l.137   \begin{equation*}
+                         
+Not a real error.
+
+! Preview: Snippet 68 ended.(655360+0x14471058).
+<-><->
+      
+l.139   \end{equation*}
+                       
+Not a real error.
+
+[68]
+! Preview: Snippet 69 started.
+<-><->
+      
+l.140   is an endomorphism of $
+                               E$.  Note that $\left[ i \right]^{2} = \left[...
+
+Not a real error.
+
+! Preview: Snippet 69 ended.(447828+0x521556).
+<-><->
+      
+l.140   is an endomorphism of $E$
+                                 .  Note that $\left[ i \right]^{2} = \left[...
+
+Not a real error.
+
+[69]
+! Preview: Snippet 70 started.
+<-><->
+      
+l.140   is an endomorphism of $E$.  Note that $
+                                               \left[ i \right]^{2} = \left[...
+
+Not a real error.
+
+! Preview: Snippet 70 ended.(625142+163840x2959176).
+<-><->
+      
+l.140 ...\left[ i \right]^{2} = \left[ -1 \right]$
+                                                  ,
+Not a real error.
+
+[70]
+! Preview: Snippet 71 started.
+<-><->
+      
+l.141   so that $
+                 \left[ i \right] \neq \left[ m \right]$ for any rational in...
+
+Not a real error.
+
+! Preview: Snippet 71 ended.(491520+163840x2403181).
+<-><->
+      
+l.141 ... $\left[ i \right] \neq \left[ m \right]$
+                                                   for any rational integer ...
+
+Not a real error.
+
+[71]
+! Preview: Snippet 72 started.
+<-><->
+      
+l.141 ...ft[ m \right]$ for any rational integer $
+                                                  m$.
+Not a real error.
+
+! Preview: Snippet 72 ended.(282168+0x575415).
+<-><->
+      
+l.141 ...[ m \right]$ for any rational integer $m$
+                                                  .
+Not a real error.
+
+[72]
+! Preview: Snippet 73 started.
+<-><->
+      
+l.142   Thus $
+              E$ has complex multiplication.
+Not a real error.
+
+! Preview: Snippet 73 ended.(447828+0x521556).
+<-><->
+      
+l.142   Thus $E$
+                 has complex multiplication.
+Not a real error.
+
+[73]
+! Preview: Snippet 74 started.
+<-><->
+      
+l.149 \subsection
+                 {An interlude on dual isogenies}
+Not a real error.
+
+! Preview: Snippet 74 ended.(455111+127431x11583163).
+<-><->
+      
+l.149 \subsection{An interlude on dual isogenies}
+                                                 
+Not a real error.
+
+[74
+
+]
+! Preview: Snippet 75 started.
+<-><->
+      
+l.152 Let $
+           E_{1}$ and $E_{2}$ be elliptic curves.  For every non-zero isogen...
+
+Not a real error.
+
+! Preview: Snippet 75 ended.(447828+98303x777786).
+<-><->
+      
+l.152 Let $E_{1}$
+                  and $E_{2}$ be elliptic curves.  For every non-zero isogen...
+
+Not a real error.
+
+[75]
+! Preview: Snippet 76 started.
+<-><->
+      
+l.152 Let $E_{1}$ and $
+                       E_{2}$ be elliptic curves.  For every non-zero isogen...
+
+Not a real error.
+
+! Preview: Snippet 76 ended.(447828+98303x777786).
+<-><->
+      
+l.152 Let $E_{1}$ and $E_{2}$
+                              be elliptic curves.  For every non-zero isogen...
+
+Not a real error.
+
+[76]
+! Preview: Snippet 77 started.
+<-><->
+      
+l.152 ...tic curves.  For every non-zero isogeny $
+                                                  \phi \colon
+Not a real error.
+
+! Preview: Snippet 77 ended.(455111+127431x3438808).
+<-><->
+      
+l.153 E_{1} \rightarrow E_{2}$
+                               there exists a unique isogeny $\hat{\phi} \co...
+
+Not a real error.
+
+[77]
+! Preview: Snippet 78 started.
+<-><->
+      
+l.153 ...ow E_{2}$ there exists a unique isogeny $
+                                                  \hat{\phi} \colon E_{2}
+Not a real error.
+
+! Preview: Snippet 78 ended.(628054+127431x3438808).
+<-><->
+      
+l.154 \rightarrow E_{1}$
+                         which satisfies
+Not a real error.
+
+[78]
+! Preview: Snippet 79 started.
+<-><->
+      
+l.155 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 79 ended.(791894+0x13548728).
+<-><->
+      
+l.158 \end{equation}
+                    
+Not a real error.
+
+[79
+
+]
+! Preview: Snippet 80 started.
+<-><->
+      
+l.159 where $
+             m$ is the degree of $\phi$ (when $\phi = \left[ 0 \right]$ we d...
+
+Not a real error.
+
+! Preview: Snippet 80 ended.(282168+0x575415).
+<-><->
+      
+l.159 where $m$
+                is the degree of $\phi$ (when $\phi = \left[ 0 \right]$ we d...
+
+Not a real error.
+
+[80]
+! Preview: Snippet 81 started.
+<-><->
+      
+l.159 where $m$ is the degree of $
+                                  \phi$ (when $\phi = \left[ 0 \right]$ we d...
+
+Not a real error.
+
+! Preview: Snippet 81 ended.(455111+127431x390486).
+<-><->
+      
+l.159 where $m$ is the degree of $\phi$
+                                        (when $\phi = \left[ 0 \right]$ we d...
+
+Not a real error.
+
+[81]
+! Preview: Snippet 82 started.
+<-><->
+      
+l.159 where $m$ is the degree of $\phi$ (when $
+                                               \phi = \left[ 0 \right]$ we d...
+
+Not a real error.
+
+! Preview: Snippet 82 ended.(491520+163840x1956063).
+<-><->
+      
+l.159 ...of $\phi$ (when $\phi = \left[ 0 \right]$
+                                                   we define
+Not a real error.
+
+[82]
+! Preview: Snippet 83 started.
+<-><->
+      
+l.160 $
+       \hat{\phi}$ to be $\left[ 0 \right]$).  We say $\hat{\phi}$ is the \e...
+
+Not a real error.
+
+! Preview: Snippet 83 ended.(628054+127431x390486).
+<-><->
+      
+l.160 $\hat{\phi}$
+                   to be $\left[ 0 \right]$).  We say $\hat{\phi}$ is the \e...
+
+Not a real error.
+
+[83]
+! Preview: Snippet 84 started.
+<-><->
+      
+l.160 $\hat{\phi}$ to be $
+                          \left[ 0 \right]$).  We say $\hat{\phi}$ is the \e...
+
+Not a real error.
+
+! Preview: Snippet 84 ended.(491520+163840x691771).
+<-><->
+      
+l.160 $\hat{\phi}$ to be $\left[ 0 \right]$
+                                           ).  We say $\hat{\phi}$ is the \e...
+
+Not a real error.
+
+[84]
+! Preview: Snippet 85 started.
+<-><->
+      
+l.160 ...hi}$ to be $\left[ 0 \right]$).  We say $
+                                                  \hat{\phi}$ is the \emph{dual
+
+Not a real error.
+
+! Preview: Snippet 85 ended.(628054+127431x390486).
+<-><->
+      
+l.160 ...$\left[ 0 \right]$).  We say $\hat{\phi}$
+                                                   is the \emph{dual
+Not a real error.
+
+[85]
+! Preview: Snippet 86 started.
+<-><->
+      
+l.161   isogeny} to $
+                     \phi$.  Note that, for any elliptic curve $E$, we have ...
+
+Not a real error.
+
+! Preview: Snippet 86 ended.(455111+127431x390486).
+<-><->
+      
+l.161   isogeny} to $\phi$
+                          .  Note that, for any elliptic curve $E$, we have ...
+
+Not a real error.
+
+[86]
+! Preview: Snippet 87 started.
+<-><->
+      
+l.161 ...hi$.  Note that, for any elliptic curve $
+                                                  E$, we have $\widehat{[1]}
+Not a real error.
+
+! Preview: Snippet 87 ended.(447828+0x521556).
+<-><->
+      
+l.161 ...$.  Note that, for any elliptic curve $E$
+                                                  , we have $\widehat{[1]}
+Not a real error.
+
+[87]
+! Preview: Snippet 88 started.
+<-><->
+      
+l.161 ...at, for any elliptic curve $E$, we have $
+                                                  \widehat{[1]}
+Not a real error.
+
+! Preview: Snippet 88 ended.(700872+163840x2257348).
+<-><->
+      
+l.162 = [1]$
+            .  This follows from the definition of the dual isogeny and the ...
+
+Not a real error.
+
+[88]
+! Preview: Snippet 89 started.
+<-><->
+      
+l.163 of $
+          End(E)$.
+Not a real error.
+
+! Preview: Snippet 89 ended.(491520+163840x2287314).
+<-><->
+      
+l.163 of $End(E)$
+                 .
+Not a real error.
+
+[89]
+! Preview: Snippet 90 started.
+<-><->
+      
+l.165 ... tool in studying the multiplication-by-$
+                                                  m$ maps.
+Not a real error.
+
+! Preview: Snippet 90 ended.(282168+0x575415).
+<-><->
+      
+l.165 ...ool in studying the multiplication-by-$m$
+                                                   maps.
+Not a real error.
+
+[90]
+! Preview: Snippet 91 started.
+<-><->
+      
+l.169   Let $
+             \phi \colon E_{1} \rightarrow E_{2}$ be an isogeny of degree $d...
+
+Not a real error.
+
+! Preview: Snippet 91 ended.(455111+127431x3438808).
+<-><->
+      
+l.169   Let $\phi \colon E_{1} \rightarrow E_{2}$
+                                                  be an isogeny of degree $d...
+
+Not a real error.
+
+[91]
+! Preview: Snippet 92 started.
+<-><->
+      
+l.169 ...ghtarrow E_{2}$ be an isogeny of degree $
+                                                  d$.  Then
+Not a real error.
+
+! Preview: Snippet 92 ended.(455111+0x341106).
+<-><->
+      
+l.169 ...tarrow E_{2}$ be an isogeny of degree $d$
+                                                  .  Then
+Not a real error.
+
+[92]
+! Preview: Snippet 93 started.
+<-><->
+      
+l.171   \item $
+               \bar{\phi} \circ \phi = \left[ d \right]$ on $E_{1}$, and $\p...
+
+Not a real error.
+
+! Preview: Snippet 93 ended.(545041+163840x2978919).
+<-><->
+      
+l.171 ...\bar{\phi} \circ \phi = \left[ d \right]$
+                                                   on $E_{1}$, and $\phi \circ
+Not a real error.
+
+[93]
+! Preview: Snippet 94 started.
+<-><->
+      
+l.171 ...\phi} \circ \phi = \left[ d \right]$ on $
+                                                  E_{1}$, and $\phi \circ
+Not a real error.
+
+! Preview: Snippet 94 ended.(447828+98303x777786).
+<-><->
+      
+l.171 ...\circ \phi = \left[ d \right]$ on $E_{1}$
+                                                  , and $\phi \circ
+Not a real error.
+
+[94]
+! Preview: Snippet 95 started.
+<-><->
+      
+l.171 ...phi = \left[ d \right]$ on $E_{1}$, and $
+                                                  \phi \circ
+Not a real error.
+
+! Preview: Snippet 95 ended.(545041+163840x2978919).
+<-><->
+      
+l.172     \bar{\phi} = \left[ d \right]$
+                                         on $E_{2}$,
+Not a real error.
+
+[95]
+! Preview: Snippet 96 started.
+<-><->
+      
+l.172     \bar{\phi} = \left[ d \right]$ on $
+                                             E_{2}$,
+Not a real error.
+
+! Preview: Snippet 96 ended.(447828+98303x777786).
+<-><->
+      
+l.172 ...\bar{\phi} = \left[ d \right]$ on $E_{2}$
+                                                  ,
+Not a real error.
+
+[96]
+! Preview: Snippet 97 started.
+<-><->
+      
+l.173   \item if $
+                  \theta \colon E_{2} \rightarrow E_{3}$ is another isogeny,...
+
+Not a real error.
+
+! Preview: Snippet 97 ended.(455111+98303x3374182).
+<-><->
+      
+l.173 ...f $\theta \colon E_{2} \rightarrow E_{3}$
+                                                   is another isogeny, then
+Not a real error.
+
+[97]
+! Preview: Snippet 98 started.
+<-><->
+      
+l.174     \begin{equation*}
+                           
+Not a real error.
+
+! Preview: Snippet 98 ended.(791894+0x13659697).
+<-><->
+      
+l.176     \end{equation*}
+                         
+Not a real error.
+
+[98]
+! Preview: Snippet 99 started.
+<-><->
+      
+l.177   \item if $
+                  \psi \colon E_{1} \rightarrow E_{2}$ is another isogeny, then
+
+Not a real error.
+
+! Preview: Snippet 99 ended.(455111+127431x3498731).
+<-><->
+      
+l.177 ... if $\psi \colon E_{1} \rightarrow E_{2}$
+                                                   is another isogeny, then
+Not a real error.
+
+[99]
+! Preview: Snippet 100 started.
+<-><->
+      
+l.178     \begin{equation*}
+                           
+Not a real error.
+
+! Preview: Snippet 100 ended.(819809+0x13966291).
+<-><->
+      
+l.180     \end{equation*}
+                         
+Not a real error.
+
+[100]
+
+LaTeX Warning: Citation `silverman86' on page 1 undefined on input line 184.
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
+! Preview: Snippet 101 started.
+<-><->
+      
+l.189   Let $
+             E$ be an elliptic curve over a field $k$ of characteristic zero...
+
+Not a real error.
+
+! Preview: Snippet 101 ended.(447828+0x521556).
+<-><->
+      
+l.189   Let $E$
+                be an elliptic curve over a field $k$ of characteristic zero...
+
+Not a real error.
+
+[101]
+! Preview: Snippet 102 started.
+<-><->
+      
+l.189 ...t $E$ be an elliptic curve over a field $
+                                                  k$ of characteristic zero,...
+
+Not a real error.
+
+! Preview: Snippet 102 ended.(455111+0x361814).
+<-><->
+      
+l.189 ...$E$ be an elliptic curve over a field $k$
+                                                   of characteristic zero, a...
+
+Not a real error.
+
+[102]
+! Preview: Snippet 103 started.
+<-><->
+      
+l.189 ...eld $k$ of characteristic zero, and let $
+                                                  m
+Not a real error.
+
+! Preview: Snippet 103 ended.(451470+25623x1813311).
+<-><->
+      
+l.190   \in \mathbb{Z}$
+                       .  Then
+Not a real error.
+
+[103]
+! Preview: Snippet 104 started.
+<-><->
+      
+l.191   \begin{equation*}
+                         
+Not a real error.
+
+! Preview: Snippet 104 ended.(655360+0x15232343).
+<-><->
+      
+l.193   \end{equation*}
+                       
+Not a real error.
+
+[104]
+! Preview: Snippet 105 started.
+<-><->
+      
+l.196 \subsection
+                 {The Tate Module}
+Not a real error.
+
+! Preview: Snippet 105 ended.(455111+0x7319068).
+<-><->
+      
+l.196 \subsection{The Tate Module}
+                                  
+Not a real error.
+
+[105
+
+]
+! Preview: Snippet 106 started.
+<-><->
+      
+l.199 Let $
+           E$ be an elliptic curve over a field $k$ of characteristic zero. ...
+
+Not a real error.
+
+! Preview: Snippet 106 ended.(447828+0x521556).
+<-><->
+      
+l.199 Let $E$
+              be an elliptic curve over a field $k$ of characteristic zero. ...
+
+Not a real error.
+
+[106]
+! Preview: Snippet 107 started.
+<-><->
+      
+l.199 Let $E$ be an elliptic curve over a field $
+                                                 k$ of characteristic zero. ...
+
+Not a real error.
+
+! Preview: Snippet 107 ended.(455111+0x361814).
+<-><->
+      
+l.199 ...$E$ be an elliptic curve over a field $k$
+                                                   of characteristic zero.  ...
+
+Not a real error.
+
+[107]
+! Preview: Snippet 108 started.
+<-><->
+      
+l.200 group $
+             Gal_{\bar{k}/k}$ acts on $E[m]$ in the following way
+Not a real error.
+
+! Preview: Snippet 108 ended.(455111+273430x1937882).
+<-><->
+      
+l.200 group $Gal_{\bar{k}/k}$
+                              acts on $E[m]$ in the following way
+Not a real error.
+
+[108]
+! Preview: Snippet 109 started.
+<-><->
+      
+l.200 group $Gal_{\bar{k}/k}$ acts on $
+                                       E[m]$ in the following way
+Not a real error.
+
+! Preview: Snippet 109 ended.(491520+163840x1461061).
+<-><->
+      
+l.200 group $Gal_{\bar{k}/k}$ acts on $E[m]$
+                                             in the following way
+Not a real error.
+
+[109]  !name(../main.tex) !offset(-183) 
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{17.77782pt}
+\newlabel{tocindent2}{29.38873pt}
+\newlabel{tocindent3}{0pt}
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 219 strings out of 93678
+ 2932 string characters out of 1167601
+ 70521 words of memory out of 1500000
+ 4643 multiletter control sequences out of 10000+50000
+ 10535 words of font info for 41 fonts, out of 1200000 for 2000
+ 189 hyphenation exceptions out of 8191
+ 22i,10n,32p,187b,241s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on _region_.dvi (109 pages, 16412 bytes).

@@ -1,9 +1,27 @@
 (TeX-add-style-hook "main"
  (lambda ()
-    (LaTeX-add-labels
-     "eq:1")
+    (LaTeX-add-bibliographies
+     "../BibTeX/mybib")
+    (LaTeX-add-environments
+     "thm"
+     "prop"
+     "lem"
+     "cor"
+     "example"
+     "rem")
     (TeX-run-style-hooks
+     "xy"
+     "all"
+     "cmtip"
+     "mathrsfs"
+     "enumerate"
+     "amsthm"
+     "amsmath"
+     "amsfonts"
      "latex2e"
-     "art10"
-     "article")))
+     "amsart10"
+     "amsart"
+     "introduction/int"
+     "endomorphisms/end"
+     "complexcurves/complex")))
 

@@ -1,11 +1,33 @@
-\documentclass{article}
+
+\documentclass{amsart}
+% \documentclass{article}
+\usepackage{amsfonts,amsmath,amsthm,enumerate,mathrsfs}
+\usepackage[all,cmtip]{xy}
+
+
+% amsthm stuff
+\newtheorem{thm}{Theorem}[subsection]
+\newtheorem{prop}{Proposition}[subsection]
+\newtheorem{lem}{Lemma}[subsection]
+\newtheorem{cor}{Corollary}[subsection]
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[subsection]
+\newtheorem{rem}{Remark}[subsection]
+
+\title{Elliptic Curves with Complex Multiplication}
 
 \begin{document}
-\begin{eqnarray}
-  \label{eq:1}
-  G_1 \colon G^{2} \pi  
-\end{eqnarray}
-Let $\rho$ be a representation of $G$ in $V$. 
+
+\maketitle{}
+
+\input{introduction/int.tex}
+\input{endomorphisms/end.tex}
+\input{complexcurves/complex.tex}
+
+\bibliographystyle{amsalpha}
+\bibliography{../BibTeX/mybib}
+
 \end{document}
 
 %%% Local Variables: 

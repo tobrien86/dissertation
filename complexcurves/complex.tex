@@ -1,0 +1,116 @@
+
+\section{Complex multiplication over $\mathbb{C}$}
+\label{sec:compl-mult-over-C}
+
+Thus far we have established the general structure of the endomorphism ring of an
+elliptic curve, but we do not yet have a satisfactory way of determining whether a
+given elliptic curve has complex multiplication or not.
+TODO: more intro material.
+
+\subsection{A brief review of elliptic curves over $\mathbb{C}$}
+\label{sec:review-complex-curves}
+
+TODO: Reference A Course in Arithmetic.  Let $\Lambda$ be a lattice in $\mathbb{C}$.
+Recall the Weierstrass $\wp$-function:
+\begin{equation*}
+  \wp(z,\Lambda)\footnote{We will usually supress the $\Lambda$ and simply write $\wp(z)$} = \frac{1}{z^{2}} + \sum_{\omega \in \Lambda - 0}
+  \frac{1}{(z-\omega)^{2}} - \frac{1}{\omega^{2}}.
+\end{equation*}
+The $\wp$-function is doubly-periodic, and thus descends to a well-defined function
+on the torus $\mathbb{C} / \Lambda$.  Recall also the Eisenstein series for $\Lambda$
+of weight $2k$:
+\begin{equation*}
+  G_{2k}(\Lambda) = \sum_{\omega \in \Lambda - 0} \frac{1}{\omega^{2}}.
+\end{equation*}
+There is a relation of algebraic dependence between $\wp$ and its derivative, given
+by:
+\begin{equation*}
+  \wp'(z)^{2} = 4\wp(z)^{3} - g_{2}\wp(z) - g_{3},
+\end{equation*}
+where $g_{2} = 60G_{4}(\Lambda)$ and $g_{3} = 140G_{6}(\Lambda)$.  So if
+$E_{\Lambda}$ is the curve in $\mathbb{P}^{2}_{\mathbb{C}}$ defined by the equation
+\begin{equation}
+  \label{eq:complex-eqn-for-ec}
+  y^{2} = 4x^{3} - g_{2}x - g_{3},
+\end{equation}
+then there is a holomorphic bijection of Riemann surfaces $\mathbb{C}/\Lambda
+\rightarrow E_{\Lambda}$ given by
+\begin{equation*}
+  z + \Lambda \rightarrow
+  \begin{cases}
+    [\wp(z) : \wp'(z) : 1] & z \neq 0,\\
+    [0 : 1 : 0] & z = 0.
+  \end{cases}
+\end{equation*}
+The curve defined in \eqref{eq:complex-eqn-for-ec} is nonsingular provided the
+discriminant
+\begin{equation*}
+  \Delta(E_{\Lambda}) = g_{2}^{3} - 27g_{3}^{2}
+\end{equation*}
+is non-zero.
+
+\subsection{Endomorphisms}
+\label{sec:endomorphisms}
+
+One advantage of working over the complex numbers is that the endomorphism ring of an
+elliptic curve can be interpreted in a simple way in terms of the lattice which
+defines the curve.
+
+Let $\Lambda_{1}$ and $\Lambda_{2}$ be lattices in $\mathbb{C}$. Suppose $\alpha \in
+\mathbb{C}$ is such that $\alpha\Lambda_{1} \subset \Lambda_{2}$.  Then $\alpha$
+defines a map $\phi_{\alpha} \colon \mathbb{C}/\lambda_{1} \rightarrow
+\mathbb{C}/\Lambda_{2}$ given by
+\begin{equation*}
+  \phi_{\alpha}(z + \Lambda_{1}) = \alpha z + \Lambda_{2}.
+\end{equation*}
+This map is well defined; if $\omega \in \Lambda_{1}$, then
+\begin{equation*}
+  \alpha(z + \omega) = \alpha z + \alpha\omega \equiv \alpha z \pmod{\Lambda_{2}}.
+\end{equation*}
+The maps $\phi_{\alpha}$ are clearly holomorphic group homomorphisms.
+
+\begin{prop}
+  \label{prop:complex-isogenies}
+  TODO: Write this out in own words.
+\end{prop}
+\begin{proof}
+  
+\end{proof}
+
+\begin{cor}
+  \label{cor:homothetic-lattices-give-isomorphic-curves}
+  Let $\Lambda_{1}$ and $\Lambda_{2}$ be as above.  Then the curves $E_{\Lambda_{1}}$
+  and $E_{\Lambda_{2}}$ are isomorphic if and only if $\Lambda_{1}$ is homothetic to $\Lambda_{2}$.
+\end{cor}
+
+From the general theory of elliptic curves we know that for any non-zero $d$ in an
+arbitrary field $k$ there exists an elliptic curve $E$ with discriminant $d$.  When
+$k$ is the field of complex numbers there is a much stronger result, known as the
+\emph{uniformisation thorem}, which states:
+
+\begin{thm}
+  \label{thm:uniformisation-theorem}
+  Let $A$ and $B$ be complex numbers which satisfy
+  \begin{equation*}
+    A^{3} - 27B^{2} \neq 0.
+  \end{equation*}
+  Then there exists a unique lattice $\Lambda \subset \mathbb{C}$ such that
+  \begin{equation*}
+    g_{2}(\Lambda) = A \text{\quad and \quad} g_{3}(\Lambda) = B.
+  \end{equation*}
+\end{thm}
+\begin{proof}
+  TODO: Reference Shimura.
+\end{proof}
+
+An obvious consequence of the uniformisation is the following corollary:
+
+\begin{cor}
+  \label{cor:uniformisation-corollary}
+  Let $E$ be an elliptic curve over $\mathbb{C}$.
+\end{cor}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 

@@ -1,20 +1,3 @@
-\message{ !name(../main.tex)}
-\documentclass{amsart}
-\usepackage{amsthm,amsfonts,amsmath,enumerate}
-
-% amsthm stuff
-\newtheorem{thm}{Theorem}[subsection]
-\newtheorem{prop}{Proposition}[subsection]
-\newtheorem{lem}{Lemma}[subsection]
-
-\theoremstyle{definition}
-\newtheorem{example}{Example}[subsection]
-
-\title{Elliptic Curves with Complex Multiplication}
-
-\begin{document}
-
-\message{ !name(endomorphisms/end.tex) !offset(-17) }
 \section{The endomorphism ring of an elliptic curve}
 \label{sec:endomorphism-ring-of-an-elliptic-curve}
 
@@ -28,7 +11,7 @@ Let $E_{1}$ and $E_{2}$ be elliptic curves.  An \emph{isogeny} from $E_{1}$ to
 $E_{2}$ is a morphism (of projective varieties) $\phi \colon E_{1} \rightarrow E_{2}$
 which satisfies
 \begin{equation*}
-  \phi \left( O \right) = O.
+  \phi \left( \mathcal{O} \right) = \mathcal{O}.
 \end{equation*}
 Any isogeny is automatically a group homomorphism (\cite{silverman86} III, \S 4, Thm
 4.8).  Furthermore, a non-zero isogeny is surjective (\cite{shafarevich94} I, \S 5.3,
@@ -43,7 +26,7 @@ The extension $\bar{k}\left(E_{1}\right) /
 Prop 6.8), and we thus define the \emph{degree} of $\phi$ to be the degree of the
 field extension.  We define the degree of the zero isogeny to be zero.  If $\phi_{1}
 \colon E_{1} \rightarrow E_{2}$ and $\phi_{2} \colon E_{2} \rightarrow E_{3}$ are
-isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, where
+isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, and
 \begin{equation}
   \label{eq:degree-of-composition}
   deg \left( \phi_{2} \circ \phi_{1} \right) = deg \left( \phi_{2} \right) deg \left( \phi_{1} \right).
@@ -63,22 +46,22 @@ structure.  The following example allows us to determine some basic properties.
 
 \begin{example}
   \label{ex:mult-by-m}
-  Let $E$ be an elliptic curve.  For every rational integer $m$ the \emph{multiplication-by-m}
-  map $\left[m\right] \colon E \rightarrow E$ defined by
-%  \begin{equation*}
-%    \left[m\right]P = P + \ldots + P \qquad \text{($m$ summands)}
-%  \end{equation*}
+  Let $E$ be an elliptic curve.  For every rational integer $m$ the
+  \emph{multiplication-by-m} map $\left[m\right] \colon E \rightarrow E$ defined by
+  % \begin{equation*}
+  %   \left[m\right]P = P + \ldots + P \qquad \text{($m$ summands)}
+  % \end{equation*}
   \begin{equation*}
     \left[ m \right] P =
     \begin{cases}
-      \quad O & m = 0,\\
+      \quad \mathcal{O} & m = 0,\\
       \quad P + \ldots + P & m > 0,\\
       - \left( P + \ldots + P \right) & m < 0,
     \end{cases}
   \end{equation*}
   is an endomorphism of $E$.  Its kernel is the familiar subgroup $E \left[ m
-  \right]$ of $E$.  From the definition it follows that $\left[m\right]
-  \circ \left[n\right] = \left[mn\right]$.  
+  \right]$ of $E$.  From the definition it follows that $\left[m\right] \circ
+  \left[n\right] = \left[mn\right]$.
   %%% Commented the following because it's obvious, though may be useful as a space
   %%% filler.
   % Indeed, we have in general that if $P_{1} =
@@ -89,12 +72,12 @@ structure.  The following example allows us to determine some basic properties.
 
 An elliptic curve $E$ has precisely three points of order 2.  Since $E$ is infinite,
 there exists a point $P_{1}$ on $E$ of order not equal to 2 so that
-$\left[2\right]P_{1} \neq O$.  Similarly, for a point $P_{2}$ of order 2, any odd
+$\left[2\right]P_{1} \neq \mathcal{O}$.  Similarly, for a point $P_{2}$ of order 2, any odd
 integer $m$ satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-zero $m$ it
 follows that $\left[m\right] \neq \left[0\right]$.
 
-As a $\mathbb{Z}$-module, the endomorphism ring of an elliptic curve $E$ is torsion-free; if $\phi \in
-End(E)$ and $m \in \mathbb{Z}$ satisfy
+As a $\mathbb{Z}$-module, the endomorphism ring of an elliptic curve $E$ is
+torsion-free; if $\phi \in End(E)$ and $m \in \mathbb{Z}$ satisfy
 \begin{equation*}
   \left[m\right] \circ \phi = \left[ 0 \right]
 \end{equation*}
@@ -141,12 +124,18 @@ said to have \emph{complex multiplication}.
   so that $\left[ i \right] \neq \left[ m \right]$ for any rational integer $m$.
   Thus $E$ has complex multiplication.
   % Worked example showing End(E) = Z[i]
-
-  We will see shortly that the endomorphism ring of any elliptic curve with complex
-  multiplication has the structure of an order in an imaginary quadratic field
 \end{example}
 
-\subsection{An interlude on dual isogenies}
+\begin{example}
+  \label{ex:finite-field-cm}
+  TODO: Example showing all curves over finite fields have CM.
+\end{example}
+
+We will see shortly that the endomorphism ring of any elliptic curve with complex
+multiplication has the structure of an order in an imaginary quadratic field.  In the
+next two sections we develop the technical tools required to prove this result.
+
+\subsection{Dual isogenies}
 \label{sec:an-interlude-dual}
 
 Let $E_{1}$ and $E_{2}$ be elliptic curves.  For every non-zero isogeny $\phi \colon
@@ -189,25 +178,77 @@ Some basic properties are given in the following lemma:
   Let $E$ be an elliptic curve over a field $k$ of characteristic zero, and let $m
   \in \mathbb{Z}$.  Then
   \begin{equation*}
-    E[m] \simeq \mathbb{Z} / m \mathbb{Z} \times \mathbb{Z} / m \mathbb{Z}.
+    E[m] \cong \mathbb{Z} / m \mathbb{Z} \times \mathbb{Z} / m \mathbb{Z}.
   \end{equation*}
 \end{prop}
 
-\subsection{The Tate Module}
+\subsection{The Tate module}
 \label{sec:tate-module}
 
-Let $E$ be an elliptic curve over a field $k$ of characteristic zero.  The Galois
-group $Gal_{\bar{k}/k}$ acts on $E[m]$ in the following way
+Let $E$ be an elliptic curve over a field $k$ of characteristic zero, and let $\ell$
+be a rational prime.  For every positive integer $n$ the multiplication-by-$\ell$ map
+takes $E[\ell^{n+1}]$ into $E[\ell^{n}]$.  We thus define the \emph{$\ell$-adic Tate
+  module of $E$} to be the projective limit
+\begin{equation*}
+  T_{\ell}(E) =  \lim_{\overleftarrow{n}} E[\mathcal{\ell}^{n}].
+\end{equation*}
+As a $\mathbb{Z}$-module $E[\ell^{n}]$ is clearly annihilated by $\ell^{n}$, and
+hence by the ideal $\ell^{n}\mathbb{Z}$, so that each of the $E[\ell^{n}]$ has the
+structure of a $\mathbb{Z}/\ell^{n}\mathbb{Z}$-module.  Then $T_{\ell}(E)$, being a
+projective limit of $\mathbb{Z}/\ell^{n}\mathbb{Z}$-modules, has the structure of a
+$\mathbb{Z}_{\ell}$-module.  Furthermore, since $E[\ell^{n}] \cong
+\mathbb{Z}/\ell^{n}\mathbb{Z} \times \mathbb{Z}/\ell^{n}\mathbb{Z}$ by Proposition
+\ref{prop:structure-of-E[m]}, it follows immediately from the definition that
+\begin{equation*}
+  T_{\ell}(E) \cong \mathbb{Z}_{\ell} \times \mathbb{Z}_{\ell}.
+\end{equation*}
+
+TODO: Some commutative algebra giving a bound on the Z-rank of End(E).
+%%% Stuff about action of Gal on Tate module being abelian.
+%%% Put this in when talking about the maximal abelian extension.
+% For every integer $m$ there is a natural action of the Galois group $Gal_{\bar{k}/k}$
+% on $E[m]$ given by $\sigma \cdot P = P^{\sigma}$, where if $P$ is given by
+% homogeneous co-ordinates $[x : y : z]$ then $P^{\sigma} = [x^{\sigma} : y^{\sigma} :
+% z^{\sigma}]$.  This action as well-defined, for
+% \begin{eqnarray*}
+%   [m](P^{\sigma}) & = & (P^{\sigma} + \ldots + P^{\sigma})\\
+%   & = & (P + \ldots + P)^{\sigma}\\
+%   & = & ([m]P)^{\sigma},
+% \end{eqnarray*}
+% so that if $[m]P = \mathcal{O}$ then $[m](P^{\sigma}) = \mathcal{O}^{\sigma} = \mathcal{O}$.
+
+% \begin{equation*}
+% \xymatrix{
+%   E[\ell^{n+1}] \ar[d]^{\sigma} \ar[r]^{[\ell]} & E[\ell^{n}] \ar[d]^{\sigma} \\
+%   E[\ell^{n+1}] \ar[r]^{[\ell]} & E[\ell^{n}]}  
+% \end{equation*}
+
+\subsection{The structure of $End(E)$ in characteristic zero}
+\label{sec:struct-ende-char-zero}
+
+TODO: Short introduction.
+
+\begin{thm}
+  \label{thm:structure-thm-for-End(E)}
+  Let $E$ be an elliptic curve over a field $k$ of characteristic zero.  Then either
+  $End(E) \cong \mathbb{Z}$ or $End(E)$ is isomorphic to an order in a quadratic
+  imaginary field.
+\end{thm}
+\begin{proof}
+  Let $K = End(E) \otimes \mathbb{Q}$.  For each $\alpha \in \mathbb{Q}, \phi \in
+  End(E)$ we define an extended dual $\widehat{\alpha \cdot \phi}$ by
+  \begin{equation*}
+    \widehat{\alpha \cdot \phi} = \alpha \cdot \hat{\phi},
+  \end{equation*}
+  where $\hat{\phi}$ is the dual isogeny to $\phi$.  
+\end{proof}
+
+In Example \ref{ex:cm-example} we saw that the endomorphism ring of the elliptic
+curve $E$ with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{Z}[i]$ of
+Gaussian integers.  It follows by Theorem \ref{thm:structure-thm-for-End(E)} that the
+endomorphism ring of $E$ is precisely $\mathbb{Z}[i]$.
 
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../main"
-%%% End: 
-\message{ !name(../main.tex) !offset(-183) }
-
-\end{document}
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: t
 %%% End: 
