@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.5.7)  27 JUL 2009 17:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  3 SEP 2009 12:48
 entering extended mode
  %&-line parsing enabled.
 **&latex prv_main.ini \nonstopmode\nofiles\PassOptionsToPackage{active,tightpag
@@ -8,7 +8,12 @@ input main.tex
 (./prv_main.ini
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, arabic, farsi, croatian, ukrainian, russian, bulgarian, czech, slov
+ak, danish, dutch, finnish, basque, french, german, ngerman, ibycus, greek, mon
+ogreek, ancientgreek, hungarian, italian, latin, mongolian, norsk, icelandic, i
+nterlingua, turkish, coptic, romanian, welsh, serbian, slovenian, estonian, esp
+eranto, uppersorbian, indonesian, polish, portuguese, spanish, catalan, galicia
+n, swedish, ukenglish, pinyin, loaded.
 (/usr/share/texmf-texlive/tex/latex/carlisle/mylatex.ltx)
 (/usr/share/texmf-texlive/tex/latex/tools/.tex File ignored))
 No auxiliary output files.
@@ -116,25 +121,138 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks25
 )
-\c@thm=\count99
-\c@prop=\count100
-\c@lem=\count101
-\c@example=\count102
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+(/usr/share/texmf-texlive/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texmf-texlive/tex/generic/xypic/xy.sty
+(/usr/share/texmf-texlive/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
+docmode, (/usr/share/texmf-texlive/tex/generic/xypic/xyrecat.tex)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen114
+\Y@c=\dimen115
+\U@c=\dimen116
+\D@c=\dimen117
+\L@c=\dimen118
+\R@c=\dimen119
+\Edge@c=\toks26
+\X@p=\dimen120
+\Y@p=\dimen121
+\U@p=\dimen122
+\D@p=\dimen123
+\L@p=\dimen124
+\R@p=\dimen125
+\Edge@p=\toks27
+\X@origin=\dimen126
+\Y@origin=\dimen127
+\X@xbase=\dimen128
+\Y@xbase=\dimen129
+\X@ybase=\dimen130
+\Y@ybase=\dimen131
+\X@min=\dimen132
+\Y@min=\dimen133
+\X@max=\dimen134
+\Y@max=\dimen135
+\lastobjectbox@=\box29
+\zerodotbox@=\box30
+\almostz@=\dimen136
+ direction,
+\d@X=\dimen137
+\d@Y=\dimen138
+\K@=\count99
+\KK@=\count100
+\Direction=\count101
+\K@dXdY=\dimen139
+\K@dYdX=\dimen140
+\xyread@=\read1
+\xywrite@=\write3
+\csp@=\count102
+\quotPTK@=\dimen141
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks28
+\connectobjectbox@@=\box31
+ objects,
+\styletoks@=\toks29
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/usr/share/texmf-texlive/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/usr/share/texmf-texlive/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.3
+(/usr/share/texmf-texlive/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count103
+\crvpts@=\toks30
+\splinebox@=\box32
+\splineval@=\dimen142
+\splinedepth@=\dimen143
+\splinetol@=\dimen144
+\splinelength@=\dimen145
+ circles,
+\L@=\dimen146
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen147
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count104
+\Col=\count105
+\queue@=\toks31
+\queue@@=\toks32
+\qcount@=\count106
+\qcount@@=\count107
+\matrixsize@=\count108
+ loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/usr/share/texmf-texlive/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded))
+\c@thm=\count109
+\c@prop=\count110
+\c@lem=\count111
+\c@cor=\count112
+\c@example=\count113
+\c@rem=\count114
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 20.
+
+(/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) )
 Beginning to dump on file prv_main.fmt
- (format=prv_main 2009.7.27)
-6322 strings of total length 82399
-61514 memory locations dumped; current usage is 205&60709
-4460 multiletter control sequences
+ (format=prv_main 2009.9.3)
+9561 strings of total length 127467
+126270 memory locations dumped; current usage is 225&125419
+6740 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/10=cmex10
 \font\tenln=line10
@@ -150,6 +268,13 @@ Beginning to dump on file prv_main.fmt
 \font\OMS/cmsy/m/n/5=cmsy5
 \font\OMS/cmsy/m/n/7=cmsy7
 \font\OMS/cmsy/m/n/10=cmsy10
+\font\xydashfont=xydash10
+\font\xyatipfont=xyatip10
+\font\xybtipfont=xybtip10
+\font\xybsqlfont=xybsql10
+\font\xycircfont=xycirc10
+\font\xy@@atfont=xycmat10
+\font\xy@@btfont=xycmbt10
 \font\OMX/cmex/m/n/7=cmex7
 \font\OMX/cmex/m/n/5=cmex7 at 5.0pt
 \font\U/msa/m/n/10=msam10
@@ -158,6 +283,9 @@ Beginning to dump on file prv_main.fmt
 \font\U/msb/m/n/10=msbm10
 \font\U/msb/m/n/7=msbm7
 \font\U/msb/m/n/5=msbm5
+\font\U/rsfs/m/n/10=rsfs10
+\font\U/rsfs/m/n/7=rsfs7
+\font\U/rsfs/m/n/5=rsfs5
 \font\OT1/cmr/m/n/10.95=cmr10 at 10.95pt
 \font\OT1/cmr/m/n/8=cmr8
 \font\OT1/cmr/bx/n/10=cmbx10
@@ -165,9 +293,51 @@ Beginning to dump on file prv_main.fmt
 \font\OT1/cmr/m/it/10=cmti10
 \font\OT1/cmtt/m/n/10=cmtt10
 \font\OT1/cmss/m/n/10=cmss10
-7417 words of font info for 29 preloaded fonts
-189 hyphenation exceptions
-Hyphenation trie of length 9934 has 560 ops out of 35111
+9055 words of font info for 39 preloaded fonts
+806 hyphenation exceptions
+Hyphenation trie of length 172481 has 4897 ops out of 35111
+  2 for language 47
+  224 for language 46
+  127 for language 45
+  18 for language 44
+  21 for language 43
+  158 for language 42
+  7 for language 41
+  194 for language 40
+  21 for language 39
+  110 for language 38
+  145 for language 37
+  45 for language 36
+  71 for language 35
+  62 for language 34
+  143 for language 33
+  68 for language 32
+  14 for language 31
+  13 for language 30
+  38 for language 29
+  147 for language 28
+  756 for language 27
+  21 for language 26
+  26 for language 25
+  35 for language 24
+  117 for language 23
+  98 for language 22
+  18 for language 21
+  50 for language 20
+  98 for language 19
+  235 for language 18
+  207 for language 17
+  88 for language 16
+  5 for language 15
+  31 for language 14
+  265 for language 13
+  60 for language 12
+  248 for language 11
+  63 for language 10
+  12 for language 9
+  119 for language 8
+  138 for language 7
+  19 for language 6
   2 for language 2
   377 for language 1
   181 for language 0

@@ -1,0 +1,195 @@
+\newpage
+\section{Complex multiplication over algebraic extensions of $\mathbb{Q}$}
+\label{sec:compl-mult-over-Q}
+
+TODO: intro.
+nn
+nLet $E$ be an elliptic curve defined over $\mathbb{C}$, given by the equation
+\begin{equation*}
+  y^{2} = x^{3} + Ax + B, \quad A, B \in \mathbb{C},
+\end{equation*}
+and let $\sigma$ be a field automorphism of $\mathbb{C}$. We define $E^{\sigma}$ to
+be the elliptic curve obtained by letting $\sigma$ act on the coefficients of the
+equation of $E$, i.e. $E^{\sigma}$ is obtained from the equation
+\begin{equation*}
+  y^{2} = x^{3} + A^{\sigma}x + B^{\sigma}.
+\end{equation*}
+It is clear that $E^{\sigma} = \{ P^{\sigma} : P \in E \}$, for if $P = (x,y)$, then
+$P^{\sigma} = (x^{\sigma},y^{\sigma})$ satisfies
+\begin{equation*}
+  (y^{\sigma})^{2} - ( (x^{\sigma})^{3} + A^{\sigma}(x^{\sigma}) + B^{\sigma} ) = (y^{2} -
+  (x^{3} + Ax + B))^{\sigma} = 0^{\sigma} = 0.
+\end{equation*}
+Note that, since $j(E)$ is given by a rational function in $A$ and $B$ we have
+\begin{equation}
+  \label{eq:j(E-sigma)-equals-j(E)-sigma}
+  j(E^{\sigma}) = j(E)^{\sigma}
+\end{equation}
+Now, if $\phi$ is an endomorphism of $E$, then $\phi$ is given by rational maps in
+the function field $\mathbb{C}(E)$:
+\begin{equation*}
+  \phi = (f_{1},f_{2}), \quad f_{i} \in \mathbb{C}(E),
+\end{equation*}
+and we define an endomorphism $\phi^{\sigma}$ of $E^{\sigma}$ in the obvious way:
+\begin{equation*}
+  \phi^{\sigma} = (f_{1}^{\sigma},f_{2}^{\sigma}).
+\end{equation*}
+Note that, if $(x\prime{},y\prime{})$ TODO: make this bit not messy.
+
+Thus for an elliptic curve $E$ and an automorphism $\sigma$ of $\mathbb{C}$ we have
+shown that
+\begin{equation}
+  \label{eq:End(E)-equals-End(E-sigma)}
+  End(E) \cong End(E^{\sigma}).
+\end{equation}
+
+\begin{prop}
+  \label{prop:j(E)-is-in-Qbar}
+  Let $E$ be an elliptic curve with complex multiplication by $\mathfrak{o}_{k}$.
+  Then $j(E)$ is algebraic over $\mathbb{Q}$.
+\end{prop}
+\begin{proof}
+  Consider the extension $K = \mathbb{Q}(j(E))$ of $\mathbb{Q}$.  By Theorem
+  \ref{thm:class-group-action-is-simply-transitive} we know that there only finitely
+  many values that the $j$-invariant of an elliptic curve with complex multiplication
+  by $\mathfrak{o}_{k}$ can attain (recall that the $j$-invariant classifies elliptic
+  curves up to isomorphism), and by \eqref{eq:j(E-sigma)-equals-j(E)-sigma} and
+  \eqref{eq:End(E)-equals-End(E-sigma)} we have that the set
+  \begin{equation*}
+    \{ j(E)^{\sigma} : \sigma \in Aut(\mathbb{C)} \}
+  \end{equation*}
+  is finite.  Now every $K$-embedding $\sigma : K \rightarrow \mathbb{C}$ is
+  determined by $\sigma (j(E))$.  On the other hand, any such $\sigma$ is the
+  restriction of an automorphism of $\mathbb{C}$.  Thus, there are only finitely many
+  such $\sigma$, so that $[\mathbb{Q}(j(E)) : \mathbb{Q}]$ is finite, which implies
+  that $j(E)$ is algebraic over $\mathbb{Q}$.
+\end{proof}
+\begin{rem}
+  \label{rem:j(E)-is-integral}
+  There is a much stronger result, which states that for an elliptic curve $E$ with
+  complex multiplication by $\mathbb{O}_{k}$, we have that $j(E)$ is an algebraic
+  integer.
+  TODO: give reference/do proof later.
+\end{rem}
+
+Let $Ell_{\bar{\mathbb{Q}}}(\mathfrak{o}_{k})$ denote the set of isomorphism classes of
+elliptic curves defined over $\bar{\mathbb{Q}}$.  If $E$ is an elliptic curve defined
+over $\bar{\mathbb{Q}}$ then its isomorphism class (in
+$Ell_{\bar{\mathbb{Q}}}(\mathfrak{o}_{k})$) is certainly contained in the
+isomorphism class of $E$ considered as an elliptic curve over $\mathbb{C}$. Let
+$i :
+Ell_{\bar{\mathbb{Q}}}(\mathfrak{o}_{k}) \rightarrow Ell(\mathfrak{o}_{k})$ denote
+this map.
+
+\begin{thm}
+  \label{thm:Ell-Q-(o_k)-equals-Ell(o_k)}
+  The map $i :
+Ell_{\bar{\mathbb{Q}}}(\mathfrak{o}_{k}) \rightarrow Ell(\mathfrak{o}_{k})$ is a bijection.
+\end{thm}
+\begin{proof}
+  By Proposition \ref{prop:j(E)-is-in-Qbar}, any elliptic curve $E$ with complex
+  multiplication by $\mathfrak{o}_{k}$ satisfies $j(E) \in \bar{\mathbb{Q}}$, and
+  from the general theory of elliptic curves we know that $E$ is isomorphic to a
+  curve defined over $\mathbb{Q}(j(E))$, given by the equation:
+  \begin{equation}
+    \label{E-defined-over-k(j(E))}
+    TODO.
+  \end{equation}
+  
+  so $i$ is surjective.  Similarly, if $E_{1}$ and $E_{2}$ are elliptic curves over
+  $\bar{\mathbb{Q}}$ with complex multiplication by $\mathfrak{o}_{k}$, such that
+  $i(E_{1}) = i(E_{2})$, then $j(E_{1}) = j(E_{2})$, so the curves must be
+  isomorphic.  Hence $i$ is injective, as required.
+\end{proof}
+The above theorem justifies our approach to an essentially algebraic phenomenon via
+analytic methods.  From an arithmetic point of view the set
+$Ell_{\bar{\mathbb{Q}}}(\mathfrak{o}_{k})$ is ``more interesting'' than
+$Ell(\mathfrak{o}_{k})$, but Theorem \ref{thm:Ell-Q-(o_k)-equals-Ell(o_k)} says that
+the latter set, which is easily computed, will suit our purposes entirely.
+
+\subsection{Towards abelian extensions of quadratic imaginary fields}
+\label{sec:towards-abel-extens}
+
+TODO: introduction.
+
+Let $E$ be an elliptic curve defined over $\mathbb{C}$ with complex multiplication by
+$\mathfrak{o}_{k}$.  For every positive integer $m$ let $K_{m}$ be the field
+extension of $K$ obtained by adjoining to $K$ the value $j(E)$ and the co-ordinates
+of the (non-trivial) $m$-torsion points of $E$ (c.f. section
+\ref{sec:some-properties-ende}):
+\begin{equation}
+  \label{eq:defn-of-K_m}
+  K_{m} = k(j(E),x_{1},y_{1},\ldots,x_{r},y_{r})
+\end{equation}
+where $(x_{i},y_{i})$ are the co-ordinates of the points in $E[m]$.  To ease notation
+we write
+\begin{equation*}
+  K_{m} = k(j(E),E[m]).
+\end{equation*}
+
+\begin{lem}
+  \label{lem:m-torsion-points-are-algebraic}
+  TODO: this.
+\end{lem}
+\begin{proof}
+  TODO: this.
+\end{proof}
+
+\begin{thm}
+  \label{thm:K_m-is-abelian-over-k(j(E))}
+  The field $K_{m}$ is an abelian extension of $k(j(E))$.
+\end{thm}
+\begin{proof}
+  We need to show that $K_{m}$ is a Galois extension of $k$, and its Galois group is
+  abelian.  Since $k$ is of characteristic zero, we only need to show that
+  $\sigma(K_{m}) = K_{m}$ for any $K_{m}$-embedding $\sigma$.  By Lemma
+  \ref{lem:m-torsion-points-are-algebraic} we know that $K_{m}$ is a finite extension
+  of $k$, so any $K_{m}$-embedding is obtained from an element $\sigma$ in
+  $Gal(\bar{k} / k)$.  Then by (TODO: fix reference), we have that $\sigma(x_{i}) =
+  x_{j}$ and $\sigma(y_{i}) = y_{j}$ for all points $(x_{i},y_{i})$ in $E[m]$.  So
+  $K_{m}$ is a normal extension of $k$, and hence is Galois.
+
+  To see that $Gal(K_{m}/k)$ is abelian is more subtle.  Recall the representation of
+  $Gal(\bar{k} / k)$ given in \eqref{eq:Galois-representation}:
+  \begin{equation*}
+    \rho (\sigma) (P) = P^{\sigma}.
+  \end{equation*}
+  We claim that $\rho$ is injective.  Indeed, suppose that $\sigma \in \ker{\rho}$.
+  Then $P^{\sigma} = P$ for every $P$ in $E[m]$.  In particular, we have
+  \begin{equation*}
+    \sigma (x_{i}) = x_{i} \quad \text{and} \quad \sigma (y_{i}) = y_{i},
+  \end{equation*}
+  for every $P = (x_{i},y_{i})$ in $E[m]$.  So $\sigma$ is the identiy on $K_{m}$,
+  and hence $\ker{\rho}$ is trivial, as required.
+
+  Recall that $E[m]$ has the structure of an $\mathfrak{o}_{k} / m
+  \mathfrak{o}_{k}$-module by Proposition \ref{prop:a-torsion-is-kernel}.
+  Furthermore, we may assume $E$ is defined over $k(j(E))$ (by
+  \eqref{E-defined-over-k(j(E))}), so that any endomorphism of $E$ is defined over
+  $k(j(E))$, i.e. given by rational functions with coefficients in $k(j(E))$.  In
+  particular, we have
+  \begin{equation*}
+    ([\alpha](P))^{\sigma} = [\alpha]^{\sigma}(P^{\sigma}) = [\alpha](P^{\sigma}),
+    \quad [\alpha] \in \mathfrak{o}_{k}.
+  \end{equation*}
+  So $Gal(K_{m}/k(j(E)))$ injects into a subgroup of the $\mathfrak{o}_{k} / m
+  \mathfrak{o}_{k}$-module automorphisms of $E[m]$, but by Proposition
+  \ref{prop:a-torsion-is-kernel} we have
+  \begin{equation*}
+    Aut_{\mathfrak{o}_{k} / m \mathfrak{o}_{k}}(E[m]) = (\mathfrak{o}_{k} / m \mathfrak{o}_{k})^{*},
+  \end{equation*}
+  thus completing the proof.
+\end{proof}
+\begin{rem}
+  \label{rem:not-abelian-over-k}
+  In general the extension $K_{m}$ is \emph{not} an abelian extension of $k$.  Of
+  course, if $j(E)$ is rational then $K_{m}$ is an abelian extension of $k$.  We
+  illustrate this explicitly in the next section.
+\end{rem}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 

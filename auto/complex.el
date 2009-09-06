@@ -3,6 +3,7 @@
     (LaTeX-add-labels
      "sec:compl-mult-over-C"
      "sec:review-complex-curves"
+     "lem:latice-iff-discrete"
      "eq:complex-eqn-for-ec"
      "sec:endomorphisms"
      "prop:complex-isogenies"

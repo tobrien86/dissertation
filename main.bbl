@@ -1,18 +1,24 @@
-\begin{thebibliography}{1}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Har77}
 
-\bibitem{hartshorne77}
-Robin Hartshorne.
-\newblock {\em Algebraic Geometry}.
-\newblock Springer, 1977.
+\bibitem[Har77]{hartshorne77}
+Robin Hartshorne, \emph{Algebraic geometry}, Springer, 1977.
 
-\bibitem{shafarevich94}
-Igor Shafarevich.
-\newblock {\em Basic Algebraic Geometry}, volume~1.
-\newblock Springer-Verlag, 1994.
+\bibitem[Sha94]{shafarevich94}
+Igor Shafarevich, \emph{Basic algebraic geometry}, vol.~1, Springer-Verlag,
+  1994.
 
-\bibitem{silverman86}
-Joseph Silverman.
-\newblock {\em The Arithmetic of Elliptic Curves}.
-\newblock Springer, 1986.
+\bibitem[Sil86]{silverman86}
+Joseph Silverman, \emph{The arithmetic of elliptic curves}, Springer, 1986.
+
+\bibitem[Sil94]{silverman94}
+\bysame, \emph{Advanced topics in the arithmetic of elliptic curves}, Springer,
+  1994.
 
 \end{thebibliography}

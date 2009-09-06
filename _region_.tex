@@ -1,209 +1,67 @@
 \message{ !name(../main.tex)}
 \documentclass{amsart}
-\usepackage{amsthm,amsfonts,amsmath,enumerate}
+% \documentclass{article}
+\usepackage{amsfonts,amsmath,amsthm,enumerate,mathrsfs}
+\usepackage[all,cmtip]{xy}
+
 
 % amsthm stuff
 \newtheorem{thm}{Theorem}[subsection]
 \newtheorem{prop}{Proposition}[subsection]
 \newtheorem{lem}{Lemma}[subsection]
+\newtheorem{cor}{Corollary}[subsection]
 
 \theoremstyle{definition}
 \newtheorem{example}{Example}[subsection]
+\newtheorem{rem}{Remark}[subsection]
 
 \title{Elliptic Curves with Complex Multiplication}
 
 \begin{document}
 
-\message{ !name(endomorphisms/end.tex) !offset(-17) }
-\section{The endomorphism ring of an elliptic curve}
-\label{sec:endomorphism-ring-of-an-elliptic-curve}
+\message{ !name(cm_rational/rational.tex) !offset(-21) }
+\section{Complex multiplication over algebraic extensions of $\mathbb{Q}$}
+\label{sec:compl-mult-over-Q}
 
-Unless stated otherwise, all elliptic curves are defined over a field $k$ of
-characteristic not equal to $2$ or $3$.
+TODO: intro.
 
-\subsection{Isogenies}
-\label{sec:isogenies}
-
-Let $E_{1}$ and $E_{2}$ be elliptic curves.  An \emph{isogeny} from $E_{1}$ to
-$E_{2}$ is a morphism (of projective varieties) $\phi \colon E_{1} \rightarrow E_{2}$
-which satisfies
+Let $E$ be an elliptic curve defined over $\mathbb{C}$, given by the equation
 \begin{equation*}
-  \phi \left( O \right) = O.
+  y^{2} = x^{3} + Ax + B,
 \end{equation*}
-Any isogeny is automatically a group homomorphism (\cite{silverman86} III, \S 4, Thm
-4.8).  Furthermore, a non-zero isogeny is surjective (\cite{shafarevich94} I, \S 5.3,
-Thm 4).  Therefore, such an isogeny $\phi \colon E_{1} \rightarrow E_{2}$ induces an
-injective homomorphism of function fields $\phi^{*} \colon \bar{k}\left(E_{2}\right)
-\rightarrow \bar{k}\left(E_{1}\right)$ given by
+and let $\sigma$ be a field automorphism of $\mathbb{C}$. We define $E^{\sigma}$ to be
+the elliptic curve obtained by letting $\sigma$ act on the coefficients of the equation
+of $E$, i.e. $E^{\sigma}$ is obtained from the equation
 \begin{equation*}
-  \phi^{*}\left(f\right) = f \circ \phi.
+  y^{2} = x^{3} + A^{\sigma}x + B^{\sigma}.
 \end{equation*}
-The extension $\bar{k}\left(E_{1}\right) /
-\phi^{*}\left(\bar{k}\left(E_{2}\right)\right)$ is finite (\cite{hartshorne77} II,
-Prop 6.8), and we thus define the \emph{degree} of $\phi$ to be the degree of the
-field extension.  We define the degree of the zero isogeny to be zero.  If $\phi_{1}
-\colon E_{1} \rightarrow E_{2}$ and $\phi_{2} \colon E_{2} \rightarrow E_{3}$ are
-isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, where
-\begin{equation}
-  \label{eq:degree-of-composition}
-  deg \left( \phi_{2} \circ \phi_{1} \right) = deg \left( \phi_{2} \right) deg \left( \phi_{1} \right).
-\end{equation}
-We say $\phi$ is \emph{separable}, \emph{inseparable} or \emph{purely inseparable}
-according to the extension.
-
-An \emph{endomorphism} of an elliptic curve $E$ is an isogeny from $E$ to itself.
-The set of all endomorphisms of $E$ forms a ring $End(E)$ under pointwise addition
-and composition of morphisms, and is known as the \emph{endomorphism ring} of $E$.
-
-\subsection{Some properties of $End(E)$}
-\label{sec:some-properties-ende}
-
-We will show that the endomorphism ring of an elliptic curve has a very particular
-structure.  The following example allows us to determine some basic properties.
-
-\begin{example}
-  \label{ex:mult-by-m}
-  Let $E$ be an elliptic curve.  For every rational integer $m$ the \emph{multiplication-by-m}
-  map $\left[m\right] \colon E \rightarrow E$ defined by
-%  \begin{equation*}
-%    \left[m\right]P = P + \ldots + P \qquad \text{($m$ summands)}
-%  \end{equation*}
-  \begin{equation*}
-    \left[ m \right] P =
-    \begin{cases}
-      \quad O & m = 0,\\
-      \quad P + \ldots + P & m > 0,\\
-      - \left( P + \ldots + P \right) & m < 0,
-    \end{cases}
-  \end{equation*}
-  is an endomorphism of $E$.  Its kernel is the familiar subgroup $E \left[ m
-  \right]$ of $E$.  From the definition it follows that $\left[m\right]
-  \circ \left[n\right] = \left[mn\right]$.  
-  %%% Commented the following because it's obvious, though may be useful as a space
-  %%% filler.
-  % Indeed, we have in general that if $P_{1} =
-  % \left(x_{1},y_{1}\right)$ and $P_{2} = \left(x_{2},y_{2}\right)$ are points on
-  % $E$,
-  % then
-\end{example}
-
-An elliptic curve $E$ has precisely three points of order 2.  Since $E$ is infinite,
-there exists a point $P_{1}$ on $E$ of order not equal to 2 so that
-$\left[2\right]P_{1} \neq O$.  Similarly, for a point $P_{2}$ of order 2, any odd
-integer $m$ satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-zero $m$ it
-follows that $\left[m\right] \neq \left[0\right]$.
-
-As a $\mathbb{Z}$-module, the endomorphism ring of an elliptic curve $E$ is torsion-free; if $\phi \in
-End(E)$ and $m \in \mathbb{Z}$ satisfy
+It is clear that $E^{\sigma} = \{ P^{\sigma} : P \in E \}$, for if $P = (x,y)$, then
+$P^{\sigma} = (x^{\sigma},y^{\sigma})$ satisfies
 \begin{equation*}
-  \left[m\right] \circ \phi = \left[ 0 \right]
+  (y^{\sigma})^{2} - ( (x^{\sigma})^{3} + A^{\sigma}(x^{\sigma}) + B^{\sigma} ) = (y^{2} -
+  (x^{3} + Ax + B))^{\sigma} = 0^{\sigma} = 0.
 \end{equation*}
-then by \eqref{eq:degree-of-composition},
+Now, if $\phi$ is an endomorphism of $E$, then $\phi$ is given by rational maps in
+the function field $\mathbb{C}(E)$:
 \begin{equation*}
-  deg \left(\left[m\right]\right) \cdot deg \left( \phi \right) = 0
+  \phi = (f_{1},f_{2}), \quad f_{i} \in \mathbb{C}(E),
 \end{equation*}
-whence either $m = 0$ or $deg\left(\left[m\right]\right) > 0$, in which case $\phi =
-\left[0\right]$ and $m \neq 0$.
-
-Taking degrees also shows that $End(E)$ is an integral domain; if $\phi_{1}$ and
-$\phi_{2}$ are endomorphisms of $E$ such that
+and we define an endomorphism $\phi^{\sigma}$ of $E^{\sigma}$ in the obvious way:
 \begin{equation*}
-  \phi_{1} \circ \phi_{2} = \left[0\right],
+  \phi^{\sigma} = (f_{1}^{\sigma},f_{2}^{\sigma}).
 \end{equation*}
-then
-\begin{equation*}
-  deg \left( \phi_{1} \right) \cdot deg \left( \phi_{2} \right) = 0,
-\end{equation*}
-from which the result follows.
-
-We summarise what we have shown in the following proposition.
+Note that, if $(x\prime{},y\prime{})$
 
 \begin{prop}
-  \label{prop:End(E)-is-char-zero-id}
-  Let $E$ be an elliptic curve.  Then $End(E)$ is a characteristic zero integral
-  domain.
+  \label{prop:j(E)-is-in-Q}
+  Let $E$ be an elliptic curve
 \end{prop}
-
-An elliptic curve whose endomorphism ring is strictly larger than $\mathbb{Z}$ is
-said to have \emph{complex multiplication}.
-
-\begin{example}
-  \label{ex:cm-example}
-  Consider the elliptic curve $E$ given by the equation
-  \begin{equation*}
-    y^{2} = x^{3} + x.
-  \end{equation*}
-  The map $\left[ i \right] \colon E \rightarrow E$ given by
-  \begin{equation*}
-    \left[ i \right](x,y) = (-x,iy)
-  \end{equation*}
-  is an endomorphism of $E$.  Note that $\left[ i \right]^{2} = \left[ -1 \right]$,
-  so that $\left[ i \right] \neq \left[ m \right]$ for any rational integer $m$.
-  Thus $E$ has complex multiplication.
-  % Worked example showing End(E) = Z[i]
-
-  We will see shortly that the endomorphism ring of any elliptic curve with complex
-  multiplication has the structure of an order in an imaginary quadratic field
-\end{example}
-
-\subsection{An interlude on dual isogenies}
-\label{sec:an-interlude-dual}
-
-Let $E_{1}$ and $E_{2}$ be elliptic curves.  For every non-zero isogeny $\phi \colon
-E_{1} \rightarrow E_{2}$ there exists a unique isogeny $\hat{\phi} \colon E_{2}
-\rightarrow E_{1}$ which satisfies
-\begin{equation}
-  \label{eq:dual-isogeny}
-  \hat{\phi} \circ \phi = \left[ m \right],
-\end{equation}
-where $m$ is the degree of $\phi$ (when $\phi = \left[ 0 \right]$ we define
-$\hat{\phi}$ to be $\left[ 0 \right]$).  We say $\hat{\phi}$ is the \emph{dual
-  isogeny} to $\phi$.  Note that, for any elliptic curve $E$, we have $\widehat{[1]}
-= [1]$.  This follows from the definition of the dual isogeny and the ring structure
-of $End(E)$.
-
-The dual isogeny will be a useful tool in studying the multiplication-by-$m$ maps.
-Some basic properties are given in the following lemma:
-\begin{lem}
-  \label{lem:properties-of-dual-isogenies}
-  Let $\phi \colon E_{1} \rightarrow E_{2}$ be an isogeny of degree $d$.  Then
-  \begin{enumerate}[(i)]
-  \item $\bar{\phi} \circ \phi = \left[ d \right]$ on $E_{1}$, and $\phi \circ
-    \bar{\phi} = \left[ d \right]$ on $E_{2}$,
-  \item if $\theta \colon E_{2} \rightarrow E_{3}$ is another isogeny, then
-    \begin{equation*}
-      \widehat{\theta \circ \phi} = \hat{\phi} \circ \hat{\theta},
-    \end{equation*}
-  \item if $\psi \colon E_{1} \rightarrow E_{2}$ is another isogeny, then
-    \begin{equation*}
-      \widehat{\phi + \psi} = \hat{\phi} + \hat{\psi}.
-    \end{equation*}
-  \end{enumerate}
-\end{lem}
-\begin{proof}
-  See (\cite{silverman86} III \S 6, Thm 6.2).
-\end{proof}
-
-\begin{prop}
-  \label{prop:structure-of-E[m]}
-  Let $E$ be an elliptic curve over a field $k$ of characteristic zero, and let $m
-  \in \mathbb{Z}$.  Then
-  \begin{equation*}
-    E[m] \simeq \mathbb{Z} / m \mathbb{Z} \times \mathbb{Z} / m \mathbb{Z}.
-  \end{equation*}
-\end{prop}
-
-\subsection{The Tate Module}
-\label{sec:tate-module}
-
-Let $E$ be an elliptic curve over a field $k$ of characteristic zero.  The Galois
-group $Gal_{\bar{k}/k}$ acts on $E[m]$ in the following way
-
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../main"
 %%% End: 
-\message{ !name(../main.tex) !offset(-183) }
+
+\message{ !name(../main.tex) !offset(-30) }
 
 \end{document}
 

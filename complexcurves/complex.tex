@@ -1,5 +1,5 @@
-
-\section{Complex multiplication over $\mathbb{C}$}
+\newpage
+\section{Elliptic curves over $\mathbb{C}$}
 \label{sec:compl-mult-over-C}
 
 Thus far we have established the general structure of the endomorphism ring of an
@@ -7,10 +7,34 @@ elliptic curve, but we do not yet have a satisfactory way of determining whether
 given elliptic curve has complex multiplication or not.
 TODO: more intro material.
 
+Our ultimate aim is to develop the theory of elliptic curves over $\mathbb{\bar{Q}}$.
+In Section ? we prove that that any elliptic curve defined over $\mathbb{C}$ with
+complex multiplication is isomorphic to an elliptic curve defined over
+$\mathbb{\bar{Q}}$.  We turn our attention thus to the complex theory; the main
+benefit of which (from our point of view) is that an isogeny of complex elliptic
+curves has a very simple geometric interpretation.  
+
 \subsection{A brief review of elliptic curves over $\mathbb{C}$}
 \label{sec:review-complex-curves}
 
-TODO: Reference A Course in Arithmetic.  Let $\Lambda$ be a lattice in $\mathbb{C}$.
+
+
+TODO: Reference A Course in Arithmetic.
+
+Recall that a \emph{lattice} in $\mathbb{C}$ is a subgroup of $\mathbb{C}$ of
+$\mathbb{Z}$-rank $2$, with a $\mathbb{Z}$-basis $(\omega_{1},\omega_{2})$ which
+spans $\mathbb{C}$ over $\mathbb{R}$.  
+
+\begin{lem}
+  \label{lem:latice-iff-discrete}
+  A subgroup $H$ of $\mathbb{C}$ is a lattice if and only if it is a discrete
+  subgroup of $\mathbb{C}$.
+\end{lem}
+\begin{proof}
+  Todo: This.
+\end{proof}
+
+Let $\Lambda$ be a lattice in $\mathbb{C}$.
 Recall the Weierstrass $\wp$-function:
 \begin{equation*}
   \wp(z,\Lambda)\footnote{We will usually supress the $\Lambda$ and simply write $\wp(z)$} = \frac{1}{z^{2}} + \sum_{\omega \in \Lambda - 0}
@@ -58,7 +82,7 @@ defines the curve.
 
 Let $\Lambda_{1}$ and $\Lambda_{2}$ be lattices in $\mathbb{C}$. Suppose $\alpha \in
 \mathbb{C}$ is such that $\alpha\Lambda_{1} \subset \Lambda_{2}$.  Then $\alpha$
-defines a map $\phi_{\alpha} \colon \mathbb{C}/\lambda_{1} \rightarrow
+defines a map $\phi_{\alpha} \colon \mathbb{C}/\Lambda_{1} \rightarrow
 \mathbb{C}/\Lambda_{2}$ given by
 \begin{equation*}
   \phi_{\alpha}(z + \Lambda_{1}) = \alpha z + \Lambda_{2}.
@@ -71,7 +95,11 @@ The maps $\phi_{\alpha}$ are clearly holomorphic group homomorphisms.
 
 \begin{prop}
   \label{prop:complex-isogenies}
-  TODO: Write this out in own words.
+  Let $\Lambda_{1}$ and $\Lambda_{2}$ be lattices in $\mathbb{C}$ and let
+  $E_{\Lambda_{1}}$ and $E_{\Lambda_{2}}$ be the corresponding elliptic curves given
+  by \eqref{eq:complex-eqn-for-ec}.  Then
+  $Hom(E_{\Lambda_{1}},E_{\Lambda_{2}})$ is isomorphic to $\{\alpha \in \mathbb{C}
+  \colon \alpha\Lambda_{1} \subset \Lambda_{2}\}$.
 \end{prop}
 \begin{proof}
   

@@ -1,6 +1,6 @@
 
-\documentclass{amsart}
-% \documentclass{article}
+% \documentclass{amsart}
+\documentclass{article}
 \usepackage{amsfonts,amsmath,amsthm,enumerate,mathrsfs}
 \usepackage[all,cmtip]{xy}
 
@@ -21,9 +21,19 @@
 
 \maketitle{}
 
+\newpage
+
+\setcounter{tocdepth}{2}
+\tableofcontents{}
+
 \input{introduction/int.tex}
 \input{endomorphisms/end.tex}
 \input{complexcurves/complex.tex}
+\input{cm_basics/cm.tex}
+\input{cm_rational/rational.tex}
+\input{abelian_extensions/ext.tex}
+
+\newpage
 
 \bibliographystyle{amsalpha}
 \bibliography{../BibTeX/mybib}

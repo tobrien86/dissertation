@@ -1,3 +1,4 @@
+\newpage
 \section{The endomorphism ring of an elliptic curve}
 \label{sec:endomorphism-ring-of-an-elliptic-curve}
 
@@ -34,6 +35,20 @@ isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, and
 We say $\phi$ is \emph{separable}, \emph{inseparable} or \emph{purely inseparable}
 according to the extension.
 
+TODO: write something about finiteness of kernels.
+
+\begin{prop}
+  \label{prop:deg-phi-equals-sizeof-kernel}
+  Let $E_{1}$ and $E_{2}$ be elliptic curves over a field $k$ of characteristic
+  $zero$ and suppose there exists an isogeny $\phi : E_{1} \rightarrow E_{2}$.  Then
+  \begin{equation*}
+    deg(\phi) = \# \ker{\phi}.
+  \end{equation*}
+\end{prop}
+\begin{proof}
+  TODO: reference *something*.
+\end{proof}
+
 An \emph{endomorphism} of an elliptic curve $E$ is an isogeny from $E$ to itself.
 The set of all endomorphisms of $E$ forms a ring $End(E)$ under pointwise addition
 and composition of morphisms, and is known as the \emph{endomorphism ring} of $E$.
@@ -43,6 +58,7 @@ and composition of morphisms, and is known as the \emph{endomorphism ring} of $E
 
 We will show that the endomorphism ring of an elliptic curve has a very particular
 structure.  The following example allows us to determine some basic properties.
+TODO: SHOW IT IS COMMUTATIVE!!
 
 \begin{example}
   \label{ex:mult-by-m}
@@ -60,8 +76,8 @@ structure.  The following example allows us to determine some basic properties.
     \end{cases}
   \end{equation*}
   is an endomorphism of $E$.  Its kernel is the familiar subgroup $E \left[ m
-  \right]$ of $E$.  From the definition it follows that $\left[m\right] \circ
-  \left[n\right] = \left[mn\right]$.
+  \right]$ of $E$.  From the definition (and the tower law for field extensions) it
+  follows that $\left[m\right] \circ \left[n\right] = \left[mn\right]$.
   %%% Commented the following because it's obvious, though may be useful as a space
   %%% filler.
   % Indeed, we have in general that if $P_{1} =
@@ -72,9 +88,9 @@ structure.  The following example allows us to determine some basic properties.
 
 An elliptic curve $E$ has precisely three points of order 2.  Since $E$ is infinite,
 there exists a point $P_{1}$ on $E$ of order not equal to 2 so that
-$\left[2\right]P_{1} \neq \mathcal{O}$.  Similarly, for a point $P_{2}$ of order 2, any odd
-integer $m$ satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-zero $m$ it
-follows that $\left[m\right] \neq \left[0\right]$.
+$\left[2\right]P_{1} \neq \mathcal{O}$.  Similarly, for a point $P_{2}$ of order 2,
+any odd integer $m$ satisfies $\left[m\right]P_{2} = P_{2}$.  Thus for all non-zero
+$m$ it follows that $\left[m\right] \neq \left[0\right]$.
 
 As a $\mathbb{Z}$-module, the endomorphism ring of an elliptic curve $E$ is
 torsion-free; if $\phi \in End(E)$ and $m \in \mathbb{Z}$ satisfy
@@ -131,9 +147,26 @@ said to have \emph{complex multiplication}.
   TODO: Example showing all curves over finite fields have CM.
 \end{example}
 
+\begin{prop}
+  \label{prop:iso-curves-iso-end-rings}
+  Let $E_{1}$ and $E_{2}$ be isomorphic elliptic curves.  Then $End(E_{1})$ is
+  isomorhpic to $End(E_{2})$.
+\end{prop}
+\begin{proof}
+  Let $f \colon E_{1} \rightarrow E_{2}$ denote the isomorphism, and let $\phi$ be an
+  endomorphism of $E_{1}$. We determine an isomorphism $F \colon End(E_{1}) \rightarrow
+  End(E_{2})$ by the following commutative diagram:
+\begin{equation*}
+\xymatrix{
+  E_{1} \ar[d]^{f} \ar[r]^{\phi} & E_{1} \ar[d]^{f} \\
+  E_{2} \ar[r] & E_{2}}  
+\end{equation*}
+i.e. $F(\phi) = f \circ \phi \circ f^{-1}$.
+\end{proof}
 We will see shortly that the endomorphism ring of any elliptic curve with complex
-multiplication has the structure of an order in an imaginary quadratic field.  In the
-next two sections we develop the technical tools required to prove this result.
+multiplication (in characteristic zero) has the structure of an order in an imaginary
+quadratic field.  In the next two sections we develop the technical tools required to
+prove this result.
 
 \subsection{Dual isogenies}
 \label{sec:an-interlude-dual}
@@ -223,6 +256,47 @@ TODO: Some commutative algebra giving a bound on the Z-rank of End(E).
 %   E[\ell^{n+1}] \ar[r]^{[\ell]} & E[\ell^{n}]}  
 % \end{equation*}
 
+\subsection{The action of $Gal(\bar{k} / k)$ on $E[m]$}
+\label{sec:action-of-Galois-on-m-torsion}
+
+Let $E$ be an elliptic curve defined over some field $k$.  Let $P = (x,y)$ be a point
+on $E$ and let $\sigma$ be an element of $Gal(\bar{k} / k)$.  We define $P^{\sigma}$
+to be the point $P^{\sigma} = (x^{\sigma},y^{\sigma})$.  Now for an arbitrary point
+$P$ on $E$ there is no reason why $P^{\sigma}$ should also lie on $E$. However, if
+$P$ is in $E[m]$ for some $m$, then
+\begin{equation*}
+  [m](P^{\sigma}) = (f_{1}(P^{\sigma}),f_{2} (P^{\sigma}))
+\end{equation*}
+where $f_{1}$ and $f_{2}$ are the rational functions which define $[m]$.  But each
+$f_{i}$ can be viewed as a quotient of polynomials in $k[x,y] / (y^{2} - (x^{3} + Ax
++ B)$.  Then, since $A$ and $B$ are in $k$, and $\sigma$ fixes $k$, we have
+$f_{i}^{\sigma}$ = $f_{i}$.  Hence,
+\begin{equation*}
+  [m](P^{\sigma}) = (f_{1}^{\sigma}(P^{\sigma}),f_{2}^{\sigma}(P^{\sigma})) =
+  ([m]P)^{\sigma} = \mathcal{O}^{\sigma} = \mathscr{O}
+\end{equation*}
+
+\begin{lem}
+  \label{lem:E[m]-is-stable-under-Galois}
+  Let $E$ be an elliptic curve over $k$.  There is a well-defined action of
+  $Gal(\bar{k} / k)$ on $E[m]$, given by
+  \begin{equation*}
+    P^{\sigma} = P, \quad P \in E[m], \sigma \in Gal(\bar{k} / k).
+  \end{equation*}
+\end{lem}
+\begin{proof}
+  We only need to check that $(P^{\sigma_{1}})^{\sigma_{2}} =
+  P^{\sigma_{1}\sigma_{2}}$. TODO: finish, boring.
+\end{proof}
+
+A consequence of Lemma \ref{lem:E[m]-is-stable-under-Galois} is that we have a
+representation $\rho : Gal(\bar{k} / k) \rightarrow Aut(E[m])$, given by
+\begin{equation}
+  \label{eq:Galois-representation}
+  \rho (\sigma) (P) = P^{\sigma}.
+\end{equation}
+Note also, that by Proposition \ref{prop:structure-of-E[m]}, we have that $Aut(E[m])
+\cong GL_{2}(\mathbb{Z} / m \mathbb{Z})$.
 \subsection{The structure of $End(E)$ in characteristic zero}
 \label{sec:struct-ende-char-zero}
 

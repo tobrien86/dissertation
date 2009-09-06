@@ -19,9 +19,12 @@
      "amsmath"
      "amsfonts"
      "latex2e"
-     "amsart10"
-     "amsart"
+     "art10"
+     "article"
      "introduction/int"
      "endomorphisms/end"
-     "complexcurves/complex")))
+     "complexcurves/complex"
+     "cm_basics/cm"
+     "cm_rational/rational"
+     "abelian_extensions/ext")))
 
