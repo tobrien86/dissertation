@@ -14,7 +14,7 @@ which satisfies
 \begin{equation*}
   \phi \left( \mathcal{O} \right) = \mathcal{O},
 \end{equation*}
-where $\mathcal{O}$ is the neutral element of $E$. 
+where $\mathcal{O}$ is the neutral element of $E$.
 Any isogeny is automatically a group homomorphism (\cite{silverman86} III, \S 4, Thm
 4.8), and we denote by $Hom(E_{1},E_{2})$ the group of all isogenies $\phi : E_{1}
 \rightarrow E_{2}$.  Any non-zero isogeny is surjective (\cite{shafarevich94} I, \S 5.3,
@@ -34,7 +34,7 @@ isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, and
   \label{eq:degree-of-composition}
   deg \left( \phi_{2} \circ \phi_{1} \right) = deg \left( \phi_{2} \right) deg \left( \phi_{1} \right),
 \end{equation}
-by the tower law fow field extensions.
+by the tower law for field extensions.
 We say $\phi$ is \emph{separable}, \emph{inseparable} or \emph{purely inseparable}
 according to the extension.  In particular, when $k$ is of characteristic zero every
 isogeny $\phi$ is separable.
@@ -178,9 +178,9 @@ $\mathbb{Z}$-module.
 % \end{prop}
 
 An elliptic curve whose endomorphism ring is strictly larger than $\mathbb{Z}$ is
-said to have \emph{complex multiplication}.  We will see shortly (Proposition \ref{prop:structure-of-E[m]}) that $deg([m]) =
+said to have \emph{complex multiplication}.  We will see shortly (Proposition \ref{prop:properties-of-m-dual}) that $deg([m]) =
 m^{2}$.  Given that this is true, it is clear that an elliptic curve $E$ has complex
-multiplication if and only if it posesses an endomorphism $\phi$ whose degree is a non-square.
+multiplication if and only if it possesses an endomorphism $\phi$ whose degree is a non-square.
 
 \begin{example}
   \label{ex:cm-example}
@@ -200,7 +200,7 @@ multiplication if and only if it posesses an endomorphism $\phi$ whose degree is
 
 \begin{example}
   \label{ex:finite-field-cm}
-  Let $k$ be a field of characterstic $q = p^{r}$, and let $E$ be an elliptic curve
+  Let $k$ be a field of characteristic $q = p^{r}$, and let $E$ be an elliptic curve
   over $k$.  We define $E^{(q)}$ to be the curve obtained by raising the coefficients
   of the Weierstrass equation of $E$ to the $q$-th power.  The \emph{Frobenius
     morphism} $\phi_{q} : E \rightarrow E^{(q)}$ is given by
@@ -217,7 +217,7 @@ multiplication if and only if it posesses an endomorphism $\phi$ whose degree is
 \begin{prop}
   \label{prop:iso-curves-iso-end-rings}
   Let $E_{1}$ and $E_{2}$ be isomorphic elliptic curves.  Then $End(E_{1})$ is
-  isomorhpic to $End(E_{2})$.
+  isomorphic to $End(E_{2})$.
 \end{prop}
 \begin{proof}
   Let $f \colon E_{1} \rightarrow E_{2}$ denote the isomorphism, and let $\phi$ be an
@@ -226,7 +226,7 @@ multiplication if and only if it posesses an endomorphism $\phi$ whose degree is
 \begin{equation*}
 \xymatrix{
   E_{1} \ar[d]^{f} \ar[r]^{\phi} & E_{1} \ar[d]^{f} \\
-  E_{2} \ar[r] & E_{2}}  
+  E_{2} \ar[r] & E_{2}}
 \end{equation*}
 i.e. $F(\phi) = f \circ \phi \circ f^{-1}$.
 \end{proof}
@@ -338,7 +338,7 @@ $\mathbb{Z}_{\ell}$-module.  Furthermore, since $E[\ell^{n}] \cong
 \ref{cor:structure-of-E[m]}, it follows immediately from the definition that
 \begin{equation}
   \label{eq:structure-of-Tate-module}
-  T_{\ell}(E) \cong \mathbb{Z}_{\ell} \times \mathbb{Z}_{\ell}.  
+  T_{\ell}(E) \cong \mathbb{Z}_{\ell} \times \mathbb{Z}_{\ell}.
 \end{equation}
 
 Let $\phi$ be an endomorphism of $E$.  Note that if $P$ is a point in $E[m]$ then
@@ -404,7 +404,7 @@ most $4$, since $End(T_{\ell}(E)) \cong M_{2}(\mathbb{Z}_{\ell})$ by
 % \begin{equation*}
 % \xymatrix{
 %   E[\ell^{n+1}] \ar[d]^{\sigma} \ar[r]^{[\ell]} & E[\ell^{n}] \ar[d]^{\sigma} \\
-%   E[\ell^{n+1}] \ar[r]^{[\ell]} & E[\ell^{n}]}  
+%   E[\ell^{n+1}] \ar[r]^{[\ell]} & E[\ell^{n}]}
 % \end{equation*}
 
 \subsection{The action of $Gal(\bar{k} / k)$ on $E[m]$}
@@ -412,8 +412,7 @@ most $4$, since $End(T_{\ell}(E)) \cong M_{2}(\mathbb{Z}_{\ell})$ by
 
 Let $E$ be an elliptic curve defined over some field $k$.  Let $P = (x,y)$ be a point
 on $E$ and let $\sigma$ be an element of $Gal(\bar{k} / k)$.  We define $P^{\sigma}$
-to be the point $P^{\sigma} = (x^{\sigma},y^{\sigma})$.  Now for an arbitrary point
-$P$ on $E$ there is no reason why $P^{\sigma}$ should also lie on $E$. However, if
+to be the point $P^{\sigma} = (x^{\sigma},y^{\sigma})$.  If
 $P$ is in $E[m]$ for some $m$, then
 \begin{equation*}
   [m](P^{\sigma}) = (f_{1}(P^{\sigma}),f_{2} (P^{\sigma}))
@@ -442,7 +441,7 @@ $f_{i}^{\sigma}$ = $f_{i}$.  Hence,
 A consequence of Lemma \ref{lem:E[m]-is-stable-under-Galois} is that we have a
 representation
 \begin{equation*}
-\rho : Gal(\bar{k} / k) \rightarrow Aut(E[m]),  
+\rho : Gal(\bar{k} / k) \rightarrow Aut(E[m]),
 \end{equation*}
 given by
 \begin{equation}
@@ -517,7 +516,7 @@ curve $E$ with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{Z}[i]$ of
 Gaussian integers.  It follows by Theorem \ref{thm:structure-thm-for-End(E)} that the
 endomorphism ring of $E$ is precisely $\mathbb{Z}[i]$.
 
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"
-%%% End: 
+%%% End:

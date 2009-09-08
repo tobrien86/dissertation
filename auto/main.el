@@ -13,6 +13,7 @@
      "xy"
      "all"
      "cmtip"
+     "booktabs"
      "mathrsfs"
      "enumerate"
      "amsthm"

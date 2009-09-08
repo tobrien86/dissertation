@@ -14,5 +14,6 @@
 \contentsline {subsection}{\numberline {4.2}Constructing elliptic curves with complex multiplication by $\mathfrak {o}_{k}$}{17}
 \contentsline {subsection}{\numberline {4.3}The group of $\mathfrak {a}$-torsion points}{20}
 \contentsline {section}{\numberline {5}Complex multiplication over algebraic extensions of $\mathbb {Q}$}{21}
-\contentsline {subsection}{\numberline {5.1}Towards abelian extensions of quadratic imaginary fields}{22}
+\contentsline {subsection}{\numberline {5.1}Rationality properties}{21}
+\contentsline {subsection}{\numberline {5.2}Towards abelian extensions of quadratic imaginary fields}{22}
 \contentsline {section}{\numberline {6}Abelian extensions of $\mathbb {Q}(i)$}{24}

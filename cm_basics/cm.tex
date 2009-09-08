@@ -181,7 +181,7 @@ consisting of finite sums of products of elements of $\mathfrak{a}$ and $\Lambda
   The first part is clear, since $End(E_{\Lambda}) \cong \{\alpha \in \mathbb{C}
   \colon \alpha\Lambda \subset \Lambda \}$.  Now let $\mathfrak{a}$ be a fractional
   ideal of $k$.  Since $k$ is a quadratic field, we have $k = \mathbb{Q}(\sqrt{d})$
-  for some squarefree integer $d$, and
+  for some square free integer $d$, and
   \begin{equation*}
     \mathfrak{o}_{k} =
     \begin{cases}
@@ -271,7 +271,7 @@ $Cl(k)$.
   \end{equation*}
   so that $\tau$ is a non-real root of an integral quadratic equation, and hence the
   field $\mathbb{Q}(\tau) = \mathbb{Q}(\frac{\omega_{1}}{\omega_{2}})$ is quadratic
-  imaginary.  Similary, we have
+  imaginary.  Similarly, we have
   \begin{equation*}
     (\alpha - a)(\alpha - d) = (\alpha - d)b\tau = bc,
   \end{equation*}
@@ -335,8 +335,31 @@ $Cl(k)$.
   transitively on $Ell(\mathfrak{o}_{k})$.  It remains to prove that the action is
   simply transitive, i.e. if $E_{\Lambda}^{\mathfrak{a}} =
   E_{\Lambda}^{\mathfrak{b}}$ then $\mathfrak{a} = \mathfrak{b}$ in $Cl(k)$.  So,
-  suppose $E_{\Lambda}^{\mathfrak{a}} = E_{\Lambda}^{\mathfrak{b}}$.  Then 
+  suppose $E_{\Lambda}^{\mathfrak{a}} = E_{\Lambda}^{\mathfrak{b}}$.  Then
+  $\mathfrak{a}^{-1}\Lambda = \alpha \mathfrak{b}^{-1}\Lambda$ for some non-zero
+  $\alpha$ in $\mathbb{C}$.  Equivalently, we have the relations
+  \begin{equation*}
+    \Lambda = \alpha\mathfrak{a}\mathfrak{b}^{-1}\Lambda \quad \text{and} \quad
+    \Lambda = \alpha^{-1}\mathfrak{b}\mathfrak{a}^{-1},
+  \end{equation*}
+  from which it follows that both $\alpha\mathfrak{a}\mathfrak{b}^{-1}$ and
+  $\alpha^{-1}\mathfrak{b}\mathfrak{a}^{-1}$ are both contained in
+  $\mathfrak{o}_{k}$:
+  \begin{equation*}
+    \alpha\mathfrak{a}\mathfrak{b}^{-1} \subset \mathfrak{o}_{k} \quad
+    \text{and} \quad \alpha^{-1}\mathfrak{b}\mathfrak{a}^{-1} \subset \mathfrak{o}_{k}.
+  \end{equation*}
+  Multiplying the second containment by $\alpha\mathfrak{a}\mathfrak{b}^{-1}$ gives
+  \begin{equation*}
+    \alpha\mathfrak{a}\mathfrak{b}^{-1} \mathfrak{o}_{k} \subset \mathfrak{o}_{k}
+    \subset \alpha\mathfrak{a}\mathfrak{b}^{-1},
+  \end{equation*}
+  whence $\mathfrak{o}_{k} = \alpha\mathfrak{a}\mathfrak{b}^{-1}$.  Then
+  $\mathfrak{b} = \alpha \mathfrak{a}$, so $\alpha$ is in $k$, and $\mathfrak{a} =
+  \mathfrak{b}$ in $Cl(k)$, as required.
 \end{proof}
+
+
 
 \subsection{The group of $\mathfrak{a}$-torsion points}
 \label{sec:group-a-tors}
@@ -383,7 +406,7 @@ E_{\Lambda}^{\mathfrak{a}}$ by (TODO: put in isogeny stuff in complex review):
 We thus define the kernel of $\phi_{\mathfrak{a}}$ to be the \emph{group of
   $\mathfrak{a}$-torsion points of $E$} and denote it by $E[\mathfrak{a}]$.
 
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"
-%%% End: 
+%%% End:
