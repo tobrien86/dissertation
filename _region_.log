@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.3)  3 SEP 2009 12:49
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.7)  7 SEP 2009 16:00
 entering extended mode
  %&-line parsing enabled.
 **&prv_main _region_.tex
@@ -18,14 +18,15 @@ n, swedish, ukenglish, pinyin, loaded.
 
 CUSTOMISED FORMAT. Preloaded files:
         .
-  amsart.cls    2004/08/06 v2.20
+ article.cls    2005/09/16 v1.4f Standard LaTeX document class
+  size10.clo    2005/09/16 v1.4f Standard LaTeX file (size option)
+amsfonts.sty    2001/10/25 v2.2f
  amsmath.sty    2000/07/18 v2.13 AMS math features
  amstext.sty    2000/06/29 v2.01
   amsgen.sty    1999/11/30 v2.0
   amsbsy.sty    1999/11/29 v1.2d
   amsopn.sty    1999/12/14 v2.01 operator names
-    umsa.fd    2002/01/19 v2.2g AMS font definitions
-amsfonts.sty    2001/10/25 v2.2f
+  amsthm.sty    2004/08/06 v2.20
 enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
 mathrsfs.sty    1996/01/01 Math RSFS package v1.0 (jk)
       xy.sty    1999/02/16 Xy-pic version 3.7
@@ -50,35 +51,34 @@ LaTeX Font Info:    ... okay on input line 20.
 Package: preview 2006/08/25 11.84 (AUCTeX/preview-latex)
 
 (/usr/share/texmf/tex/latex/preview/prtightpage.def
-\PreviewBorder=\dimen148
+\PreviewBorder=\dimen146
 )
 (/usr/share/texmf/tex/latex/preview/prauctex.def
 No auxiliary output files.
 
 
 \hbadness=\count115
-\hfuzz=\dimen149
+\hfuzz=\dimen147
 (/usr/share/texmf/tex/latex/preview/prauctex.cfg))
 (/usr/share/texmf/tex/latex/preview/prfootnotes.def)
 \pr@snippet=\count116
-\pr@box=\box33
-\pr@output=\toks33
+\pr@box=\box32
+\pr@output=\toks34
 
 Preview: Fontsize 10pt
-)  !name(cm_rational/rational.tex) !offset(-21) 
+)  !name(endomorphisms/end.tex) !offset(432) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.23 \section
-             {Complex multiplication over algebraic extensions of $\mathbb{Q}$}
-
+l.23 \subsection
+                {The structure of $End(E)$ in characteristic zero}
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(451470+109226x23592960).
+! Preview: Snippet 1 ended.(589824+196608x22609920).
 <-><->
       
-l.23 ...over algebraic extensions of $\mathbb{Q}$}
+l.23 ...ucture of $End(E)$ in characteristic zero}
                                                   
 Not a real error.
 
@@ -88,16 +88,16 @@ Not a real error.
 ! Preview: Snippet 2 started.
 <-><->
       
-l.28 Let $
-          E$ be an elliptic curve defined over $\mathbb{C}$, given by the eq...
+l.30   Let $
+            E$ be an elliptic curve over a field $k$ of characteristic zero....
 
 Not a real error.
 
 ! Preview: Snippet 2 ended.(447828+0x521556).
 <-><->
       
-l.28 Let $E$
-             be an elliptic curve defined over $\mathbb{C}$, given by the eq...
+l.30   Let $E$
+               be an elliptic curve over a field $k$ of characteristic zero....
 
 Not a real error.
 
@@ -105,47 +105,50 @@ Not a real error.
 ! Preview: Snippet 3 started.
 <-><->
       
-l.28 Let $E$ be an elliptic curve defined over $
-                                                \mathbb{C}$, given by the eq...
+l.30   Let $E$ be an elliptic curve over a field $
+                                                  k$ of characteristic zero....
 
 Not a real error.
 
-! Preview: Snippet 3 ended.(451470+0x473316).
+! Preview: Snippet 3 ended.(455111+0x361814).
 <-><->
       
-l.28 ...n elliptic curve defined over $\mathbb{C}$
-                                                  , given by the equation
+l.30 ... $E$ be an elliptic curve over a field $k$
+                                                   of characteristic zero.  ...
+
 Not a real error.
 
 [3]
 ! Preview: Snippet 4 started.
 <-><->
       
-l.29 \begin{equation*}
-                      
+l.31   $
+        End(E) \cong \mathbb{Z}$ or $End(E)$ is isomorphic to an order in a ...
+
 Not a real error.
 
-! Preview: Snippet 4 ended.(693664+0x14477116).
+! Preview: Snippet 4 ended.(491520+163840x3598028).
 <-><->
       
-l.31 \end{equation*}
-                    
+l.31   $End(E) \cong \mathbb{Z}$
+                                 or $End(E)$ is isomorphic to an order in a ...
+
 Not a real error.
 
 [4]
 ! Preview: Snippet 5 started.
 <-><->
       
-l.32 and let $
-              \sigma$ be a field automorphism of $\mathbb{C}$. We define $E^...
+l.31   $End(E) \cong \mathbb{Z}$ or $
+                                     End(E)$ is isomorphic to an order in a ...
 
 Not a real error.
 
-! Preview: Snippet 5 ended.(282168+0x397994).
+! Preview: Snippet 5 ended.(491520+163840x2287314).
 <-><->
       
-l.32 and let $\sigma$
-                      be a field automorphism of $\mathbb{C}$. We define $E^...
+l.31   $End(E) \cong \mathbb{Z}$ or $End(E)$
+                                             is isomorphic to an order in a ...
 
 Not a real error.
 
@@ -153,16 +156,16 @@ Not a real error.
 ! Preview: Snippet 6 started.
 <-><->
       
-l.32 and let $\sigma$ be a field automorphism of $
-                                                  \mathbb{C}$. We define $E^...
+l.35   Let $
+            K = End(E) \otimes \mathbb{Q}$.  For each $\alpha \in \mathbb{Q}...
 
 Not a real error.
 
-! Preview: Snippet 6 ended.(451470+0x473316).
+! Preview: Snippet 6 ended.(491520+163840x5075313).
 <-><->
       
-l.32 ...a$ be a field automorphism of $\mathbb{C}$
-                                                  . We define $E^{\sigma}$ t...
+l.35   Let $K = End(E) \otimes \mathbb{Q}$
+                                          .  For each $\alpha \in \mathbb{Q}...
 
 Not a real error.
 
@@ -170,154 +173,161 @@ Not a real error.
 ! Preview: Snippet 7 started.
 <-><->
       
-l.32 ... automorphism of $\mathbb{C}$. We define $
-                                                  E^{\sigma}$ to be
+l.35 ... = End(E) \otimes \mathbb{Q}$.  For each $
+                                                  \alpha \in \mathbb{Q}, \ph...
+
 Not a real error.
 
-! Preview: Snippet 7 ended.(447828+0x874474).
+! Preview: Snippet 7 ended.(491520+163840x5502432).
 <-><->
       
-l.32 ...sm of $\mathbb{C}$. We define $E^{\sigma}$
-                                                   to be
+l.36   End(E)$
+               we define an extended dual $\widehat{\alpha \cdot \phi}$ by
 Not a real error.
 
 [7]
 ! Preview: Snippet 8 started.
 <-><->
       
-l.33 the elliptic curve obtained by letting $
-                                             \sigma$ act on the coefficients...
-
+l.36   End(E)$ we define an extended dual $
+                                           \widehat{\alpha \cdot \phi}$ by
 Not a real error.
 
-! Preview: Snippet 8 ended.(282168+0x397994).
+! Preview: Snippet 8 ended.(664463+127431x1285456).
 <-><->
       
-l.33 ...lliptic curve obtained by letting $\sigma$
-                                                   act on the coefficients o...
-
+l.36 ...xtended dual $\widehat{\alpha \cdot \phi}$
+                                                   by
 Not a real error.
 
 [8]
 ! Preview: Snippet 9 started.
 <-><->
       
-l.34 of $
-         E$, i.e. $E^{\sigma}$ is obtained from the equation
+l.37   \begin{equation*}
+                        
 Not a real error.
 
-! Preview: Snippet 9 ended.(447828+0x521556).
+! Preview: Snippet 9 ended.(791894+0x13118342).
 <-><->
       
-l.34 of $E$
-           , i.e. $E^{\sigma}$ is obtained from the equation
+l.39   \end{equation*}
+                      
 Not a real error.
 
 [9]
 ! Preview: Snippet 10 started.
 <-><->
       
-l.34 of $E$, i.e. $
-                   E^{\sigma}$ is obtained from the equation
+l.40   where $
+              \widehat{\phi}$ is the dual isogeny to $\phi$.  We define func...
+
 Not a real error.
 
-! Preview: Snippet 10 ended.(447828+0x874474).
+! Preview: Snippet 10 ended.(646259+127431x390486).
 <-><->
       
-l.34 of $E$, i.e. $E^{\sigma}$
-                               is obtained from the equation
+l.40   where $\widehat{\phi}$
+                              is the dual isogeny to $\phi$.  We define func...
+
 Not a real error.
 
 [10]
 ! Preview: Snippet 11 started.
 <-><->
       
-l.35 \begin{equation*}
-                      
+l.40 ... $\widehat{\phi}$ is the dual isogeny to $
+                                                  \phi$.  We define function...
+
 Not a real error.
 
-! Preview: Snippet 11 ended.(693664+0x14830034).
+! Preview: Snippet 11 ended.(455111+127431x390486).
 <-><->
       
-l.37 \end{equation*}
-                    
+l.40 ...dehat{\phi}$ is the dual isogeny to $\phi$
+                                                  .  We define functions $N : K
+
 Not a real error.
 
 [11]
 ! Preview: Snippet 12 started.
 <-><->
       
-l.38 It is clear that $
-                       E^{\sigma} = \{ P^{\sigma} : P \in E \}$, for if $P =...
-
+l.40 ... isogeny to $\phi$.  We define functions $
+                                                  N : K
 Not a real error.
 
-! Preview: Snippet 12 ended.(491520+163840x5648775).
+! Preview: Snippet 12 ended.(451470+109226x3276783).
 <-><->
       
-l.38 ... $E^{\sigma} = \{ P^{\sigma} : P \in E \}$
-                                                  , for if $P = (x,y)$, then
+l.41   \rightarrow \mathbb{Q}$
+                               and $T : K \rightarrow \mathbb{Q}$ by
 Not a real error.
 
 [12]
 ! Preview: Snippet 13 started.
 <-><->
       
-l.38 ...a} = \{ P^{\sigma} : P \in E \}$, for if $
-                                                  P = (x,y)$, then
+l.41   \rightarrow \mathbb{Q}$ and $
+                                    T : K \rightarrow \mathbb{Q}$ by
 Not a real error.
 
-! Preview: Snippet 13 ended.(491520+163840x2905954).
+! Preview: Snippet 13 ended.(451470+109226x3152768).
 <-><->
       
-l.38 ...{\sigma} : P \in E \}$, for if $P = (x,y)$
-                                                  , then
+l.41 ...hbb{Q}$ and $T : K \rightarrow \mathbb{Q}$
+                                                   by
 Not a real error.
 
 [13]
 ! Preview: Snippet 14 started.
 <-><->
       
-l.39 $
-      P^{\sigma} = (x^{\sigma},y^{\sigma})$ satisfies
+l.42   \begin{equation*}
+                        
 Not a real error.
 
-! Preview: Snippet 14 ended.(491520+163840x3964708).
+! Preview: Snippet 14 ended.(638976+0x12750844).
 <-><->
       
-l.39 $P^{\sigma} = (x^{\sigma},y^{\sigma})$
-                                            satisfies
-Not a real error.
-
-[14]
-! Preview: Snippet 15 started.
-<-><->
-      
-l.40 \begin{equation*}
+l.44   \end{equation*}
                       
 Not a real error.
 
-! Preview: Snippet 15 ended.(730073+0x21396694).
+[14]
+
+LaTeX Warning: Reference `ex:cm-example' on page 1 undefined on input line 47.
+
+! Preview: Snippet 15 started.
 <-><->
       
-l.43 \end{equation*}
-                    
+l.48 curve $
+            E$ with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{...
+
+Not a real error.
+
+! Preview: Snippet 15 ended.(447828+0x521556).
+<-><->
+      
+l.48 curve $E$
+               with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{...
+
 Not a real error.
 
 [15]
 ! Preview: Snippet 16 started.
 <-><->
       
-l.44 Now, if $
-              \phi$ is an endomorphism of $E$, then $\phi$ is given by ratio...
+l.48 curve $E$ with equation $
+                              y^{2} = x^{3} + x$ contains the ring $\mathbb{...
 
 Not a real error.
 
-! Preview: Snippet 16 ended.(455111+127431x390486).
+! Preview: Snippet 16 ended.(533465+127431x3356738).
 <-><->
       
-l.44 Now, if $\phi$
-                    is an endomorphism of $E$, then $\phi$ is given by ratio...
+l.48 curve $E$ with equation $y^{2} = x^{3} + x$
+                                                 contains the ring $\mathbb{...
 
 Not a real error.
 
@@ -325,158 +335,63 @@ Not a real error.
 ! Preview: Snippet 17 started.
 <-><->
       
-l.44 Now, if $\phi$ is an endomorphism of $
-                                           E$, then $\phi$ is given by ratio...
-
+l.48 ...on $y^{2} = x^{3} + x$ contains the ring $
+                                                  \mathbb{Z}[i]$ of
 Not a real error.
 
-! Preview: Snippet 17 ended.(447828+0x521556).
+! Preview: Snippet 17 ended.(491520+163840x1026778).
 <-><->
       
-l.44 Now, if $\phi$ is an endomorphism of $E$
-                                             , then $\phi$ is given by ratio...
-
+l.48 ...{3} + x$ contains the ring $\mathbb{Z}[i]$
+                                                   of
 Not a real error.
 
 [17]
+
+LaTeX Warning: Reference `thm:structure-thm-for-End(E)' on page 1 undefined on 
+input line 49.
+
 ! Preview: Snippet 18 started.
 <-><->
       
-l.44 ...f $\phi$ is an endomorphism of $E$, then $
-                                                  \phi$ is given by rational...
-
+l.50 endomorphism ring of $
+                           E$ is precisely $\mathbb{Z}[i]$.
 Not a real error.
 
-! Preview: Snippet 18 ended.(455111+127431x390486).
+! Preview: Snippet 18 ended.(447828+0x521556).
 <-><->
       
-l.44 ...hi$ is an endomorphism of $E$, then $\phi$
-                                                   is given by rational maps in
-
+l.50 endomorphism ring of $E$
+                              is precisely $\mathbb{Z}[i]$.
 Not a real error.
 
 [18]
 ! Preview: Snippet 19 started.
 <-><->
       
-l.45 the function field $
-                         \mathbb{C}(E)$:
+l.50 endomorphism ring of $E$ is precisely $
+                                            \mathbb{Z}[i]$.
 Not a real error.
 
-! Preview: Snippet 19 ended.(491520+163840x1504598).
+! Preview: Snippet 19 ended.(491520+163840x1026778).
 <-><->
       
-l.45 the function field $\mathbb{C}(E)$
-                                       :
+l.50 ...m ring of $E$ is precisely $\mathbb{Z}[i]$
+                                                  .
 Not a real error.
 
-[19]
-! Preview: Snippet 20 started.
-<-><->
-      
-l.46 \begin{equation*}
-                      
-Not a real error.
+[19]  !name(../main.tex) !offset(-18) 
 
-! Preview: Snippet 20 ended.(655360+0x15430634).
-<-><->
-      
-l.48 \end{equation*}
-                    
-Not a real error.
+LaTeX Warning: There were undefined references.
 
-[20]
-! Preview: Snippet 21 started.
-<-><->
-      
-l.49 and we define an endomorphism $
-                                    \phi^{\sigma}$ of $E^{\sigma}$ in the ob...
-
-Not a real error.
-
-! Preview: Snippet 21 ended.(455111+127431x743404).
-<-><->
-      
-l.49 and we define an endomorphism $\phi^{\sigma}$
-                                                   of $E^{\sigma}$ in the ob...
-
-Not a real error.
-
-[21]
-! Preview: Snippet 22 started.
-<-><->
-      
-l.49 ...efine an endomorphism $\phi^{\sigma}$ of $
-                                                  E^{\sigma}$ in the obvious...
-
-Not a real error.
-
-! Preview: Snippet 22 ended.(447828+0x874474).
-<-><->
-      
-l.49 ...domorphism $\phi^{\sigma}$ of $E^{\sigma}$
-                                                   in the obvious way:
-Not a real error.
-
-[22]
-! Preview: Snippet 23 started.
-<-><->
-      
-l.50 \begin{equation*}
-                      
-Not a real error.
-
-! Preview: Snippet 23 ended.(655360+0x13840921).
-<-><->
-      
-l.52 \end{equation*}
-                    
-Not a real error.
-
-[23]
-! Preview: Snippet 24 started.
-<-><->
-      
-l.53 Note that, if $
-                    (x\prime{},y\prime{})$
-Not a real error.
-
-! Preview: Snippet 24 ended.(491520+163840x1880821).
-<-><->
-      
-l.53 Note that, if $(x\prime{},y\prime{})$
-                                          
-Not a real error.
-
-[24]
-! Preview: Snippet 25 started.
-<-><->
-      
-l.57   Let $
-            E$ be an elliptic curve
-Not a real error.
-
-! Preview: Snippet 25 ended.(447828+0x521556).
-<-><->
-      
-l.57   Let $E$
-               be an elliptic curve
-Not a real error.
-
-[25]  !name(../main.tex) !offset(-30) 
-\newlabel{tocindent-1}{0pt}
-\newlabel{tocindent0}{0pt}
-\newlabel{tocindent1}{17.77782pt}
-\newlabel{tocindent2}{0pt}
-\newlabel{tocindent3}{0pt}
  ) 
 Here is how much of TeX's memory you used:
- 197 strings out of 90439
- 2568 string characters out of 1122533
- 131340 words of memory out of 1500000
- 6904 multiletter control sequences out of 10000+50000
- 12502 words of font info for 53 fonts, out of 1200000 for 2000
- 806 hyphenation exceptions out of 8191
- 22i,4n,32p,161b,171s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 202 strings out of 90828
+ 2654 string characters out of 1126488
+ 128187 words of memory out of 1500000
+ 6674 multiletter control sequences out of 10000+50000
+ 13918 words of font info for 59 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 22i,10n,22p,161b,162s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on _region_.dvi (25 pages, 5176 bytes).
+Output written on _region_.dvi (19 pages, 4316 bytes).

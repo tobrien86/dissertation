@@ -3,16 +3,16 @@
 \contentsline {subsection}{\numberline {2.1}Isogenies}{4}
 \contentsline {subsection}{\numberline {2.2}Some properties of $End(E)$}{4}
 \contentsline {subsection}{\numberline {2.3}Dual isogenies}{6}
-\contentsline {subsection}{\numberline {2.4}The Tate module}{7}
-\contentsline {subsection}{\numberline {2.5}The action of $Gal(\mathaccentV {bar}016{k} / k)$ on $E[m]$}{7}
-\contentsline {subsection}{\numberline {2.6}The structure of $End(E)$ in characteristic zero}{8}
-\contentsline {section}{\numberline {3}Elliptic curves over $\mathbb {C}$}{9}
-\contentsline {subsection}{\numberline {3.1}A brief review of elliptic curves over $\mathbb {C}$}{9}
-\contentsline {subsection}{\numberline {3.2}Endomorphisms}{10}
-\contentsline {section}{\numberline {4}Complex multiplication - basic results}{11}
-\contentsline {subsection}{\numberline {4.1}Fractional ideals}{11}
-\contentsline {subsection}{\numberline {4.2}Constructing elliptic curves with complex multiplication by $\mathfrak {o}_{k}$}{12}
-\contentsline {subsection}{\numberline {4.3}The group of $\mathfrak {a}$-torsion points}{14}
-\contentsline {section}{\numberline {5}Complex multiplication over algebraic extensions of $\mathbb {Q}$}{16}
-\contentsline {subsection}{\numberline {5.1}Towards abelian extensions of quadratic imaginary fields}{17}
-\contentsline {section}{\numberline {6}Abelian extensions of $\mathbb {Q}(i)$}{19}
+\contentsline {subsection}{\numberline {2.4}The Tate module}{8}
+\contentsline {subsection}{\numberline {2.5}The action of $Gal(\mathaccentV {bar}016{k} / k)$ on $E[m]$}{9}
+\contentsline {subsection}{\numberline {2.6}The structure of $End(E)$ in characteristic zero}{9}
+\contentsline {section}{\numberline {3}Elliptic curves over $\mathbb {C}$}{11}
+\contentsline {subsection}{\numberline {3.1}A brief review of elliptic curves over $\mathbb {C}$}{11}
+\contentsline {subsection}{\numberline {3.2}Endomorphisms}{12}
+\contentsline {section}{\numberline {4}Complex multiplication - basic results}{15}
+\contentsline {subsection}{\numberline {4.1}Fractional ideals}{16}
+\contentsline {subsection}{\numberline {4.2}Constructing elliptic curves with complex multiplication by $\mathfrak {o}_{k}$}{17}
+\contentsline {subsection}{\numberline {4.3}The group of $\mathfrak {a}$-torsion points}{20}
+\contentsline {section}{\numberline {5}Complex multiplication over algebraic extensions of $\mathbb {Q}$}{21}
+\contentsline {subsection}{\numberline {5.1}Towards abelian extensions of quadratic imaginary fields}{22}
+\contentsline {section}{\numberline {6}Abelian extensions of $\mathbb {Q}(i)$}{24}

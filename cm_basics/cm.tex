@@ -10,19 +10,56 @@ $\mathfrak{o}_{k}$ in some quadratic imaginary field $k$, and we shall say that 
 has complex multiplication by $\mathfrak{o}_{k}$}.  We denote by
 $Ell(\mathfrak{o}_{k})$ the set of isomorphism classes of elliptic curves with
 complex multiplication by $\mathfrak{o}_{k}$.  Note that, if $E$ has complex
-multiplication by $\mathfrak{o}_{k}$ then there are exactly two ways in which $o_{k}$
-can be identified with $End(E)$.  We will always use the following identification
+multiplication by $\mathfrak{o}_{k}$ then there are exactly two ways in which
+$End(E)$ can be embedded in $\mathbb{C}$.  We will always use the identification
 determined by the following commutative diagram (replacing $E$ by $E_{\Lambda}$ for
-some lattice $\Lambda$, which is possible by uniformisation):
+some lattice $\Lambda$, which is possible by Uniformisation):
 \begin{equation}
   \label{eq:o-identified-with-End(E)}
+  \begin{split}
   \xymatrix{
-    \mathbb{C} / \Lambda \ar[d]^{f} \ar[r] & \mathbb{C} / \Lambda \ar[d]^{f}\\
-    E_{\Lambda} \ar[r]& E_{\Lambda}
-  }  
+    \mathbb{C} / \Lambda \ar[d]^{f} \ar[r]^{\phi_{\alpha}} & \mathbb{C} / \Lambda \ar[d]^{f}\\
+    E_{\Lambda} \ar[r]^{[\alpha]}& E_{\Lambda}
+  }
+  \end{split}
 \end{equation}
-where $f$ is the isomorphism described in \eqref{eq:complex-eqn-for-ec}. TODO: make
-this more clear and fix alignment.
+where $f$ is the isomorphism described in \eqref{eq:complex-eqn-for-ec}, and
+$\phi_{\alpha}$ and $[\alpha]$ are the maps determined in Proposition
+\ref{prop:complex-isogenies} and \eqref{eq:End(E)-in-complex} respectively.
+
+For example, let $\Lambda = \mathbb{Z}[i]$.  Then
+\begin{equation*}
+  \wp(iz) = \frac{1}{(iz)^{2}} + \sum_{\omega \in \Lambda - 0}\frac{1}{(iz - \omega)^{2}} - \frac{1}{\omega^{2}},
+\end{equation*}
+and since $i\Lambda = \Lambda$ we may replace $\omega$ with $i \omega$ in the above
+summation, so that
+\begin{equation*}
+  \wp(iz) = -\wp(z).
+\end{equation*}
+Similarly, the same method shows that
+\begin{equation*}
+  \wp^{\prime}(iz) = i\wp(z).
+\end{equation*}
+Now consider the elliptic curve $E_{\Lambda}$.  Then
+\eqref{eq:o-identified-with-End(E)} says that the endomorphism $[i]$ is determined by
+\begin{equation*}
+  [i](x,y) = (-x,y).
+\end{equation*}
+Furthermore, using again the fact that $i\Lambda = \Lambda$ we have
+\begin{equation*}
+  g_{3}(\Lambda) = g_{3}(i\Lambda) = 140 \sum_{\omega \in \Lambda} \frac{1}{(i
+    \omega)^{6}} = -g_{3}(\Lambda),
+\end{equation*}
+so that $g_{3}(\Lambda) = 0$ and $E_{\Lambda}$ is given by the equation
+\begin{equation*}
+  y^{2} = 4x^{3} - g_{2}x.
+\end{equation*}
+Therefore, $E_{\Lambda}$ is isomorphic to the elliptic curve $E$ given by
+\begin{equation*}
+  y^{2} = x^{3} + x,
+\end{equation*}
+since $j(E_{\Lambda}) = 1728 = j(E)$.  This justifies the description of the
+endomorphism described in Example \ref{ex:cm-example}.
 
 \subsection{Fractional ideals}
 \label{sec:fractional-ideals}
@@ -45,18 +82,19 @@ refer to such an ideal as an \emph{integral ideal}.  The quotient $\mathfrak{o}_
 \begin{equation*}
   N\mathfrak{a} = \# ( \mathfrak{o}_{k} / \mathfrak{a} ).
 \end{equation*}
-In particular, when $k$ is quadratic then $k = \mathbb{Q}(\sqrt{d})$ for some
+In particular, if $k$ is quadratic, then $k = \mathbb{Q}(\sqrt{d})$ for some
 square-free integer $d$ and every element $\alpha$ of $k$ is of the form
 \begin{equation*}
   \alpha = a + b\sqrt{d}
 \end{equation*}
-where $a$ and $b$ are in $\mathbb{Q}$.  When $\alpha$ is an integer in $k$, then
+where $a$ and $b$ are in $\mathbb{Q}$.  When $\alpha$ is an integer in $k$
+(i.e. $\alpha \in \mathfrak{o}_{k}$), then
 $a^{2} - db^{2}$ is a rational integer, and the principle ideal $(\alpha)$ of
 $\mathfrak{o}_{k}$ satisfies
 \begin{equation*}
   N(\alpha) = |a^{2} - db^{2}|.
 \end{equation*}
-  A fractional ideal is principle
+  A fractional ideal is \emph{principal}
 if it is of the form $c\mathfrak{o}_{k}$ for some $c$ in $k$.  If $\mathfrak{a}$ is a
 fractional ideal of $k$, then we define $\mathfrak{a}^{-1}$ to be the set
 \begin{equation*}
@@ -80,14 +118,24 @@ us to construct elliptic curves with complex multiplication by $\mathfrak{o}_{k}
 \end{lem}
 
 \begin{proof}
-  TODO: make neat proof.
+  Let $\mathfrak{a}$ be a fractional ideal of $k$.  Using the inclusion $\mathbb{Z}
+  \subset \mathfrak{o}_{k}$ it follows that $\mathfrak{a}$ is a free
+  $\mathbb{Z}$-module of rank $2$.  Furthermore, it is clear that $\mathfrak{a}$ is
+  not contained in $\mathbb{R}$. Thus $\mathfrak{a}$ is a lattice, as required.
 \end{proof}
 
 \subsection{Constructing elliptic curves with complex multiplication by
   $\mathfrak{o}_{k}$}
 \label{sec:constr-ellipt-curv-with-cm-by-o}
 
-TODO: intro.
+Thus far we have not found a satisfactory way of constructing elliptic curves (over
+$\mathbb{C}$) with complex multiplication.  We shall remedy this situation now.  More
+precisely, to every fractional ideal $\mathfrak{a}$ of $k$, for some quadratic
+imaginary field $k$, we will associate an elliptic curve which has complex
+multiplication by $\mathfrak{o}_{k}$.  We shall see later (Theorem
+\ref{thm:class-group-action-is-simply-transitive}) that every elliptic curve with
+complex multiplication by $\mathfrak{o}_{k}$ is isomorphic to one which is obtained
+from a fractional ideal of $k$.
 
 \begin{thm}
   \label{thm:cm-curves-from-frac-ideals}
@@ -99,7 +147,7 @@ TODO: intro.
   Consider the endomorphism ring of the elliptic curve $E_{\mathfrak{a}}$:
   \begin{equation*}
     End(E_{\mathfrak{a}}) \cong \{ \alpha \in \mathbb{C} \colon \alpha\mathfrak{a}
-    \subset \mathfrak{a}\} \quad \text{(by Proposition \ref{prop:complex-isogenies})}.
+    \subset \mathfrak{a}\}
   \end{equation*}
   Now, since $\mathfrak{a} \subset k$, any such $\alpha$ must be an element of $k$.
   But $\mathfrak{a}$ is a finitely generated $\mathfrak{o}_{k}$-submodule of $k$, so
@@ -194,7 +242,9 @@ where $\mathfrak{a}$ and $\mathfrak{b}$ represent any non-trivial ideal classes 
 $Cl(k)$.
 \begin{rem}
   \label{rem:convention-on-group-action}
-  We choose $\mathfrak{a}^{-1}$ by convention. TODO: more on this.
+  We choose $\mathfrak{a}^{-1}$ in the definition of the action out of respect for
+  convention.  The use of the inverse makes things easier in the deeper theory of
+  complex multiplication (which we will not quite reach).
 \end{rem}
 
 \begin{lem}
@@ -205,7 +255,31 @@ $Cl(k)$.
   quadratic imaginary field, equal to $k$.
 \end{lem}
 \begin{proof}
-  TODO: this.
+  Let $\tau = \frac{\omega_{1}}{\omega_{2}}$.  In particular $\tau$ is non-real, by
+  definition of $\Lambda$.  We may assume that $\Lambda = \mathbb{Z} +
+  \mathbb{Z}\tau$, since homothetic lattices give rise to isomorphic curves.  Let $R
+  = \{\alpha \in \mathbb{C} : \alpha \Lambda \subset \Lambda \} \cong
+  End(E_{\Lambda}) \}$.  Then, since both $1$ and $\tau$ belong to $\Lambda$, there
+  exist rational integers $a$, $b$, $c$ and $d$ such that
+  \begin{equation*}
+    \alpha = a + b\tau \quad \text{and} \quad \alpha \tau = c + d \tau,
+  \end{equation*}
+  for any $\alpha$ in $R$ (so $R \subset \Lambda)$.  Re-arranging the above equations
+  yields
+  \begin{equation*}
+    b\tau^{2} + a\tau = \alpha\tau = c + d\tau,
+  \end{equation*}
+  so that $\tau$ is a non-real root of an integral quadratic equation, and hence the
+  field $\mathbb{Q}(\tau) = \mathbb{Q}(\frac{\omega_{1}}{\omega_{2}})$ is quadratic
+  imaginary.  Similary, we have
+  \begin{equation*}
+    (\alpha - a)(\alpha - d) = (\alpha - d)b\tau = bc,
+  \end{equation*}
+  so every $\alpha$ in $R \subset \mathbb{Q}(\tau)$ is a root of a monic integral
+  quadratic equation, and hence is an integer in $\mathbb{Q}(\tau)$.  This shows that
+  $R \otimes \mathbb{Q} = \mathbb{Q}(\tau)$.  On the other hand, we have $R \cong
+  End(E)$ so $R \otimes \mathbb{Q} = k$.  Hence
+  $\mathbb{Q}(\frac{\omega_{1}}{\omega_{2}}) = k$, as required.
 \end{proof}
 
 \begin{thm}
@@ -234,33 +308,34 @@ $Cl(k)$.
   \Lambda_{1} \}$ we see that there is a homomorphism $\mathfrak{o}_{k} \rightarrow
   End(\mathfrak{a}_{1})$ determined by the following diagram:
   \begin{equation*}
-  \xymatrix{
-    \mathfrak{o}_{k} \ar[rd] \ar[r] & E \ar[d]^{f}\\
-    &End(\mathfrak{a}_{1})
-  }
-\end{equation*}
-where $f(\alpha)$ is the endomorphism of $\mathfrak{a}_{1}$ given by
-\begin{equation*}
-  f(\alpha)(x) = \alpha \cdot x.
-\end{equation*}
-Thus $\mathfrak{a}_{1}$ is a finitely-generated $\mathfrak{o}_{k}$-module, and is
-hence a fractional ideal of $k$.  Similarly, choosing a non-zero element
-$\lambda_{2}$ of $\Lambda_{2}$ gives a fractional ideal $\mathfrak{a}_{2} =
-\frac{1}{\lambda_{2}}$ of $k$.  We have
-\begin{equation*}
-  \frac{\lambda_{2}}{\lambda_{1}}\mathfrak{a}_{2}\mathfrak{a}_{1}^{-1}\Lambda_{1} = \Lambda_{2},
-\end{equation*}
-so that
-\begin{equation*}
-  E_{\Lambda_{1}}^{\mathfrak{a}_{2}^{-1}\mathfrak{a}_{1}} =
-  E_{\mathfrak{a}_{2}\mathfrak{a}_{1}^{-1}\Lambda_{1}} = E_{\frac{\lambda_{1}}{\lambda_{2}}\Lambda_{2}},
-\end{equation*}
-and $E_{\frac{\lambda_{1}}{\lambda_{2}}\Lambda_{2}}$ is isomorphic to
-$E_{\Lambda_{2}}$ by Corollary \ref{cor:homothetic-lattices-give-isomorphic-curves}.
-Thus $Cl(k)$ acts transitively on $Ell(\mathfrak{o}_{k})$.  It remains to prove that
-the action is simply transitive, i.e. if $E_{\Lambda}^{\mathfrak{a}} =
-E_{\Lambda}^{\mathfrak{b}}$ then $\mathfrak{a} = \mathfrak{b}$ in $Cl(k)$.  TODO:
-finish this.
+    \xymatrix{
+      \mathfrak{o}_{k} \ar[rd] \ar[r] & E \ar[d]^{f}\\
+      &End(\mathfrak{a}_{1})
+    }
+  \end{equation*}
+  where $f(\alpha)$ is the endomorphism of $\mathfrak{a}_{1}$ given by
+  \begin{equation*}
+    f(\alpha)(x) = \alpha \cdot x.
+  \end{equation*}
+  Thus $\mathfrak{a}_{1}$ is a finitely-generated $\mathfrak{o}_{k}$-module, and is
+  hence a fractional ideal of $k$.  Similarly, choosing a non-zero element
+  $\lambda_{2}$ of $\Lambda_{2}$ gives a fractional ideal $\mathfrak{a}_{2} =
+  \frac{1}{\lambda_{2}}$ of $k$.  We have
+  \begin{equation*}
+    \frac{\lambda_{2}}{\lambda_{1}}\mathfrak{a}_{2}\mathfrak{a}_{1}^{-1}\Lambda_{1} = \Lambda_{2},
+  \end{equation*}
+  so that
+  \begin{equation*}
+    E_{\Lambda_{1}}^{\mathfrak{a}_{2}^{-1}\mathfrak{a}_{1}} =
+    E_{\mathfrak{a}_{2}\mathfrak{a}_{1}^{-1}\Lambda_{1}} = E_{\frac{\lambda_{1}}{\lambda_{2}}\Lambda_{2}},
+  \end{equation*}
+  and $E_{\frac{\lambda_{1}}{\lambda_{2}}\Lambda_{2}}$ is isomorphic to
+  $E_{\Lambda_{2}}$ by Corollary
+  \ref{cor:homothetic-lattices-give-isomorphic-curves}.  Thus $Cl(k)$ acts
+  transitively on $Ell(\mathfrak{o}_{k})$.  It remains to prove that the action is
+  simply transitive, i.e. if $E_{\Lambda}^{\mathfrak{a}} =
+  E_{\Lambda}^{\mathfrak{b}}$ then $\mathfrak{a} = \mathfrak{b}$ in $Cl(k)$.  So,
+  suppose $E_{\Lambda}^{\mathfrak{a}} = E_{\Lambda}^{\mathfrak{b}}$.  Then 
 \end{proof}
 
 \subsection{The group of $\mathfrak{a}$-torsion points}

@@ -2,49 +2,50 @@
 \section{Elliptic curves over $\mathbb{C}$}
 \label{sec:compl-mult-over-C}
 
-Thus far we have established the general structure of the endomorphism ring of an
-elliptic curve, but we do not yet have a satisfactory way of determining whether a
-given elliptic curve has complex multiplication or not.
-TODO: more intro material.
-
-Our ultimate aim is to develop the theory of elliptic curves over $\mathbb{\bar{Q}}$.
-In Section ? we prove that that any elliptic curve defined over $\mathbb{C}$ with
-complex multiplication is isomorphic to an elliptic curve defined over
-$\mathbb{\bar{Q}}$.  We turn our attention thus to the complex theory; the main
-benefit of which (from our point of view) is that an isogeny of complex elliptic
-curves has a very simple geometric interpretation.  
+Our ultimate aim is to develop the theory of complex multiplication for elliptic
+curves defined over $\mathbb{\bar{Q}}$.  In Section \ref{sec:towards-abel-extens} we
+prove that that any elliptic curve defined over $\mathbb{C}$ with complex
+multiplication is isomorphic to an elliptic curve defined over $\mathbb{\bar{Q}}$.
+We turn our attention thus to the complex theory; the main benefit of which (from our
+point of view) is that an isogeny of complex elliptic curves has a very simple
+geometric interpretation.
 
 \subsection{A brief review of elliptic curves over $\mathbb{C}$}
 \label{sec:review-complex-curves}
 
 
 
-TODO: Reference A Course in Arithmetic.
+The material relating to the lattices and functions considered in this section can be
+found in (\cite{serre73} VII).
 
-Recall that a \emph{lattice} in $\mathbb{C}$ is a subgroup of $\mathbb{C}$ of
+Recall that a \emph{lattice} in $\mathbb{C}$ is a subgroup $\Lambda$ of $\mathbb{C}$ of
 $\mathbb{Z}$-rank $2$, with a $\mathbb{Z}$-basis $(\omega_{1},\omega_{2})$ which
-spans $\mathbb{C}$ over $\mathbb{R}$.  
+spans $\mathbb{C}$ over $\mathbb{R}$.  The following lemma will not be used until
+later, but is convenient to prove here.
 
 \begin{lem}
   \label{lem:latice-iff-discrete}
-  A subgroup $H$ of $\mathbb{C}$ is a lattice if and only if it is a discrete
-  subgroup of $\mathbb{C}$.
+  A subgroup $\Lambda$ of $\mathbb{C}$ is a lattice if and only if it is a discrete
+  subgroup of $\mathbb{C}$, which spans $\mathbb{C}$ over $\mathbb{R}$.
 \end{lem}
 \begin{proof}
   Todo: This.
 \end{proof}
 
-Let $\Lambda$ be a lattice in $\mathbb{C}$.
-Recall the Weierstrass $\wp$-function:
+Let $\Lambda$ be a lattice in $\mathbb{C}$.  Recall the Weierstrass $\wp$-function:
 \begin{equation*}
   \wp(z,\Lambda)\footnote{We will usually supress the $\Lambda$ and simply write $\wp(z)$} = \frac{1}{z^{2}} + \sum_{\omega \in \Lambda - 0}
-  \frac{1}{(z-\omega)^{2}} - \frac{1}{\omega^{2}}.
+  \frac{1}{(z-\omega)^{2}} - \frac{1}{\omega^{2}},
+\end{equation*}
+and its derivative
+\begin{equation*}
+  \wp^{\prime}(z,\Lambda) = -2 \sum_{\omega \in \Lambda}\frac{1}{(z - \omega)^{3}}.
 \end{equation*}
 The $\wp$-function is doubly-periodic, and thus descends to a well-defined function
 on the torus $\mathbb{C} / \Lambda$.  Recall also the Eisenstein series for $\Lambda$
 of weight $2k$:
 \begin{equation*}
-  G_{2k}(\Lambda) = \sum_{\omega \in \Lambda - 0} \frac{1}{\omega^{2}}.
+  G_{2k}(\Lambda) = \sum_{\omega \in \Lambda - 0} \frac{1}{\omega^{2k}}.
 \end{equation*}
 There is a relation of algebraic dependence between $\wp$ and its derivative, given
 by:
@@ -84,9 +85,10 @@ Let $\Lambda_{1}$ and $\Lambda_{2}$ be lattices in $\mathbb{C}$. Suppose $\alpha
 \mathbb{C}$ is such that $\alpha\Lambda_{1} \subset \Lambda_{2}$.  Then $\alpha$
 defines a map $\phi_{\alpha} \colon \mathbb{C}/\Lambda_{1} \rightarrow
 \mathbb{C}/\Lambda_{2}$ given by
-\begin{equation*}
+\begin{equation}
+  \label{eq:phi_alpha}
   \phi_{\alpha}(z + \Lambda_{1}) = \alpha z + \Lambda_{2}.
-\end{equation*}
+\end{equation}
 This map is well defined; if $\omega \in \Lambda_{1}$, then
 \begin{equation*}
   \alpha(z + \omega) = \alpha z + \alpha\omega \equiv \alpha z \pmod{\Lambda_{2}}.
@@ -97,46 +99,161 @@ The maps $\phi_{\alpha}$ are clearly holomorphic group homomorphisms.
   \label{prop:complex-isogenies}
   Let $\Lambda_{1}$ and $\Lambda_{2}$ be lattices in $\mathbb{C}$ and let
   $E_{\Lambda_{1}}$ and $E_{\Lambda_{2}}$ be the corresponding elliptic curves given
-  by \eqref{eq:complex-eqn-for-ec}.  Then
-  $Hom(E_{\Lambda_{1}},E_{\Lambda_{2}})$ is isomorphic to $\{\alpha \in \mathbb{C}
-  \colon \alpha\Lambda_{1} \subset \Lambda_{2}\}$.
+  by \eqref{eq:complex-eqn-for-ec}.  Then $Hom(E_{\Lambda_{1}},E_{\Lambda_{2}})$ is
+  isomorphic to $\{\alpha \in \mathbb{C} \colon \alpha\Lambda_{1} \subset
+  \Lambda_{2}\}$.
 \end{prop}
 \begin{proof}
-  
-\end{proof}
+  We give a sketch of the proof, describing the maps involved. See
+  (\cite{silverman86} VI, Thm 4.1) for the full proof.
 
-\begin{cor}
-  \label{cor:homothetic-lattices-give-isomorphic-curves}
-  Let $\Lambda_{1}$ and $\Lambda_{2}$ be as above.  Then the curves $E_{\Lambda_{1}}$
-  and $E_{\Lambda_{2}}$ are isomorphic if and only if $\Lambda_{1}$ is homothetic to $\Lambda_{2}$.
-\end{cor}
+  Let $Holom(\Lambda_{1},\Lambda_{2})$ denote the set of holomorphic maps $\phi :
+  \mathbb{C} / \Lambda_{1} \rightarrow \mathbb{C} / \Lambda_{2}$ with $\phi (0) = 0$.
+  The idea is to show that there are bijections between the following two pairs of
+  sets:
+  \begin{enumerate}[(i)]
+  \item $\{ \alpha \in \mathbb{C} : \alpha \Lambda_{1} \subset \Lambda_{2} \}
+    \rightarrow Holom(\Lambda_{1},\Lambda_{2})$,
+  \item $\{ \text{isogenies } E_{\Lambda_{1}} \rightarrow E_{\Lambda_{2}} \}
+    \rightarrow Holom(\Lambda_{1},\Lambda_{2})$,
+     
+   \end{enumerate}
+   where the map in (i) is given by $\alpha \rightarrow \phi_{a}$ (where
+   $\phi_{\alpha}$ is given by \eqref{eq:phi_alpha}), and the map in (ii) is natural
+   inclusion.
 
-From the general theory of elliptic curves we know that for any non-zero $d$ in an
-arbitrary field $k$ there exists an elliptic curve $E$ with discriminant $d$.  When
-$k$ is the field of complex numbers there is a much stronger result, known as the
-\emph{uniformisation thorem}, which states:
+   We have already seen that $\phi_{\alpha}$ is in $Holom(\Lambda_{1},\Lambda_{2})$,
+   so the mapping in (i) is well defined. The discreteness of $\Lambda_{2}$ shows
+   that the mapping is injective. Conversely, any $\phi$ in
+   $Holom(\Lambda_{1},\Lambda_{2})$ lifts to a holomorphic map $\Phi : \mathbb{C}
+   \rightarrow \mathbb{C}$ with $\Phi (0) = 0$ such that the following diagram
+   commutes:
+   \begin{equation*}
+     \xymatrix{
+       \mathbb{C} \ar[d] \ar[r]^{\Phi} & \mathbb{C}  \ar[d]\\
+       \mathbb{C} / \Lambda_{1} \ar[r]^{\phi }& \mathbb{C} / \Lambda_{2}
+     }.     
+   \end{equation*}
+   It turns out that $\Phi (\Lambda_{1}) \subset \Lambda_{2}$ and that the derivative
+   $\Phi^{\prime}$ of $\Phi$ is a holomorphic elliptic function and is thus constant.
+   Thus $\Phi (z) = \alpha z + \beta$, and $\Phi (0) = 0$ shows that $\beta = 0$.
+   Therefore $\phi (z) = \alpha z$ for some non-zero $\alpha$ such that $\alpha
+   \Lambda_{1} \subset \Lambda_{2}$, so $\phi = \phi_{\alpha}$, showing the mapping
+   in (i) is surjective.
 
-\begin{thm}
-  \label{thm:uniformisation-theorem}
-  Let $A$ and $B$ be complex numbers which satisfy
-  \begin{equation*}
-    A^{3} - 27B^{2} \neq 0.
-  \end{equation*}
-  Then there exists a unique lattice $\Lambda \subset \mathbb{C}$ such that
-  \begin{equation*}
-    g_{2}(\Lambda) = A \text{\quad and \quad} g_{3}(\Lambda) = B.
-  \end{equation*}
-\end{thm}
-\begin{proof}
-  TODO: Reference Shimura.
-\end{proof}
+   Now consider the mapping in (ii).  Since an isogeny $\phi : E_{\Lambda_{1}}
+   \rightarrow E_{\Lambda_{2}}$ is everywhere locally defined, it defines unique a
+   holomorphic map of Riemann surfaces $\mathbb{C} / \Lambda_{1} \rightarrow
+   \mathbb{C} / \Lambda_{2}$.  Conversely any holomorphic map $\phi : \mathbb{C} /
+   \Lambda_{1} \rightarrow \mathbb{C} / \Lambda_{2}$ is given by $\phi_{\alpha}$ for
+   some non-zero $\alpha$ satisfying $\alpha \Lambda_{1} \subset \Lambda_{2}$, and so
+   defines a map $E_{\Lambda_{1}} \rightarrow E_{\Lambda_{2}}$ by
+   \begin{equation*}
+     (\wp (z,\Lambda_{1}), \wp^{\prime}(z,\Lambda_{1})) \rightarrow (\wp (\alpha z,
+     \Lambda_{2}), \wp^{\prime} (\alpha z , \Lambda_{2})).
+   \end{equation*}
+   Since $\alpha \Lambda_{1} \subset \Lambda_{2}$ it follows that both $\wp (\alpha
+   z, \Lambda_{2})$ and its derivative are both elliptic functions of $\Lambda_{1}$,
+   and every such function can be expressed as a rational function in $\wp (z,
+   \Lambda_{1})$ and $\wp^{\prime} (z, \Lambda_{1})$, which shows that $\phi$ is an
+   isogeny.
+ \end{proof}
 
-An obvious consequence of the uniformisation is the following corollary:
+ Recall that we say two lattices $\Lambda_{1}$ and $\Lambda_{2}$ are
+ \emph{homothetic} if there exists a non-zero $\alpha$ in $\mathbb{C}$ such that
+ $\Lambda_{2} = \alpha \Lambda_{1}$.
 
-\begin{cor}
-  \label{cor:uniformisation-corollary}
-  Let $E$ be an elliptic curve over $\mathbb{C}$.
-\end{cor}
+ \begin{cor}
+   \label{cor:homothetic-lattices-give-isomorphic-curves}
+   Let $\Lambda_{1}$ and $\Lambda_{2}$ be as above.  Then the curves
+   $E_{\Lambda_{1}}$ and $E_{\Lambda_{2}}$ are isomorphic if and only if
+   $\Lambda_{1}$ is homothetic to $\Lambda_{2}$.
+ \end{cor}
+
+ \begin{proof}
+   If $E_{1} \cong E_{2}$ then there exist isognies $\phi_{1} : E_{1} \rightarrow
+   E_{2}$ and $\phi_{2} : E_{2} \rightarrow E_{1}$ which satisfy
+   \begin{equation*}
+     \phi_{2} \circ \phi_{1} = id_{E_{1}} \quad \text{and} \quad \phi_{1} \circ
+     \phi_{2} = id_{E_{2}}.
+   \end{equation*}
+   Let $\alpha$ and $\beta$ be non-zero elements of $\mathbb{C}$ such that $\alpha
+   \Lambda_{1} \subset \Lambda_{2}$ and $\beta \Lambda_{2} \subset \lambda_{1}$, and
+   $\phi_{1}$ and $\phi_{2}$ correspond (as in the proof of Proposition
+   \ref{prop:complex-isogenies}) to the holomorphic functions $\phi_{\alpha}$ and
+   $\phi_{\beta}$ respectively.  Since $\phi_{1}$ and $\phi_{2}$ compose to the
+   identity we must have $\beta = \alpha^{-1}$, so that
+   \begin{equation*}
+     \alpha \Lambda_{1} \subset \Lambda_{2} \subset \alpha \Lambda_{1}.
+   \end{equation*}
+   So $\Lambda_{2} = \alpha \Lambda_{1}$ as required.  Conversely, if $\Lambda_{1}$
+   and $\Lambda_{2}$ are homothetic then $\Lambda_{2} = \alpha \Lambda_{1}$ for some
+   non-zero $\alpha$.  Then the map $\phi_{\alpha} : \mathbb{C} / \Lambda_{1}
+   \rightarrow \mathbb{C} / \alpha \Lambda_{1}$ is clearly a bijection with a
+   holomorphic inverse, so $E_{\Lambda_{1}}$ and $E_{\Lambda_{2}}$ are isomorphic by
+   the commutativity of the following diagram:
+   \begin{equation*}
+     \xymatrix{
+       \mathbb{C} / \Lambda_{1} \ar[d] \ar[r]^{\Phi} & \mathbb{C} / \alpha \Lambda_{1} \ar[d]\\
+       E_{\Lambda_{1}} \ar[r]^{\phi }& E_{\Lambda_{2}}
+     },
+   \end{equation*}
+   thus completing the proof.
+ \end{proof}
+
+ The next result is known as the \emph{Uniformisation theorem}.  It is useful in that
+ it parametrises every elliptic curve over $\mathbb{C}$
+
+ \begin{thm}
+   \label{thm:uniformisation-theorem}
+   Let $A$ and $B$ be complex numbers which satisfy
+   \begin{equation*}
+     A^{3} - 27B^{2} \neq 0.
+   \end{equation*}
+   Then there exists a unique lattice $\Lambda \subset \mathbb{C}$ such that
+   \begin{equation*}
+     g_{2}(\Lambda) = A \quad \text{and} \quad g_{3}(\Lambda) = B.
+   \end{equation*}
+ \end{thm}
+ \begin{proof}
+   TODO: Reference Shimura.
+ \end{proof}
+
+ An obvious consequence of the uniformisation is the following corollary:
+
+ \begin{cor}
+   \label{cor:uniformisation-corollary}
+   Let $E$ be an elliptic curve over $\mathbb{C}$.  Then there exists a lattice
+   $\Lambda$ in $\mathbb{C}$ such that $E \cong E_{\Lambda}$, where $E_{\Lambda}$ is
+   given by \eqref{eq:complex-eqn-for-ec}.
+ \end{cor}
+ \begin{proof}
+   Suppose $E$ is given by the equation
+   \begin{equation*}
+     y^{2} = 4x^{3} + Ax + B.
+   \end{equation*}
+   Then, since $E$ is non-singular, its discriminant $A^{3} - 27B^{2}$ is non-zero.
+   Now by Uniformisation there exists a lattice $\Lambda$ such that
+   \begin{equation*}
+     g_{2}(\Lambda) = A \quad \text{and} \quad g_{3}(\Lambda) = B,
+   \end{equation*}
+   so that the $j$-invariant $j(E_{\Lambda})$ of theelliptic curve $E_{\Lambda}$ is
+   given by
+   \begin{align*}
+     j(E_{\Lambda})&= 1728 \cdot \frac{g_{2}^{3}(\Lambda)}{\Delta(E_{\Lambda})}\\
+     &=1728 \cdot \frac{A^{3}}{A^{3} - 27B^{2}}\\
+     &=j(E),
+   \end{align*}
+   so $E \cong E_{\Lambda}$ as required.
+ \end{proof}
+
+ When $E$ is an elliptic curve over $\mathbb{C}$, Proposition
+ \ref{prop:complex-isogenies} together with Uniformisation imply that
+ \begin{equation}
+   \label{eq:End(E)-in-complex}
+   End(E) \cong \{a \in \mathbb{C} : \alpha \Lambda \subset \Lambda \}
+ \end{equation}
+ for some unique lattice $\Lambda$ in $\mathbb{C}$.
 
 %%% Local Variables: 
 %%% mode: latex

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  3 SEP 2009 12:48
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  7 SEP 2009 16:00
 entering extended mode
  %&-line parsing enabled.
 **&latex prv_main.ini \nonstopmode\nofiles\PassOptionsToPackage{active,tightpag
@@ -18,14 +18,34 @@ n, swedish, ukenglish, pinyin, loaded.
 (/usr/share/texmf-texlive/tex/latex/tools/.tex File ignored))
 No auxiliary output files.
 
-(./main.tex (/usr/share/texmf-texlive/tex/latex/amscls/amsart.cls
-Document Class: amsart 2004/08/06 v2.20
-\linespacing=\dimen102
-\normalparindent=\dimen103
-\normaltopskip=\skip41
+(./main.tex (/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip42
+\@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
@@ -33,93 +53,69 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks14
-\ex@=\dimen104
+\@emptytoks=\toks15
+\ex@=\dimen103
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen105
+\pmbraise@=\dimen104
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count79
+\inf@bad=\count87
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count80
-\leftroot@=\count81
+\uproot@=\count88
+\leftroot@=\count89
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count82
-\DOTSCASE@=\count83
+\classnum@=\count90
+\DOTSCASE@=\count91
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen106
+\big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count84
-\c@MaxMatrixCols=\count85
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
-\c@parentequation=\count86
-\dspbrk@lvl=\count87
-\tag@help=\toks15
-\row@=\count88
-\column@=\count89
-\maxfields@=\count90
-\andhelp@=\toks16
-\eqnshift@=\dimen107
-\alignsep@=\dimen108
-\tagshift@=\dimen109
-\tagwidth@=\dimen110
-\totwidth@=\dimen111
-\lineht@=\dimen112
-\@envbody=\toks17
-\multlinegap=\skip43
-\multlinetaggap=\skip44
-\mathdisplay@stack=\toks18
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 407.
-
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2002/01/19 v2.2g AMS font definitions
-)
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2001/10/25 v2.2f
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
-)
-\copyins=\insert233
-\abstractbox=\box28
-\listisep=\skip45
-\c@part=\count91
-\c@section=\count92
-\c@subsection=\count93
-\c@subsubsection=\count94
-\c@paragraph=\count95
-\c@subparagraph=\count96
-\c@figure=\count97
-\c@table=\count98
-\abovecaptionskip=\skip46
-\belowcaptionskip=\skip47
-\captionindent=\dimen113
-\thm@style=\toks19
-\thm@bodyfont=\toks20
-\thm@headfont=\toks21
-\thm@notefont=\toks22
-\thm@headpunct=\toks23
-\thm@preskip=\skip48
-\thm@postskip=\skip49
-\thm@headsep=\skip50
-\dth@everypar=\toks24
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks25
 )
 (/usr/share/texmf-texlive/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks25
+\@enLab=\toks26
 )
 (/usr/share/texmf-texlive/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -135,51 +131,51 @@ docmode, (/usr/share/texmf-texlive/tex/generic/xypic/xyrecat.tex)
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen114
-\Y@c=\dimen115
-\U@c=\dimen116
-\D@c=\dimen117
-\L@c=\dimen118
-\R@c=\dimen119
-\Edge@c=\toks26
-\X@p=\dimen120
-\Y@p=\dimen121
-\U@p=\dimen122
-\D@p=\dimen123
-\L@p=\dimen124
-\R@p=\dimen125
-\Edge@p=\toks27
-\X@origin=\dimen126
-\Y@origin=\dimen127
-\X@xbase=\dimen128
-\Y@xbase=\dimen129
-\X@ybase=\dimen130
-\Y@ybase=\dimen131
-\X@min=\dimen132
-\Y@min=\dimen133
-\X@max=\dimen134
-\Y@max=\dimen135
-\lastobjectbox@=\box29
-\zerodotbox@=\box30
-\almostz@=\dimen136
+\X@c=\dimen112
+\Y@c=\dimen113
+\U@c=\dimen114
+\D@c=\dimen115
+\L@c=\dimen116
+\R@c=\dimen117
+\Edge@c=\toks27
+\X@p=\dimen118
+\Y@p=\dimen119
+\U@p=\dimen120
+\D@p=\dimen121
+\L@p=\dimen122
+\R@p=\dimen123
+\Edge@p=\toks28
+\X@origin=\dimen124
+\Y@origin=\dimen125
+\X@xbase=\dimen126
+\Y@xbase=\dimen127
+\X@ybase=\dimen128
+\Y@ybase=\dimen129
+\X@min=\dimen130
+\Y@min=\dimen131
+\X@max=\dimen132
+\Y@max=\dimen133
+\lastobjectbox@=\box28
+\zerodotbox@=\box29
+\almostz@=\dimen134
  direction,
-\d@X=\dimen137
-\d@Y=\dimen138
+\d@X=\dimen135
+\d@Y=\dimen136
 \K@=\count99
 \KK@=\count100
 \Direction=\count101
-\K@dXdY=\dimen139
-\K@dYdX=\dimen140
+\K@dXdY=\dimen137
+\K@dYdX=\dimen138
 \xyread@=\read1
 \xywrite@=\write3
 \csp@=\count102
-\quotPTK@=\dimen141
+\quotPTK@=\dimen139
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks28
-\connectobjectbox@@=\box31
+\swaptoks@@=\toks29
+\connectobjectbox@@=\box30
  objects,
-\styletoks@=\toks29
+\styletoks@=\toks30
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
@@ -194,20 +190,20 @@ Package: xy 1999/02/16 Xy-pic version 3.7
 (/usr/share/texmf-texlive/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.7 curve,
 \crv@cnt@=\count103
-\crvpts@=\toks30
-\splinebox@=\box32
-\splineval@=\dimen142
-\splinedepth@=\dimen143
-\splinetol@=\dimen144
-\splinelength@=\dimen145
+\crvpts@=\toks31
+\splinebox@=\box31
+\splineval@=\dimen140
+\splinedepth@=\dimen141
+\splinetol@=\dimen142
+\splinelength@=\dimen143
  circles,
-\L@=\dimen146
+\L@=\dimen144
  loaded)
 (/usr/share/texmf-texlive/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.7 loaded)
 (/usr/share/texmf-texlive/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.6
-\xylinethick@=\dimen147
+\xylinethick@=\dimen145
  loaded)
 (/usr/share/texmf-texlive/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.3 loaded)
@@ -217,8 +213,8 @@ Package: xy 1999/02/16 Xy-pic version 3.7
  Xy-pic option: Matrix feature v.3.4
 \Row=\count104
 \Col=\count105
-\queue@=\toks31
-\queue@@=\toks32
+\queue@=\toks32
+\queue@@=\toks33
 \qcount@=\count106
 \qcount@@=\count107
 \matrixsize@=\count108
@@ -249,10 +245,10 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 20.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) )
 Beginning to dump on file prv_main.fmt
- (format=prv_main 2009.9.3)
-9561 strings of total length 127467
-126270 memory locations dumped; current usage is 225&125419
-6740 multiletter control sequences
+ (format=prv_main 2009.9.7)
+9172 strings of total length 123512
+122161 memory locations dumped; current usage is 273&121264
+6506 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/10=cmex10
 \font\tenln=line10
@@ -286,15 +282,15 @@ Beginning to dump on file prv_main.fmt
 \font\U/rsfs/m/n/10=rsfs10
 \font\U/rsfs/m/n/7=rsfs7
 \font\U/rsfs/m/n/5=rsfs5
-\font\OT1/cmr/m/n/10.95=cmr10 at 10.95pt
+\font\OT1/cmr/m/n/12=cmr12
 \font\OT1/cmr/m/n/8=cmr8
 \font\OT1/cmr/bx/n/10=cmbx10
 \font\OT1/cmr/bx/it/10=cmbxti10
 \font\OT1/cmr/m/it/10=cmti10
 \font\OT1/cmtt/m/n/10=cmtt10
 \font\OT1/cmss/m/n/10=cmss10
-9055 words of font info for 39 preloaded fonts
-806 hyphenation exceptions
+9053 words of font info for 39 preloaded fonts
+645 hyphenation exceptions
 Hyphenation trie of length 172481 has 4897 ops out of 35111
   2 for language 47
   224 for language 46
