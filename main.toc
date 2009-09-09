@@ -5,15 +5,15 @@
 \contentsline {subsection}{\numberline {2.3}Dual isogenies}{6}
 \contentsline {subsection}{\numberline {2.4}The Tate module}{8}
 \contentsline {subsection}{\numberline {2.5}The action of $Gal(\mathaccentV {bar}016{k} / k)$ on $E[m]$}{9}
-\contentsline {subsection}{\numberline {2.6}The structure of $End(E)$ in characteristic zero}{9}
-\contentsline {section}{\numberline {3}Elliptic curves over $\mathbb {C}$}{11}
-\contentsline {subsection}{\numberline {3.1}A brief review of elliptic curves over $\mathbb {C}$}{11}
-\contentsline {subsection}{\numberline {3.2}Endomorphisms}{12}
-\contentsline {section}{\numberline {4}Complex multiplication - basic results}{15}
-\contentsline {subsection}{\numberline {4.1}Fractional ideals}{16}
-\contentsline {subsection}{\numberline {4.2}Constructing elliptic curves with complex multiplication by $\mathfrak {o}_{k}$}{17}
-\contentsline {subsection}{\numberline {4.3}The group of $\mathfrak {a}$-torsion points}{20}
-\contentsline {section}{\numberline {5}Complex multiplication over algebraic extensions of $\mathbb {Q}$}{21}
-\contentsline {subsection}{\numberline {5.1}Rationality properties}{21}
-\contentsline {subsection}{\numberline {5.2}Towards abelian extensions of quadratic imaginary fields}{22}
-\contentsline {section}{\numberline {6}Abelian extensions of $\mathbb {Q}(i)$}{24}
+\contentsline {subsection}{\numberline {2.6}The structure of $End(E)$ in characteristic zero}{10}
+\contentsline {section}{\numberline {3}Elliptic curves over $\mathbb {C}$}{12}
+\contentsline {subsection}{\numberline {3.1}A brief review of elliptic curves over $\mathbb {C}$}{12}
+\contentsline {subsection}{\numberline {3.2}Endomorphisms}{13}
+\contentsline {section}{\numberline {4}Complex multiplication - basic results}{17}
+\contentsline {subsection}{\numberline {4.1}Fractional ideals}{18}
+\contentsline {subsection}{\numberline {4.2}Constructing elliptic curves with complex multiplication by $\mathfrak {o}_{k}$}{19}
+\contentsline {subsection}{\numberline {4.3}The group of $\mathfrak {a}$-torsion points}{22}
+\contentsline {section}{\numberline {5}Complex multiplication over algebraic extensions of $\mathbb {Q}$}{23}
+\contentsline {subsection}{\numberline {5.1}Rationality properties}{23}
+\contentsline {subsection}{\numberline {5.2}Towards abelian extensions of quadratic imaginary fields}{24}
+\contentsline {section}{\numberline {6}Abelian extensions of $\mathbb {Q}(i)$}{26}

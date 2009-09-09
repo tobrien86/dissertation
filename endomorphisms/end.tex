@@ -14,13 +14,13 @@ which satisfies
 \begin{equation*}
   \phi \left( \mathcal{O} \right) = \mathcal{O},
 \end{equation*}
-where $\mathcal{O}$ is the neutral element of $E$.
-Any isogeny is automatically a group homomorphism (\cite{silverman86} III, \S 4, Thm
-4.8), and we denote by $Hom(E_{1},E_{2})$ the group of all isogenies $\phi : E_{1}
-\rightarrow E_{2}$.  Any non-zero isogeny is surjective (\cite{shafarevich94} I, \S 5.3,
-Thm 4).  Therefore, an isogeny $\phi \colon E_{1} \rightarrow E_{2}$ induces an
-injective homomorphism of function fields $\phi^{*} \colon \bar{k}\left(E_{2}\right)
-\rightarrow \bar{k}\left(E_{1}\right)$ given by
+where $\mathcal{O}$ is the neutral element of $E$.  Any isogeny is automatically a
+group homomorphism (\cite{silverman86} III, \S 4, Thm 4.8), and we denote by
+$Hom(E_{1},E_{2})$ the group of all isogenies $\phi : E_{1} \rightarrow E_{2}$.  Any
+non-zero isogeny is surjective (\cite{shafarevich94} I, \S 5.3, Thm 4).  Therefore,
+an isogeny $\phi \colon E_{1} \rightarrow E_{2}$ induces an injective homomorphism of
+function fields $\phi^{*} \colon \bar{k}\left(E_{2}\right) \rightarrow
+\bar{k}\left(E_{1}\right)$ given by
 \begin{equation*}
   \phi^{*}\left(f\right) = f \circ \phi.
 \end{equation*}
@@ -34,17 +34,14 @@ isogenies of elliptic curves, then $\phi_{2} \circ \phi_{1}$ is an isogeny, and
   \label{eq:degree-of-composition}
   deg \left( \phi_{2} \circ \phi_{1} \right) = deg \left( \phi_{2} \right) deg \left( \phi_{1} \right),
 \end{equation}
-by the tower law for field extensions.
-We say $\phi$ is \emph{separable}, \emph{inseparable} or \emph{purely inseparable}
-according to the extension.  In particular, when $k$ is of characteristic zero every
-isogeny $\phi$ is separable.
-
-TODO: write something about finiteness of kernels.
+by the tower law for field extensions.  We say $\phi$ is \emph{separable},
+\emph{inseparable} or \emph{purely inseparable} according to the extension.  In
+particular, when $k$ is of characteristic zero every isogeny $\phi$ is separable.
 
 \begin{prop}
   \label{prop:deg-phi-equals-sizeof-kernel}
-  Let $E_{1}$ and $E_{2}$ be elliptic curves over a field $k$ of characteristic
-  $zero$ and suppose there exists an isogeny $\phi : E_{1} \rightarrow E_{2}$.  Then
+  Let $E_{1}$ and $E_{2}$ be elliptic curves over a field $k$ such that there exists
+  an isogeny $\phi : E_{1} \rightarrow E_{2}$.  Then $\# \ker{\phi}$ is finite, and
   \begin{equation*}
     deg(\phi) = \# \ker{\phi}.
   \end{equation*}
@@ -62,7 +59,6 @@ and composition of morphisms, and is known as the \emph{endomorphism ring} of $E
 
 We will show that the endomorphism ring of an elliptic curve has a very particular
 structure.  The following example allows us to determine some basic properties.
-TODO: SHOW IT IS COMMUTATIVE!!
 
 \begin{example}
   \label{ex:mult-by-m}
@@ -285,12 +281,12 @@ Some basic properties are given in the following lemma:
 
 \begin{proof}
   To prove (i) we proceed by induction.  It is obvious that $\widehat{[0]} = [0]$ and
-  $\widehat{[1]} = [1]$.  Now let $m$ be an arbitrary integer (for simplicity, suppose
-  $m$ is positive; the proof is hardly changed otherwise). Then
+  $\widehat{[1]} = [1]$.  Now let $m$ be an arbitrary integer (for simplicity,
+  suppose $m$ is positive; the proof is hardly changed otherwise). Then
   \begin{eqnarray*}
     \widehat{[m]}&=&\widehat{[(m-1) + 1]}\\
     &=&\widehat{[m-1]} + \widehat{[1]} \quad \text{(by Lemma
-                                 \ref{lem:properties-of-dual-isogenies} (i)) }\\
+      \ref{lem:properties-of-dual-isogenies} (i)) }\\
     &=&[m-1] + [1] \quad \text{(by the inductive hypothesis)}\\
     &=&[m],
   \end{eqnarray*}
@@ -299,7 +295,7 @@ Some basic properties are given in the following lemma:
   Now let $d = deg([m])$.  Then, by Lemma \ref{lem:properties-of-dual-isogenies} (i)
   we have
   \begin{equation*}
-    [d] = [m] \circ \widehat([m]) = [m] \circ [m] = [m^{2}],
+    [d] = [m] \circ \widehat{([m])} = [m] \circ [m] = [m^{2}],
   \end{equation*}
   and since $End(E)$ is torsion-free we must have $d = m^{2}$ as required.
 \end{proof}
@@ -312,11 +308,23 @@ Some basic properties are given in the following lemma:
   \end{equation*}
 \end{cor}
 \begin{proof}
-  By Proposition \ref{prop:deg-phi-equals-sizeof-kernel} we have
+  We proceed by induction.  For $m = 1$ and $m = 2$ the result is clear.  So suppose $m > 2$.  By
+  Proposition \ref{prop:deg-phi-equals-sizeof-kernel} we have
   \begin{equation*}
     \# E[d] = deg([d]) = d^{2},
   \end{equation*}
-  for every integer $d$ dividing $m$ (including $m$).
+  for every integer $d$ dividing $m$.  Now recall that a finite abelian group $G$ of
+  order $g$ is isomorphic to the direct product of its $p$-primary components
+  $G_{p}$, where
+  \begin{equation*}
+    G_{p} = \{ s \in G : s \text{ has } p \text{-power order} \},
+  \end{equation*}
+  for each prime $p$ dividing $g$.  If $G = E[m]$ then its $p$-primary components are
+  precisely the subgroups $E[p_{i}^{e_{i}}]$, where $m = p_{1}^{e_{1}} \ldots
+  p_{r}^{e_{r}}$ is the prime factorisation of $m$.  In particular, each of the
+  $E[p_{i}^{e_{i}}]$ is (by the inductive hypothesis) isomorphic to $\mathbb{Z} /
+  p_{i}^{e_{i}} \mathbb{Z} \times \mathbb{Z} / p_{i}^{e_{i}} \mathbb{Z}$.  This
+  completes the proof.
 \end{proof}
 
 \subsection{The Tate module}
@@ -343,7 +351,7 @@ $\mathbb{Z}_{\ell}$-module.  Furthermore, since $E[\ell^{n}] \cong
 
 Let $\phi$ be an endomorphism of $E$.  Note that if $P$ is a point in $E[m]$ then
 \begin{eqnarray*}
-  [m] \circ \phi (P)&=&\phi (P) + \ldots \phi (P)\\
+  [m] \circ \phi (P)&=&\phi (P) + \ldots + \phi (P)\\
   &=&\phi ([m] P) \quad \text{(since $\phi$ is a homomorphism)}\\
   &=&\phi (\mathcal{O}) \quad \text{(since $P \in E[m]$)}\\
   &=&\mathcal{O} \quad \text{(by definition of $\phi$)}
@@ -454,7 +462,8 @@ Note also, that by Corollary \ref{cor:structure-of-E[m]}, we have that $Aut(E[m]
 \subsection{The structure of $End(E)$ in characteristic zero}
 \label{sec:struct-ende-char-zero}
 
-TODO: Short introduction.
+We are now in a position to describe the general structure of the endomorphism ring
+of an elliptic curve.
 
 \begin{thm}
   \label{thm:structure-thm-for-End(E)}

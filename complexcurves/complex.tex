@@ -13,13 +13,11 @@ geometric interpretation.
 \subsection{A brief review of elliptic curves over $\mathbb{C}$}
 \label{sec:review-complex-curves}
 
-
-
 The material relating to the lattices and functions considered in this section can be
 found in (\cite{serre73} VII).
 
-Recall that a \emph{lattice} in $\mathbb{C}$ is a subgroup $\Lambda$ of $\mathbb{C}$ of
-$\mathbb{Z}$-rank $2$, with a $\mathbb{Z}$-basis $(\omega_{1},\omega_{2})$ which
+Recall that a \emph{lattice} in $\mathbb{C}$ is a subgroup $\Lambda$ of $\mathbb{C}$
+of $\mathbb{Z}$-rank $2$, with a $\mathbb{Z}$-basis $(\omega_{1},\omega_{2})$ which
 spans $\mathbb{C}$ over $\mathbb{R}$.  The following lemma will not be used until
 later, but is convenient to prove here.
 
@@ -29,7 +27,42 @@ later, but is convenient to prove here.
   subgroup of $\mathbb{C}$, which spans $\mathbb{C}$ over $\mathbb{R}$.
 \end{lem}
 \begin{proof}
-  Todo: This.
+  It is clear that a lattice is a discrete subgroup of $\mathbb{C}$.  Conversely, let
+  $\Lambda$ be a discrete subgroup of $\mathbb{C}$.  Let $\omega_{1}$ be a non-zero
+  point in $\Lambda$ with $|\omega_{1}|$ minimal, and choose $\omega_{2}$ in $\Lambda
+  - \mathbb{Z}\omega_{1}$ with $|\omega_{2}|$ minimal (such an element exists since
+  $\Lambda$ spans $\mathbb{C}$ over $\mathbb{R}$).  The ratio
+  $\frac{\omega_{2}}{\omega_{1}}$ is non-real, since otherwise there would exist an
+  integer $n$ such that
+  \begin{equation*}
+    n < \frac{\omega_{1}}{\omega_{2}} < n + 1,
+  \end{equation*}
+  so that $\omega_{2} - n\omega_{1}$ is a point in $\Lambda$ which satisfies
+  \begin{equation*}
+    | \omega_{2} - n \omega_{1} | < |\omega_{1} |,
+  \end{equation*}
+  contradicting the minimality of $|\omega_{1}|$.  Then $\mathbb{C} =
+  \mathbb{R}\omega_{1} + \mathbb{R}\omega_{2}$, so that any element $\omega$ in
+  $\Lambda$ can be written in the form
+  \begin{equation*}
+    \omega = a\omega_{1} + b\omega_{2}, \quad a,b \in \mathbb{R}.
+  \end{equation*}
+  Given such an element $\omega$, let $m$ and $n$ be integers such that
+  \begin{equation*}
+    |a - m| \leq \frac{1}{2} \quad \text{and} \quad |b - n| \leq \frac{1}{2},
+  \end{equation*}
+  and consider the element
+  \begin{equation*}
+    \omega^{\prime} = \omega - m\omega_{1} - n\omega_{2} = (a - n)\omega_{1} + (b -
+    n)\omega_{2} \in \Lambda.
+  \end{equation*}
+  Then we have the following inequality:
+  \begin{equation*}
+    |\omega^{\prime}| \leq \frac{1}{2}|\omega_{1}| + \frac{1}{2}|\omega_{2}| \leq |\omega_{2}|.
+  \end{equation*}
+  Since $\frac{\omega_{2}}{\omega_{1}}$ is non-real, one easily deduces that the
+  first inequalty is strict, whence $\omega^{\prime}$ belongs to $\Lambda -
+  \mathbb{Z}\omega_{1}$, so that $\omega$ is in $\Lambda$, thus completing the proof.
 \end{proof}
 
 Let $\Lambda$ be a lattice in $\mathbb{C}$.  Recall the Weierstrass $\wp$-function:
@@ -216,7 +249,7 @@ The maps $\phi_{\alpha}$ are clearly holomorphic group homomorphisms.
    \end{equation*}
  \end{thm}
  \begin{proof}
-   TODO: Reference Shimura.
+  See (\cite{shimura94} Section 4.2).
  \end{proof}
 
  An obvious consequence of the Uniformisation is the following corollary:

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.7)  7 SEP 2009 16:00
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.9)  9 SEP 2009 19:07
 entering extended mode
  %&-line parsing enabled.
 **&prv_main _region_.tex
@@ -29,56 +29,57 @@ amsfonts.sty    2001/10/25 v2.2f
   amsthm.sty    2004/08/06 v2.20
 enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
 mathrsfs.sty    1996/01/01 Math RSFS package v1.0 (jk)
+booktabs.sty    2005/04/14 v1.61803 publication quality tables
       xy.sty    1999/02/16 Xy-pic version 3.7
     umsa.fd    2002/01/19 v2.2g AMS font definitions
     umsb.fd    2002/01/19 v2.2g AMS font definitions
    ursfs.fd    1998/03/24 rsfs font definition file (jk)
         .
 No file _region_.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 (/usr/share/texmf/tex/latex/preview/preview.sty
 Package: preview 2006/08/25 11.84 (AUCTeX/preview-latex)
 
 (/usr/share/texmf/tex/latex/preview/prtightpage.def
-\PreviewBorder=\dimen146
+\PreviewBorder=\dimen159
 )
 (/usr/share/texmf/tex/latex/preview/prauctex.def
 No auxiliary output files.
 
 
-\hbadness=\count115
-\hfuzz=\dimen147
+\hbadness=\count119
+\hfuzz=\dimen160
 (/usr/share/texmf/tex/latex/preview/prauctex.cfg))
 (/usr/share/texmf/tex/latex/preview/prfootnotes.def)
-\pr@snippet=\count116
+\pr@snippet=\count120
 \pr@box=\box32
 \pr@output=\toks34
 
 Preview: Fontsize 10pt
-)  !name(endomorphisms/end.tex) !offset(432) 
+)  !name(abelian_extensions/ext.tex) !offset(-20) 
 ! Preview: Snippet 1 started.
 <-><->
       
-l.23 \subsection
-                {The structure of $End(E)$ in characteristic zero}
+l.22 \section
+             {Abelian extensions of $\mathbb{Q}(i)$}
 Not a real error.
 
 Preview: Tightpage -32891 -32891 32891 32891
-! Preview: Snippet 1 ended.(589824+196608x22609920).
+! Preview: Snippet 1 ended.(707788+235929x22609920).
 <-><->
       
-l.23 ...ucture of $End(E)$ in characteristic zero}
+l.22 ...ion{Abelian extensions of $\mathbb{Q}(i)$}
                                                   
 Not a real error.
 
@@ -88,16 +89,16 @@ Not a real error.
 ! Preview: Snippet 2 started.
 <-><->
       
-l.30   Let $
-            E$ be an elliptic curve over a field $k$ of characteristic zero....
+l.25 Let $
+          k = \mathbb{Q}(i)$, so that $\mathfrak{o}_{k} = \mathbb{Z}[i]$.  I...
 
 Not a real error.
 
-! Preview: Snippet 2 ended.(447828+0x521556).
+! Preview: Snippet 2 ended.(491520+163840x2480852).
 <-><->
       
-l.30   Let $E$
-               be an elliptic curve over a field $k$ of characteristic zero....
+l.25 Let $k = \mathbb{Q}(i)$
+                            , so that $\mathfrak{o}_{k} = \mathbb{Z}[i]$.  I...
 
 Not a real error.
 
@@ -105,67 +106,70 @@ Not a real error.
 ! Preview: Snippet 3 started.
 <-><->
       
-l.30   Let $E$ be an elliptic curve over a field $
-                                                  k$ of characteristic zero....
+l.25 Let $k = \mathbb{Q}(i)$, so that $
+                                       \mathfrak{o}_{k} = \mathbb{Z}[i]$.  I...
 
 Not a real error.
 
-! Preview: Snippet 3 ended.(455111+0x361814).
+LaTeX Font Info:    Try loading font information for U+euf on input line 25.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2002/01/19 v2.2g AMS font definitions
+)
+! Preview: Snippet 3 ended.(491520+163840x2543402).
 <-><->
       
-l.30 ... $E$ be an elliptic curve over a field $k$
-                                                   of characteristic zero.  ...
-
+l.25 ...so that $\mathfrak{o}_{k} = \mathbb{Z}[i]$
+                                                  .  In Section
 Not a real error.
 
 [3]
+
+LaTeX Warning: Reference `sec:struct-ende-char-zero' on page 1 undefined on inp
+ut line 26.
+
 ! Preview: Snippet 4 started.
 <-><->
       
-l.31   $
-        End(E) \cong \mathbb{Z}$ or $End(E)$ is isomorphic to an order in a ...
-
+l.26 ...} we established that the elliptic curve $
+                                                  E$ given by
 Not a real error.
 
-! Preview: Snippet 4 ended.(491520+163840x3598028).
+! Preview: Snippet 4 ended.(447828+0x521556).
 <-><->
       
-l.31   $End(E) \cong \mathbb{Z}$
-                                 or $End(E)$ is isomorphic to an order in a ...
-
+l.26 ...we established that the elliptic curve $E$
+                                                   given by
 Not a real error.
 
 [4]
 ! Preview: Snippet 5 started.
 <-><->
       
-l.31   $End(E) \cong \mathbb{Z}$ or $
-                                     End(E)$ is isomorphic to an order in a ...
-
+l.28 \begin{equation*}
+                      
 Not a real error.
 
-! Preview: Snippet 5 ended.(491520+163840x2287314).
+! Preview: Snippet 5 ended.(693664+0x12983329).
 <-><->
       
-l.31   $End(E) \cong \mathbb{Z}$ or $End(E)$
-                                             is isomorphic to an order in a ...
-
+l.30 \end{equation*}
+                    
 Not a real error.
 
 [5]
 ! Preview: Snippet 6 started.
 <-><->
       
-l.35   Let $
-            K = End(E) \otimes \mathbb{Q}$.  For each $\alpha \in \mathbb{Q}...
+l.31 has complex multiplication by $
+                                    \mathbb{Z}[i]$.  In particular, we know ...
 
 Not a real error.
 
-! Preview: Snippet 6 ended.(491520+163840x5075313).
+! Preview: Snippet 6 ended.(491520+163840x1026778).
 <-><->
       
-l.35   Let $K = End(E) \otimes \mathbb{Q}$
-                                          .  For each $\alpha \in \mathbb{Q}...
+l.31 has complex multiplication by $\mathbb{Z}[i]$
+                                                  .  In particular, we know ...
 
 Not a real error.
 
@@ -173,62 +177,61 @@ Not a real error.
 ! Preview: Snippet 7 started.
 <-><->
       
-l.35 ... = End(E) \otimes \mathbb{Q}$.  For each $
-                                                  \alpha \in \mathbb{Q}, \ph...
-
+l.31 ...hbb{Z}[i]$.  In particular, we know that $
+                                                  h_{k} =
 Not a real error.
 
-! Preview: Snippet 7 ended.(491520+163840x5502432).
+! Preview: Snippet 7 ended.(455111+98303x1901526).
 <-><->
       
-l.36   End(E)$
-               we define an extended dual $\widehat{\alpha \cdot \phi}$ by
+l.32 1$
+        so $j(E)$ is rational (indeed, we have $j(E) = 1728$).
 Not a real error.
 
 [7]
 ! Preview: Snippet 8 started.
 <-><->
       
-l.36   End(E)$ we define an extended dual $
-                                           \widehat{\alpha \cdot \phi}$ by
+l.32 1$ so $
+            j(E)$ is rational (indeed, we have $j(E) = 1728$).
 Not a real error.
 
-! Preview: Snippet 8 ended.(664463+127431x1285456).
+! Preview: Snippet 8 ended.(491520+163840x1338678).
 <-><->
       
-l.36 ...xtended dual $\widehat{\alpha \cdot \phi}$
-                                                   by
+l.32 1$ so $j(E)$
+                  is rational (indeed, we have $j(E) = 1728$).
 Not a real error.
 
 [8]
 ! Preview: Snippet 9 started.
 <-><->
       
-l.37   \begin{equation*}
-                        
+l.32 1$ so $j(E)$ is rational (indeed, we have $
+                                                j(E) = 1728$).
 Not a real error.
 
-! Preview: Snippet 9 ended.(791894+0x13118342).
+! Preview: Snippet 9 ended.(491520+163840x3523208).
 <-><->
       
-l.39   \end{equation*}
-                      
+l.32 ...is rational (indeed, we have $j(E) = 1728$
+                                                  ).
 Not a real error.
 
 [9]
 ! Preview: Snippet 10 started.
 <-><->
       
-l.40   where $
-              \widehat{\phi}$ is the dual isogeny to $\phi$.  We define func...
+l.34 Consider the group $
+                         E[2]$ of $2$-torsion points of $E$.  Recall that a ...
 
 Not a real error.
 
-! Preview: Snippet 10 ended.(646259+127431x390486).
+! Preview: Snippet 10 ended.(491520+163840x1213327).
 <-><->
       
-l.40   where $\widehat{\phi}$
-                              is the dual isogeny to $\phi$.  We define func...
+l.34 Consider the group $E[2]$
+                               of $2$-torsion points of $E$.  Recall that a ...
 
 Not a real error.
 
@@ -236,16 +239,16 @@ Not a real error.
 ! Preview: Snippet 11 started.
 <-><->
       
-l.40 ... $\widehat{\phi}$ is the dual isogeny to $
-                                                  \phi$.  We define function...
+l.34 Consider the group $E[2]$ of $
+                                   2$-torsion points of $E$.  Recall that a ...
 
 Not a real error.
 
-! Preview: Snippet 11 ended.(455111+127431x390486).
+! Preview: Snippet 11 ended.(422343+0x327681).
 <-><->
       
-l.40 ...dehat{\phi}$ is the dual isogeny to $\phi$
-                                                  .  We define functions $N : K
+l.34 Consider the group $E[2]$ of $2$
+                                     -torsion points of $E$.  Recall that a ...
 
 Not a real error.
 
@@ -253,64 +256,65 @@ Not a real error.
 ! Preview: Snippet 12 started.
 <-><->
       
-l.40 ... isogeny to $\phi$.  We define functions $
-                                                  N : K
+l.34 ...he group $E[2]$ of $2$-torsion points of $
+                                                  E$.  Recall that a point $P =
+
 Not a real error.
 
-! Preview: Snippet 12 ended.(451470+109226x3276783).
+! Preview: Snippet 12 ended.(447828+0x521556).
 <-><->
       
-l.41   \rightarrow \mathbb{Q}$
-                               and $T : K \rightarrow \mathbb{Q}$ by
+l.34 ... group $E[2]$ of $2$-torsion points of $E$
+                                                  .  Recall that a point $P =
 Not a real error.
 
 [12]
 ! Preview: Snippet 13 started.
 <-><->
       
-l.41   \rightarrow \mathbb{Q}$ and $
-                                    T : K \rightarrow \mathbb{Q}$ by
+l.34 ...sion points of $E$.  Recall that a point $
+                                                  P =
 Not a real error.
 
-! Preview: Snippet 13 ended.(451470+109226x3152768).
+! Preview: Snippet 13 ended.(491520+163840x2905954).
 <-><->
       
-l.41 ...hbb{Q}$ and $T : K \rightarrow \mathbb{Q}$
-                                                   by
+l.35 (x,y)$
+            on $E$ has order $2$ if and only if $y = 0$.  So the $x$-co-ordi...
+
 Not a real error.
 
 [13]
 ! Preview: Snippet 14 started.
 <-><->
       
-l.42   \begin{equation*}
-                        
+l.35 (x,y)$ on $
+                E$ has order $2$ if and only if $y = 0$.  So the $x$-co-ordi...
+
 Not a real error.
 
-! Preview: Snippet 14 ended.(638976+0x12750844).
+! Preview: Snippet 14 ended.(447828+0x521556).
 <-><->
       
-l.44   \end{equation*}
-                      
+l.35 (x,y)$ on $E$
+                   has order $2$ if and only if $y = 0$.  So the $x$-co-ordi...
+
 Not a real error.
 
 [14]
-
-LaTeX Warning: Reference `ex:cm-example' on page 1 undefined on input line 47.
-
 ! Preview: Snippet 15 started.
 <-><->
       
-l.48 curve $
-            E$ with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{...
+l.35 (x,y)$ on $E$ has order $
+                              2$ if and only if $y = 0$.  So the $x$-co-ordi...
 
 Not a real error.
 
-! Preview: Snippet 15 ended.(447828+0x521556).
+! Preview: Snippet 15 ended.(422343+0x327681).
 <-><->
       
-l.48 curve $E$
-               with equation $y^{2} = x^{3} + x$ contains the ring $\mathbb{...
+l.35 (x,y)$ on $E$ has order $2$
+                                 if and only if $y = 0$.  So the $x$-co-ordi...
 
 Not a real error.
 
@@ -318,16 +322,16 @@ Not a real error.
 ! Preview: Snippet 16 started.
 <-><->
       
-l.48 curve $E$ with equation $
-                              y^{2} = x^{3} + x$ contains the ring $\mathbb{...
+l.35 (x,y)$ on $E$ has order $2$ if and only if $
+                                                 y = 0$.  So the $x$-co-ordi...
 
 Not a real error.
 
-! Preview: Snippet 16 ended.(533465+127431x3356738).
+! Preview: Snippet 16 ended.(422343+127431x1546311).
 <-><->
       
-l.48 curve $E$ with equation $y^{2} = x^{3} + x$
-                                                 contains the ring $\mathbb{...
+l.35 ...n $E$ has order $2$ if and only if $y = 0$
+                                                  .  So the $x$-co-ordinates...
 
 Not a real error.
 
@@ -335,63 +339,337 @@ Not a real error.
 ! Preview: Snippet 17 started.
 <-><->
       
-l.48 ...on $y^{2} = x^{3} + x$ contains the ring $
-                                                  \mathbb{Z}[i]$ of
+l.35 ...rder $2$ if and only if $y = 0$.  So the $
+                                                  x$-co-ordinates are
 Not a real error.
 
-! Preview: Snippet 17 ended.(491520+163840x1026778).
+! Preview: Snippet 17 ended.(282168+0x374556).
 <-><->
       
-l.48 ...{3} + x$ contains the ring $\mathbb{Z}[i]$
-                                                   of
+l.35 ...er $2$ if and only if $y = 0$.  So the $x$
+                                                  -co-ordinates are
 Not a real error.
 
 [17]
-
-LaTeX Warning: Reference `thm:structure-thm-for-End(E)' on page 1 undefined on 
-input line 49.
-
 ! Preview: Snippet 18 started.
 <-><->
       
-l.50 endomorphism ring of $
-                           E$ is precisely $\mathbb{Z}[i]$.
+l.37 \begin{equation*}
+                      
 Not a real error.
 
-! Preview: Snippet 18 ended.(447828+0x521556).
+! Preview: Snippet 18 ended.(693664+0x12918779).
 <-><->
       
-l.50 endomorphism ring of $E$
-                              is precisely $\mathbb{Z}[i]$.
+l.39 \end{equation*}
+                    
 Not a real error.
 
 [18]
 ! Preview: Snippet 19 started.
 <-><->
       
-l.50 endomorphism ring of $E$ is precisely $
-                                            \mathbb{Z}[i]$.
+l.40 which are clearly equal to $
+                                 0$, $i$ and $-i$.  In particular, the field...
+
 Not a real error.
 
-! Preview: Snippet 19 ended.(491520+163840x1026778).
+! Preview: Snippet 19 ended.(422343+0x327681).
 <-><->
       
-l.50 ...m ring of $E$ is precisely $\mathbb{Z}[i]$
-                                                  .
+l.40 which are clearly equal to $0$
+                                   , $i$ and $-i$.  In particular, the field...
+
 Not a real error.
 
-[19]  !name(../main.tex) !offset(-18) 
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.40 which are clearly equal to $0$, $
+                                      i$ and $-i$.  In particular, the field...
+
+Not a real error.
+
+! Preview: Snippet 20 ended.(432226+0x225780).
+<-><->
+      
+l.40 which are clearly equal to $0$, $i$
+                                         and $-i$.  In particular, the field...
+
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.40 which are clearly equal to $0$, $i$ and $
+                                              -i$.  In particular, the field...
+
+Not a real error.
+
+! Preview: Snippet 21 ended.(432226+54613x735506).
+<-><->
+      
+l.40 which are clearly equal to $0$, $i$ and $-i$
+                                                 .  In particular, the field...
+
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.40 ... $i$ and $-i$.  In particular, the field $
+                                                  K_{2} =
+Not a real error.
+
+! Preview: Snippet 22 ended.(491520+163840x4692695).
+<-><->
+      
+l.41 \mathbb{Q}(i)(E[2])$
+                          is generated by elements contained in $\mathbb{Q}(...
+
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.41 ...)$ is generated by elements contained in $
+                                                  \mathbb{Q}(i)$, so that
+Not a real error.
+
+! Preview: Snippet 23 ended.(491520+163840x1245232).
+<-><->
+      
+l.41 ...d by elements contained in $\mathbb{Q}(i)$
+                                                  , so that
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.42 $
+      K_{2} = \mathbb{Q}(i)$.
+Not a real error.
+
+! Preview: Snippet 24 ended.(491520+163840x2969642).
+<-><->
+      
+l.42 $K_{2} = \mathbb{Q}(i)$
+                            .
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.44 Now consider the group of $
+                                3$-torsion points of $E$.  There are $8$ non...
+
+Not a real error.
+
+! Preview: Snippet 25 ended.(422343+0x327681).
+<-><->
+      
+l.44 Now consider the group of $3$
+                                  -torsion points of $E$.  There are $8$ non...
+
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.44 ...sider the group of $3$-torsion points of $
+                                                  E$.  There are $8$ non-tri...
+
+Not a real error.
+
+! Preview: Snippet 26 ended.(447828+0x521556).
+<-><->
+      
+l.44 ...der the group of $3$-torsion points of $E$
+                                                  .  There are $8$ non-trivi...
+
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.44 ...of $3$-torsion points of $E$.  There are $
+                                                  8$ non-trivial such
+Not a real error.
+
+! Preview: Snippet 27 ended.(422343+0x327681).
+<-><->
+      
+l.44 ... $3$-torsion points of $E$.  There are $8$
+                                                   non-trivial such
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.45 points (since $
+                     \# E[3] = 9$), whose $x$-co-ordinates are determined by...
+
+Not a real error.
+
+! Preview: Snippet 28 ended.(491520+163840x2960949).
+<-><->
+      
+l.45 points (since $ \# E[3] = 9$
+                                 ), whose $x$-co-ordinates are determined by...
+
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.45 points (since $ \# E[3] = 9$), whose $
+                                           x$-co-ordinates are determined by...
+
+Not a real error.
+
+! Preview: Snippet 29 ended.(282168+0x374556).
+<-><->
+      
+l.45 points (since $ \# E[3] = 9$), whose $x$
+                                             -co-ordinates are determined by...
+
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.47 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 30 ended.(730073+0x22609920).
+<-><->
+      
+l.50 \end{equation}
+                   
+Not a real error.
+
+[30
+
+]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.51 Solving the corresponding quadratic in $
+                                             u = x^{2}$ we see that the root...
+
+Not a real error.
+
+! Preview: Snippet 31 ended.(533465+0x1917531).
+<-><->
+      
+l.51 ...the corresponding quadratic in $u = x^{2}$
+                                                   we see that the roots of
+Not a real error.
+
+[31]
+
+LaTeX Warning: Reference `eq:3-torsion-polynomial' on page 1 undefined on input
+ line 52.
+
+! Preview: Snippet 32 started.
+<-><->
+      
+l.52 \eqref{eq:3-torsion-polynomial} are $
+                                          \pm \alpha, \pm \frac{i}{\sqrt{3}\...
+
+Not a real error.
+
+! Preview: Snippet 32 ended.(561594+356512x2922146).
+<-><->
+      
+l.52 ...$\pm \alpha, \pm \frac{i}{\sqrt{3}\alpha}$
+                                                  , where
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.53 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 33 ended.(1992312+0x13615124).
+<-><->
+      
+l.55 \end{equation*}
+                    
+Not a real error.
+
+[33]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.56 To find the $
+                  y$-co-ordinates, note that
+Not a real error.
+
+! Preview: Snippet 34 ended.(282168+127431x344824).
+<-><->
+      
+l.56 To find the $y$
+                    -co-ordinates, note that
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.57 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 35 ended.(1475177+0x15142358).
+<-><->
+      
+l.59 \end{equation*}
+                    
+Not a real error.
+
+[35]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.61 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 36 ended.(1652329+0x19384599).
+<-><->
+      
+l.64 \end{equation*}
+                    
+Not a real error.
+
+[36]  !name(../main.tex) !offset(-34) 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 202 strings out of 90828
- 2654 string characters out of 1126488
- 128187 words of memory out of 1500000
- 6674 multiletter control sequences out of 10000+50000
- 13918 words of font info for 59 fonts, out of 1200000 for 2000
+ 193 strings out of 90770
+ 2791 string characters out of 1125736
+ 128924 words of memory out of 1500000
+ 6723 multiletter control sequences out of 10000+50000
+ 11785 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 22i,10n,22p,161b,162s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 22i,8n,22p,183b,148s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on _region_.dvi (19 pages, 4316 bytes).
+Output written on _region_.dvi (36 pages, 7052 bytes).

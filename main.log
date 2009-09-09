@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  8 SEP 2009 20:56
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  9 SEP 2009 19:27
 entering extended mode
  %&-line parsing enabled.
 **\input main.tex
@@ -236,29 +236,29 @@ Package: xy 1999/02/16 Xy-pic version 3.7
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 22.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 21.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -283,7 +283,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
  [4] [5]
-Overfull \hbox (2.27446pt too wide) in paragraph at lines 219--221
+Overfull \hbox (2.27446pt too wide) in paragraph at lines 215--217
 \OT1/cmr/bx/n/10 Proposition 2.2.2. \OT1/cmr/m/it/10 Let $\OML/cmm/m/it/10 E[]$
  \OT1/cmr/m/it/10 and $\OML/cmm/m/it/10 E[]$ \OT1/cmr/m/it/10 be iso-mor-phic e
 l-lip-tic curves. Then $\OML/cmm/m/it/10 End\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E
@@ -291,23 +291,23 @@ l-lip-tic curves. Then $\OML/cmm/m/it/10 End\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E
  []
 
 <xymatrix 2x2 175> [6] [7] [8] [9]) (./complexcurves/complex.tex [10] [11]
-<xymatrix 2x2 168> [12] <xymatrix 2x2 168> [13]) (./cm_basics/cm.tex [14]
-<xymatrix 2x2 182> <xymatrix 2x2 182> [15] [16] [17] [18] <xymatrix 2x2 127>
-[19] <xymatrix 2x2 161>) (./cm_rational/rational.tex [20] [21]
+[12] [13] <xymatrix 2x2 168> [14] <xymatrix 2x2 168> [15]) (./cm_basics/cm.tex
+[16] <xymatrix 2x2 182> <xymatrix 2x2 182> [17] [18] [19] [20] <xymatrix 2x2
+127> [21] <xymatrix 2x2 161>) (./cm_rational/rational.tex [22] [23]
 Overfull \hbox (11.30698pt too wide) in paragraph at lines 110--110
 []\OT1/cmr/bx/n/12 Towards abelian ex-ten-sions of quadratic imag-i-nary fields
  
  []
 
-[22]) (./abelian_extensions/ext.tex [23]) [24] (./main.bbl) [25] (./main.aux) )
- 
+[24]) (./abelian_extensions/ext.tex [25] [26]) [27] (./main.bbl) [28]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3483 strings out of 94075
- 42457 string characters out of 1165176
- 128301 words of memory out of 1500000
- 6694 multiletter control sequences out of 10000+50000
+ 3488 strings out of 94075
+ 42547 string characters out of 1165176
+ 128350 words of memory out of 1500000
+ 6699 multiletter control sequences out of 10000+50000
  17752 words of font info for 74 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  27i,27n,27p,243b,480s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on main.dvi (25 pages, 77504 bytes).
+Output written on main.dvi (28 pages, 84560 bytes).
