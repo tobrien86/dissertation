@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.9)  9 SEP 2009 19:07
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=prv_main 2009.9.10)  10 SEP 2009 11:37
 entering extended mode
  %&-line parsing enabled.
 **&prv_main _region_.tex
@@ -587,89 +587,392 @@ LaTeX Warning: Reference `eq:3-torsion-polynomial' on page 1 undefined on input
 <-><->
       
 l.52 \eqref{eq:3-torsion-polynomial} are $
-                                          \pm \alpha, \pm \frac{i}{\sqrt{3}\...
-
+                                          \pm \alpha, \pm
 Not a real error.
 
 ! Preview: Snippet 32 ended.(561594+356512x2922146).
 <-><->
       
-l.52 ...$\pm \alpha, \pm \frac{i}{\sqrt{3}\alpha}$
-                                                  , where
+l.53 \frac{i}{\sqrt{3}\alpha}$
+                              \footnote{This follows from the method of ``La...
+
 Not a real error.
 
 [32]
 ! Preview: Snippet 33 started.
 <-><->
       
-l.53 \begin{equation*}
-                      
+l.53 \frac{i}{\sqrt{3}\alpha}$\footnote
+                                       {This follows from the method of ``La...
+
 Not a real error.
 
-! Preview: Snippet 33 ended.(1992312+0x13615124).
+! Preview: Snippet 33 ended.(533465+0x294003).
 <-><->
       
-l.55 \end{equation*}
-                    
+l.58   here.}
+             , where
 Not a real error.
 
 [33]
 ! Preview: Snippet 34 started.
 <-><->
       
-l.56 To find the $
-                  y$-co-ordinates, note that
+l.59 \begin{equation*}
+                      
 Not a real error.
 
-! Preview: Snippet 34 ended.(282168+127431x344824).
+! Preview: Snippet 34 ended.(1992312+0x13615124).
 <-><->
       
-l.56 To find the $y$
-                    -co-ordinates, note that
+l.61 \end{equation*}
+                    
 Not a real error.
 
 [34]
 ! Preview: Snippet 35 started.
 <-><->
       
-l.57 \begin{equation*}
-                      
+l.62 To find the $
+                  y$-co-ordinates, note that
 Not a real error.
 
-! Preview: Snippet 35 ended.(1475177+0x15142358).
+! Preview: Snippet 35 ended.(282168+127431x344824).
 <-><->
       
-l.59 \end{equation*}
-                    
+l.62 To find the $y$
+                    -co-ordinates, note that
 Not a real error.
 
 [35]
 ! Preview: Snippet 36 started.
 <-><->
       
-l.61 \begin{equation*}
+l.63 \begin{equation*}
                       
 Not a real error.
 
-! Preview: Snippet 36 ended.(1652329+0x19384599).
+! Preview: Snippet 36 ended.(1475177+0x15142358).
 <-><->
       
-l.64 \end{equation*}
+l.65 \end{equation*}
                     
 Not a real error.
 
-[36]  !name(../main.tex) !offset(-34) 
+[36]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.67 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 37 ended.(1749762+0x12604924).
+<-><->
+      
+l.69 \end{equation*}
+                    
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.71 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 38 ended.(1692742+0x20580773).
+<-><->
+      
+l.75 \end{equation*}
+                    
+Not a real error.
+
+[38]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.77 \begin{equation*}
+                      
+Not a real error.
+
+! Preview: Snippet 39 ended.(1992312+0x12878755).
+<-><->
+      
+l.79 \end{equation*}
+                    
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.80 We claim that $
+                    K_{3} = \mathbb{Q}(i)(E[3]) = \mathbb{Q}(i,\beta)$, i.e....
+
+Not a real error.
+
+! Preview: Snippet 40 ended.(491520+163840x7508278).
+<-><->
+      
+l.80 ...\mathbb{Q}(i)(E[3]) = \mathbb{Q}(i,\beta)$
+                                                  , i.e. the
+Not a real error.
+
+[40]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.81 co-ordinates of the points in $
+                                    E[3]$ can be described by rational funct...
+
+Not a real error.
+
+! Preview: Snippet 41 ended.(491520+163840x1213327).
+<-><->
+      
+l.81 co-ordinates of the points in $E[3]$
+                                          can be described by rational funct...
+
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.81 ...an be described by rational functions of $
+                                                  i$
+Not a real error.
+
+! Preview: Snippet 42 ended.(432226+0x225780).
+<-><->
+      
+l.81 ... be described by rational functions of $i$
+                                                  
+Not a real error.
+
+[42]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.82 and $
+          \beta$. Indeed, we have
+Not a real error.
+
+! Preview: Snippet 43 ended.(455111+127431x405276).
+<-><->
+      
+l.82 and $\beta$
+                . Indeed, we have
+Not a real error.
+
+[43]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.83 \begin{align}
+                  
+Not a real error.
+
+! Preview: Snippet 44 ended.(3052565+0x22609920).
+<-><->
+      
+l.86 \end{align}
+                
+Not a real error.
+
+[44
+
+
+]
+
+LaTeX Warning: Reference `eq:beta-powers-2' on page 1 undefined on input line 8
+7.
+
+! Preview: Snippet 45 started.
+<-><->
+      
+l.87 so \eqref{eq:beta-powers-2} shows that $
+                                             \sqrt{3}$ belongs to $\mathbb{Q...
+
+Not a real error.
+
+! Preview: Snippet 45 ended.(594554+87018x873816).
+<-><->
+      
+l.87 ...ef{eq:beta-powers-2} shows that $\sqrt{3}$
+                                                   belongs to $\mathbb{Q}(i,...
+
+Not a real error.
+
+[45]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.87 ...wers-2} shows that $\sqrt{3}$ belongs to $
+                                                  \mathbb{Q}(i,\beta)$,
+Not a real error.
+
+! Preview: Snippet 46 ended.(491520+163840x1941777).
+<-><->
+      
+l.87 ...\sqrt{3}$ belongs to $\mathbb{Q}(i,\beta)$
+                                                  ,
+Not a real error.
+
+[46]
+
+LaTeX Warning: Reference `eq:beta-powers-1' on page 1 undefined on input line 8
+8.
+
+! Preview: Snippet 47 started.
+<-><->
+      
+l.88 ...ith \eqref{eq:beta-powers-1}) shows that $
+                                                  \alpha$ is also in
+Not a real error.
+
+! Preview: Snippet 47 ended.(282168+0x421661).
+<-><->
+      
+l.88 ...ref{eq:beta-powers-1}) shows that $\alpha$
+                                                   is also in
+Not a real error.
+
+[47]
+! Preview: Snippet 48 started.
+<-><->
+      
+l.89 $
+      \mathbb{Q}(i,\beta)$, as required.
+Not a real error.
+
+! Preview: Snippet 48 ended.(491520+163840x1941777).
+<-><->
+      
+l.89 $\mathbb{Q}(i,\beta)$
+                          , as required.
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.91 Now, the minimal polynomial for $
+                                      \beta$ over $\mathbb{Q}(i)$ is
+Not a real error.
+
+! Preview: Snippet 49 ended.(455111+127431x405276).
+<-><->
+      
+l.91 Now, the minimal polynomial for $\beta$
+                                             over $\mathbb{Q}(i)$ is
+Not a real error.
+
+[49]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.91 ... the minimal polynomial for $\beta$ over $
+                                                  \mathbb{Q}(i)$ is
+Not a real error.
+
+! Preview: Snippet 50 ended.(491520+163840x1245232).
+<-><->
+      
+l.91 ...olynomial for $\beta$ over $\mathbb{Q}(i)$
+                                                   is
+Not a real error.
+
+[50]
+! Preview: Snippet 51 started.
+<-><->
+      
+l.92 \begin{equation}
+                     
+Not a real error.
+
+! Preview: Snippet 51 ended.(1315244+0x22609920).
+<-><->
+      
+l.95 \end{equation}
+                   
+Not a real error.
+
+[51
+
+]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.96 so that $
+              [K_{3} : \mathbb{Q}(i) ] = 8$.  Since \eqref{eq:min-poly-beta}...
+
+Not a real error.
+
+! Preview: Snippet 52 ended.(491520+163840x4207538).
+<-><->
+      
+l.96 so that $[K_{3} : \mathbb{Q}(i) ] = 8$
+                                           .  Since \eqref{eq:min-poly-beta}...
+
+Not a real error.
+
+[52]
+
+LaTeX Warning: Reference `eq:min-poly-beta' on page 1 undefined on input line 9
+6.
+
+
+LaTeX Warning: Reference `eq:3-torsion-polynomial' on page 1 undefined on input
+ line 98.
+
+
+LaTeX Warning: Reference `eq:min-poly-beta' on page 1 undefined on input line 9
+9.
+
+! Preview: Snippet 53 started.
+<-><->
+      
+l.100 \begin{equation*}
+                       
+Not a real error.
+
+! Preview: Snippet 53 ended.(652887+0x13981513).
+<-><->
+      
+l.102 \end{equation*}
+                     
+Not a real error.
+
+[53]
+! Preview: Snippet 54 started.
+<-><->
+      
+l.104 \begin{equation*}
+                       
+Not a real error.
+
+! Preview: Snippet 54 ended.(652887+0x11945414).
+<-><->
+      
+l.106 \end{equation*}
+                     
+Not a real error.
+
+[54]  !name(../main.tex) !offset(-76) 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 193 strings out of 90770
- 2791 string characters out of 1125736
+ 223 strings out of 90770
+ 3091 string characters out of 1125735
  128924 words of memory out of 1500000
- 6723 multiletter control sequences out of 10000+50000
- 11785 words of font info for 50 fonts, out of 1200000 for 2000
+ 6741 multiletter control sequences out of 10000+50000
+ 15396 words of font info for 65 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 22i,8n,22p,183b,148s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 24i,11n,22p,183b,190s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on _region_.dvi (36 pages, 7052 bytes).
+Output written on _region_.dvi (54 pages, 10040 bytes).

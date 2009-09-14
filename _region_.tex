@@ -49,7 +49,13 @@ the quartic equation
   3x^{4} + 6x^{2} - 1.
 \end{equation}
 Solving the corresponding quadratic in $u = x^{2}$ we see that the roots of
-\eqref{eq:3-torsion-polynomial} are $\pm \alpha, \pm \frac{i}{\sqrt{3}\alpha}$, where
+\eqref{eq:3-torsion-polynomial} are $\pm \alpha, \pm
+\frac{i}{\sqrt{3}\alpha}$\footnote{This follows from the method of ``Lagrange
+  resultants''; a monic quadratic polynomial $x^{2} + px + q$ over an algebraically
+  closed field $k$ factors as $(x - \alpha)(x - \beta)$ where $\alpha$ and $\beta$
+  are roots of the polynomial in $k$. In particular, comparing coefficients gives the
+  identities $\alpha + \beta = p$ and $\alpha \beta = q$, the second of which we use
+  here.}, where
 \begin{equation*}
   \alpha = \sqrt{ \frac{2\sqrt{3} - 3}{3} }.
 \end{equation*}
@@ -57,10 +63,46 @@ To find the $y$-co-ordinates, note that
 \begin{equation*}
   \alpha^{3} + \alpha = \alpha(\alpha^{2} + 1) = \frac{2\alpha}{\sqrt{3}},
 \end{equation*}
+and
+\begin{equation*}
+  \frac{i}{\sqrt(3)\alpha}^{3c}
+\end{equation*}
 from which we condlude
 \begin{equation*}
   E[3] = \{ \mathcal{O}, (\alpha,\pm \beta), (-\alpha, \pm \beta),
-  (\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{i}}{\sqrt[4]{27}} ), (-\frac{i}{\sqrt{3}\alpha}, )  \}
+  (\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta} ),
+  (-\frac{i}{\sqrt{3}\alpha}, \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta} )  \},
+\end{equation*}
+where
+\begin{equation*}
+  \beta = \sqrt{ \frac{2\alpha}{\sqrt{3}} }.
+\end{equation*}
+We claim that $K_{3} = \mathbb{Q}(i)(E[3]) = \mathbb{Q}(i,\beta)$, i.e. the
+co-ordinates of the points in $E[3]$ can be described by rational functions of $i$
+and $\beta$. Indeed, we have
+\begin{align}
+  \beta^{2}&= \frac{2\alpha}{\sqrt{3}} \label{eq:beta-powers-1}\\
+  \beta^{4}&= \frac{4}{9}(2\sqrt{3} - 3) \label{eq:beta-powers-2}
+\end{align}
+so \eqref{eq:beta-powers-2} shows that $\sqrt{3}$ belongs to $\mathbb{Q}(i,\beta)$,
+which in turn (along with \eqref{eq:beta-powers-1}) shows that $\alpha$ is also in
+$\mathbb{Q}(i,\beta)$, as required.
+
+Now, the minimal polynomial for $\beta$ over $\mathbb{Q}(i)$ is
+\begin{equation}
+  \label{eq:min-poly-beta}
+  x^{8} + \frac{8}{3}x^{4} - \frac{16}{27},
+\end{equation}
+so that $[K_{3} : \mathbb{Q}(i) ] = 8$.  Since \eqref{eq:min-poly-beta} has such a
+simple form, we are reduced to solving a quadratic equation (as we did with
+\eqref{eq:3-torsion-polynomial}), and we find that the roots of
+\eqref{eq:min-poly-beta} are
+\begin{equation*}
+  \pm \beta, \pm i \beta, \pm \beta^{\prime}, \pm i \beta^{\prime}
+\end{equation*}
+where
+\begin{equation*}
+  \beta^{\prime} = 
 \end{equation*}
 
 
@@ -69,7 +111,7 @@ from which we condlude
 %%% TeX-master: "../main"
 %%% End: 
 
-\message{ !name(../main.tex) !offset(-34) }
+\message{ !name(../main.tex) !offset(-76) }
 
 \end{document}
 

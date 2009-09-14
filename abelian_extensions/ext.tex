@@ -29,7 +29,13 @@ the quartic equation
   3x^{4} + 6x^{2} - 1.
 \end{equation}
 Solving the corresponding quadratic in $u = x^{2}$ we see that the roots of
-\eqref{eq:3-torsion-polynomial} are $\pm \alpha, \pm \frac{i}{\sqrt{3}\alpha}$, where
+\eqref{eq:3-torsion-polynomial} are $\pm \alpha, \pm
+\frac{i}{\sqrt{3}\alpha}$\footnote{This follows from the method of ``Lagrange
+  resultants''; a monic quadratic polynomial $x^{2} + px + q$ over an algebraically
+  closed field $k$ factors as $(x - \alpha)(x - \beta)$ where $\alpha$ and $\beta$
+  are roots of the polynomial in $k$. In particular, comparing coefficients gives the
+  identities $\alpha + \beta = p$ and $\alpha \beta = q$, the second of which we use
+  here.}, where
 \begin{equation*}
   \alpha = \sqrt{ \frac{2\sqrt{3} - 3}{3} }.
 \end{equation*}
@@ -37,16 +43,22 @@ To find the $y$-co-ordinates, note that
 \begin{equation*}
   \alpha^{3} + \alpha = \alpha(\alpha^{2} + 1) = \frac{2\alpha}{\sqrt{3}},
 \end{equation*}
-from which we condlude
+and
 \begin{equation*}
-  E[3] = \{ \mathcal{O}, (\alpha,\pm \beta), (-\alpha, \pm \beta),
-  (\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta} ),
-  (-\frac{i}{\sqrt{3}\alpha}, \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta} )  \},
+  (\frac{i}{\sqrt{3}\alpha})^{3} + \frac{i}{\sqrt{3}\alpha} = \frac{-2i}{3\alpha} =
+  \frac{-4i}{\sqrt{27} (\frac{2\alpha}{\sqrt{3}}) } = \frac{-4i}{\sqrt{27}\beta^{2}},
 \end{equation*}
 where
 \begin{equation*}
-  \beta = \sqrt{ \frac{2\alpha}{\sqrt{3}} }.
+  \beta = \sqrt{ \frac{2\alpha}{\sqrt{3}} },
 \end{equation*}
+so that
+\begin{equation}
+  \label{eq:points-of-e[3]}
+  E[3] = \{ \mathcal{O}, (\alpha,\pm \beta), (-\alpha, \pm \beta),
+  (\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta} ),
+  (-\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta} )  \}.
+\end{equation}
 We claim that $K_{3} = \mathbb{Q}(i)(E[3]) = \mathbb{Q}(i,\beta)$, i.e. the
 co-ordinates of the points in $E[3]$ can be described by rational functions of $i$
 and $\beta$. Indeed, we have
@@ -56,7 +68,34 @@ and $\beta$. Indeed, we have
 \end{align}
 so \eqref{eq:beta-powers-2} shows that $\sqrt{3}$ belongs to $\mathbb{Q}(i,\beta)$,
 which in turn (along with \eqref{eq:beta-powers-1}) shows that $\alpha$ is also in
-$\mathbb{Q}(i,\beta)$, as required.
+$\mathbb{Q}(i,\beta)$.  It remains to check that the $y$-co-ordinates of the points
+$(\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta} )$ and
+$(-\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta} )$ are
+contained in $\mathbb{Q}(i)$.  We recall the addition formulae for an elliptic curve
+of the form $y^{2} = x^{3} + Ax + B$.  If $P_{1} = (x_{1},y_{1})$ and $P_{2} =
+(x_{2},y_{2})$ are points on such a curve then the co-ordinates $x_{3},y_{3}$ of
+$P_{3} = P_{1} + P_{2}$ are given by
+\begin{equation}
+  \label{eq:addition-law}
+  x_{3} = \lambda^{2} - x_{1} - x_{2} \quad \text{and} \quad  y_{3} = -\lambda x_{3}
+  - \nu,
+\end{equation}
+where
+\begin{equation}
+  \label{eq:eddition-law-2}
+  \lambda = \frac{y_{2} - y_{1}}{x_{2} - x_{1}} \quad \text{and} \quad \nu =
+  \frac{y_{1}x_{2} - y_{2}x_{1}}{x_{2} - x_{1}}.
+\end{equation}
+Now $E[3]$ is a group, and if we let $P_{1} = (\alpha, \beta)$ and $P_{2} = (-\alpha,
+i\beta)$ in $E[3]$ it follows that $P_{1} + P_{2}$ is equal to
+$(\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta} )$ or
+$(-\frac{i}{\sqrt{3}\alpha}, \pm \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta} )$\footnote{One
+  sees this easily by exhausting all other possibilities.  For example, we cannot
+  have $P_{1} + P_{2} = 2P_{3}$ since that would imply $P_{1} = P_{2}$, which is
+  absurd.}.  In particular, their values are given by rational functions of $\alpha$,
+$\beta$ and $i$ (by \eqref{eq:addition-law} and \eqref{eq:eddition-law-2}), and since
+$\lambda$ belongs to $\mathbb{Q}(i)$ we have the desired result, namely that $K_{3} =
+\mathbb{Q}(i,\beta)$.
 
 Now, the minimal polynomial for $\beta$ over $\mathbb{Q}(i)$ is
 \begin{equation}
@@ -68,12 +107,15 @@ simple form, we are reduced to solving a quadratic equation (as we did with
 \eqref{eq:3-torsion-polynomial}), and we find that the roots of
 \eqref{eq:min-poly-beta} are
 \begin{equation*}
-  \pm \beta, \pm i \beta, \pm \beta^{\prime}, \pm i \beta^{\prime}
+  \pm \beta, \pm i \beta, \pm \frac{2 \sqrt{i}}{\sqrt[4]{27}\beta}, \pm \frac{2 \sqrt{-i}}{\sqrt[4]{27}\beta}
 \end{equation*}
-where
-\begin{equation*}
-  \beta^{\prime} = 
-\end{equation*}
+(cf. \eqref{eq:points-of-e[3]}).  So the $8$ embeddings $\sigma_{j} : \mathbb{Q}(i)
+\rightarrow \mathbb{C}$, $j = 1 \ldots 8$, are determined uniquely by the value of
+$\sigma_{j}(\beta)$.  Furthermore, we know by Theorem
+\ref{thm:K_m-is-abelian-over-k(j(E))} that $K_{3}$ is a Galois extension of
+$\mathbb{Q}(i)$, with $Gal(K_{3}/\mathbb{Q}(i))$ abelian.  Since the only abelian
+groups of order 8 are $C_{2} \times C_{4}$ and $C_{8}$ it is easy to see that
+$Gal(K_{3}/\mathbb{Q}(i))$ must be isomorphic to $C_{2} \times C_{4}$.
 
 
 %%% Local Variables: 

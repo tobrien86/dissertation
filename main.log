@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  9 SEP 2009 19:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.7.28)  10 SEP 2009 17:09
 entering extended mode
  %&-line parsing enabled.
 **\input main.tex
@@ -302,12 +302,12 @@ Overfull \hbox (11.30698pt too wide) in paragraph at lines 110--110
 [24]) (./abelian_extensions/ext.tex [25] [26]) [27] (./main.bbl) [28]
 (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3488 strings out of 94075
- 42547 string characters out of 1165176
- 128350 words of memory out of 1500000
- 6699 multiletter control sequences out of 10000+50000
+ 3491 strings out of 94075
+ 42602 string characters out of 1165176
+ 128380 words of memory out of 1500000
+ 6702 multiletter control sequences out of 10000+50000
  17752 words of font info for 74 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  27i,27n,27p,243b,480s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on main.dvi (28 pages, 84560 bytes).
+Output written on main.dvi (28 pages, 89444 bytes).
